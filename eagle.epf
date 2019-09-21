@@ -7,6 +7,10 @@ Desktop="Desktop"
 [Globals]
 AutoSaveProject=1
 UsedLibraryUrn="urn:adsk.eagle:library:210"
+UsedLibraryUrn="urn:adsk.eagle:library:229"
+UsedLibraryUrn="urn:adsk.eagle:library:240"
+UsedLibraryUrn="urn:adsk.eagle:library:243"
+UsedLibraryUrn="urn:adsk.eagle:library:325"
 UsedLibraryUrn="urn:adsk.eagle:library:348"
 UsedLibraryUrn="urn:adsk.eagle:library:371"
 UsedLibraryUrn="urn:adsk.eagle:library:12980074"
@@ -14,7 +18,8 @@ UsedLibraryUrn="urn:adsk.eagle:library:13096589"
 UsedLibraryUrn="urn:adsk.eagle:library:12979881"
 UsedLibraryUrn="urn:adsk.eagle:library:13143856"
 UsedLibraryUrn="urn:adsk.eagle:library:11396254"
-UsedLibrary="D:/!_Projects/_Electonic/3 Digital BMS 6s multichemistry/Components/smf_10.lbr"
+UsedLibraryUrn="urn:adsk.eagle:library:13360199"
+UsedLibraryUrn="urn:adsk.eagle:library:13360588"
 
 [Win_1]
 Type="Control Panel"
