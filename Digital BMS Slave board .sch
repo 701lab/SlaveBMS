@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7677,7 +7677,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="BQ79606A-Q1" urn="urn:adsk.eagle:symbol:13136515/2" library_version="13">
+<symbol name="BQ79606A-Q1" urn="urn:adsk.eagle:symbol:13136515/2" locally_modified="yes" library_version="13" library_locally_modified="yes">
 <wire x1="-33.02" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="-53.34" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="-53.34" x2="-33.02" y2="-53.34" width="0.254" layer="94"/>
@@ -7732,10 +7732,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pin name="VLDO" x="-5.08" y="5.08" length="middle" direction="out" rot="R270"/>
 <pin name="NC@0" x="-22.86" y="-58.42" length="middle" direction="nc" rot="R90"/>
 <pin name="LDOIN" x="-2.54" y="5.08" length="middle" direction="in" rot="R270"/>
+<pin name="PAD" x="-27.94" y="-58.42" length="middle" direction="pwr" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BQ79606A-Q1-" urn="urn:adsk.eagle:component:13136519/4" prefix="U" library_version="13">
+<deviceset name="BQ79606A-Q1-" urn="urn:adsk.eagle:component:13136519/4" locally_modified="yes" prefix="U" library_version="13" library_locally_modified="yes">
 <description>Precision battery monitor
 
 
@@ -7781,6 +7782,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <connect gate="G$1" pin="NC@0" pad="38"/>
 <connect gate="G$1" pin="NC@1" pad="47"/>
 <connect gate="G$1" pin="NFAULT" pad="42"/>
+<connect gate="G$1" pin="PAD" pad="49"/>
 <connect gate="G$1" pin="REF1" pad="46"/>
 <connect gate="G$1" pin="RX" pad="41"/>
 <connect gate="G$1" pin="TSREF" pad="43"/>
@@ -7810,33 +7812,15 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </library>
 <library name="testing" urn="urn:adsk.eagle:library:13096589">
 <packages>
-<package name="TP1MM_MASK" urn="urn:adsk.eagle:footprint:13096591/1" library_version="1">
-<circle x="0" y="0" radius="0.5" width="0" layer="1"/>
-<circle x="0" y="0" radius="0.52" width="0" layer="29"/>
-<circle x="0" y="0" radius="0.5" width="0" layer="39"/>
-<smd name="1" x="0" y="0" dx="0.3" dy="0.3" layer="1" stop="no" cream="no"/>
+<package name="TP1MM_MASK" urn="urn:adsk.eagle:footprint:13096591/3" library_version="4">
+<circle x="0" y="0" radius="0.6096" width="0" layer="39"/>
 <text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<smd name="1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
 </package>
-<package name="TP1MM_NOMASK" urn="urn:adsk.eagle:footprint:13096594/1" library_version="1">
-<circle x="0" y="0" radius="0.5" width="0" layer="1"/>
-<circle x="0" y="0" radius="0.7" width="0" layer="29"/>
-<circle x="0" y="0" radius="0.7" width="0" layer="39"/>
-<smd name="1" x="0" y="0" dx="0.3" dy="0.3" layer="1" stop="no" cream="no"/>
+<package name="TP1.27MM" urn="urn:adsk.eagle:footprint:13096595/2" library_version="4">
+<circle x="0" y="0" radius="0.762" width="0" layer="39"/>
 <text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-</package>
-<package name="TP1.27MM_MASK" urn="urn:adsk.eagle:footprint:13096595/1" library_version="1">
-<circle x="0" y="0" radius="0.635" width="0" layer="1"/>
-<circle x="0" y="0" radius="0.6604" width="0" layer="29"/>
-<circle x="0" y="0" radius="0.635" width="0" layer="39"/>
-<smd name="1" x="0" y="0" dx="0.3" dy="0.3" layer="1" stop="no" cream="no"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-</package>
-<package name="TP1.27MM_NOMASK" urn="urn:adsk.eagle:footprint:13096590/1" library_version="1">
-<circle x="0" y="0" radius="0.635" width="0" layer="1"/>
-<circle x="0" y="0" radius="0.889" width="0" layer="29"/>
-<circle x="0" y="0" radius="0.889" width="0" layer="39"/>
-<smd name="1" x="0" y="0" dx="0.3" dy="0.3" layer="1" stop="no" cream="no"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<smd name="1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
 </package>
 <package name="SOLDER_BRIDGE" urn="urn:adsk.eagle:footprint:13096593/1" library_version="1">
 <wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
@@ -7881,24 +7865,14 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="TP1MM_MASK" urn="urn:adsk.eagle:package:13096609/1" type="model" library_version="1">
+<package3d name="TP1MM_MASK" urn="urn:adsk.eagle:package:13096609/3" type="model" library_version="4">
 <packageinstances>
 <packageinstance name="TP1MM_MASK"/>
 </packageinstances>
 </package3d>
-<package3d name="TP1MM_NOMASK" urn="urn:adsk.eagle:package:13096610/1" type="model" library_version="1">
+<package3d name="TP1.27MM_MASK" urn="urn:adsk.eagle:package:13096604/3" type="model" library_version="4">
 <packageinstances>
-<packageinstance name="TP1MM_NOMASK"/>
-</packageinstances>
-</package3d>
-<package3d name="TP1.27MM_MASK" urn="urn:adsk.eagle:package:13096604/1" type="model" library_version="1">
-<packageinstances>
-<packageinstance name="TP1.27MM_MASK"/>
-</packageinstances>
-</package3d>
-<package3d name="TP1.27MM_NOMASK" urn="urn:adsk.eagle:package:13096606/1" type="model" library_version="1">
-<packageinstances>
-<packageinstance name="TP1.27MM_NOMASK"/>
+<packageinstance name="TP1.27MM"/>
 </packageinstances>
 </package3d>
 <package3d name="SOLDER_BRIDGE" urn="urn:adsk.eagle:package:13096608/1" type="model" library_version="1">
@@ -7926,50 +7900,33 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TEST_PAD" urn="urn:adsk.eagle:component:13096611/1" prefix="TP" library_version="1">
+<deviceset name="TEST_PAD" urn="urn:adsk.eagle:component:13096611/3" prefix="TP" library_version="4">
+<description>Test point
+
+&lt;p&gt; SMD&lt;/P&gt;
+
+&lt;p&gt;&lt;b&gt;Updated: 05.11.19 by Andrey Dovnar, andrevdovnar@gmail.com&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="TEST_PAD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TP1MM_MASK">
+<device name="-[1.27MM]" package="TP1.27MM">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:13096609/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:13096604/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="1" package="TP1MM_NOMASK">
+<device name="-[1MM]" package="TP1MM_MASK">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:13096610/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="2" package="TP1.27MM_MASK">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:13096604/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3" package="TP1.27MM_NOMASK">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:13096606/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:13096609/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -10414,7 +10371,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C30" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="0805" package3d_urn="urn:adsk.eagle:package:13360230/2" value="1u/16V"/>
 <part name="C26" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.47u/16V"/>
-<part name="TP2" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
+<part name="TP2" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
 <part name="R30" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R1210" package3d_urn="urn:adsk.eagle:package:23554/2" value="10, 1/4W"/>
 <part name="R31" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R1210" package3d_urn="urn:adsk.eagle:package:23554/2" value="10, 1/4W"/>
 <part name="R32" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R1210" package3d_urn="urn:adsk.eagle:package:23554/2" value="10, 1/4W"/>
@@ -10461,10 +10418,10 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="R66" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/1" value="10k"/>
 <part name="R67" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU-X" device="0603" package3d_urn="urn:adsk.eagle:package:13360604/2"/>
 <part name="J7" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S2B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143949/2"/>
-<part name="TP38" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
-<part name="TP40" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
-<part name="TP42" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
-<part name="TP43" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
+<part name="TP38" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
+<part name="TP40" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
+<part name="TP42" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
+<part name="TP43" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X6" device="" package3d_urn="urn:adsk.eagle:package:22474/2"/>
 <part name="JP2" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="PINHD-1X6-OCT" device="" package3d_urn="urn:adsk.eagle:package:22472/2"/>
 <part name="R68" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/1" value="10k"/>
@@ -10482,32 +10439,32 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="C76" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K-X" device="0603" package3d_urn="urn:adsk.eagle:package:13360222/2" value="1u/16V"/>
 <part name="J10" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S3B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143944/2"/>
 <part name="J9" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S3B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143944/2"/>
-<part name="TP51" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
-<part name="TP52" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
+<part name="TP51" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
+<part name="TP52" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
 <part name="D6" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/2" value="6.2V"/>
 <part name="D1" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/2" value="6.2V"/>
 <part name="D2" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/2" value="6.2V"/>
 <part name="D3" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/2" value="6.2V"/>
 <part name="D7" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/2" value="6.2V"/>
 <part name="D8" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/2" value="6.2V"/>
-<part name="TP53" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="1" package3d_urn="urn:adsk.eagle:package:13096610/1"/>
-<part name="TP54" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="1" package3d_urn="urn:adsk.eagle:package:13096610/1"/>
-<part name="TP55" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="1" package3d_urn="urn:adsk.eagle:package:13096610/1"/>
-<part name="TP56" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="1" package3d_urn="urn:adsk.eagle:package:13096610/1"/>
-<part name="TP57" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="1" package3d_urn="urn:adsk.eagle:package:13096610/1"/>
-<part name="TP58" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="1" package3d_urn="urn:adsk.eagle:package:13096610/1"/>
-<part name="TP59" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="1" package3d_urn="urn:adsk.eagle:package:13096610/1"/>
-<part name="TP60" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="1" package3d_urn="urn:adsk.eagle:package:13096610/1"/>
-<part name="TP61" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="1" package3d_urn="urn:adsk.eagle:package:13096610/1"/>
-<part name="TP62" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="1" package3d_urn="urn:adsk.eagle:package:13096610/1"/>
-<part name="TP63" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="1" package3d_urn="urn:adsk.eagle:package:13096610/1"/>
-<part name="TP64" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="1" package3d_urn="urn:adsk.eagle:package:13096610/1"/>
-<part name="TP65" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="1" package3d_urn="urn:adsk.eagle:package:13096610/1"/>
-<part name="TP66" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="1" package3d_urn="urn:adsk.eagle:package:13096610/1"/>
-<part name="TP67" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="1" package3d_urn="urn:adsk.eagle:package:13096610/1"/>
-<part name="TP68" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="1" package3d_urn="urn:adsk.eagle:package:13096610/1"/>
-<part name="TP69" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="1" package3d_urn="urn:adsk.eagle:package:13096610/1"/>
-<part name="TP70" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="1" package3d_urn="urn:adsk.eagle:package:13096610/1"/>
+<part name="TP53" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
+<part name="TP54" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
+<part name="TP55" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
+<part name="TP56" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
+<part name="TP57" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
+<part name="TP58" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
+<part name="TP59" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
+<part name="TP60" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
+<part name="TP61" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
+<part name="TP62" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
+<part name="TP63" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
+<part name="TP64" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
+<part name="TP65" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
+<part name="TP66" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
+<part name="TP67" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
+<part name="TP68" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
+<part name="TP69" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
+<part name="TP70" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
 <part name="J11" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S4B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143913/2"/>
 <part name="R74" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100"/>
 <part name="R44" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/1" value="1k"/>
@@ -10517,21 +10474,21 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="J12" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S4B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143913/2"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="TP1" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
-<part name="TP5" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
-<part name="TP6" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
-<part name="TP7" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
-<part name="TP8" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
-<part name="TP15" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
-<part name="TP16" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
-<part name="TP17" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
-<part name="TP3" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
-<part name="TP4" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
-<part name="TP9" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
-<part name="TP10" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
-<part name="TP11" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
-<part name="TP12" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="" package3d_urn="urn:adsk.eagle:package:13096609/1"/>
-<part name="TP13" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="1" package3d_urn="urn:adsk.eagle:package:13096610/1"/>
+<part name="TP1" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
+<part name="TP5" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
+<part name="TP6" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
+<part name="TP7" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
+<part name="TP8" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
+<part name="TP15" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
+<part name="TP16" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
+<part name="TP17" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
+<part name="TP3" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
+<part name="TP4" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
+<part name="TP9" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
+<part name="TP10" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
+<part name="TP11" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
+<part name="TP12" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
+<part name="TP13" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
 </parts>
 <sheets>
 <sheet>
