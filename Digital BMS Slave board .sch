@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10665,10 +10665,6 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="R66" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/1" value="10k"/>
 <part name="R67" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU-X" device="0603" package3d_urn="urn:adsk.eagle:package:13360604/2"/>
 <part name="J7" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S2B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143949/2"/>
-<part name="TP38" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
-<part name="TP40" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
-<part name="TP42" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
-<part name="TP43" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X6" device="" package3d_urn="urn:adsk.eagle:package:22474/2"/>
 <part name="JP2" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="PINHD-1X6-OCT" device="" package3d_urn="urn:adsk.eagle:package:22472/2"/>
 <part name="R68" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/1" value="10k"/>
@@ -10686,8 +10682,6 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="C76" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K-X" device="0603" package3d_urn="urn:adsk.eagle:package:13360222/2" value="1u/16V"/>
 <part name="J10" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S3B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143944/2"/>
 <part name="J9" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S3B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143944/2"/>
-<part name="TP51" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
-<part name="TP52" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
 <part name="D6" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/2" value="6.2V"/>
 <part name="D1" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/2" value="6.2V"/>
 <part name="D2" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/2" value="6.2V"/>
@@ -10712,7 +10706,6 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="TP68" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
 <part name="TP69" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
 <part name="TP70" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
-<part name="J11" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S4B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143913/2"/>
 <part name="R74" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100"/>
 <part name="R44" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/1" value="1k"/>
 <part name="D9" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="LED0805" device="" package3d_urn="urn:adsk.eagle:package:14160208/4" value="GREEN"/>
@@ -10737,6 +10730,22 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="TP12" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM]" package3d_urn="urn:adsk.eagle:package:13096609/3"/>
 <part name="TP13" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM]" package3d_urn="urn:adsk.eagle:package:13096604/3"/>
 <part name="JP4" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="D10" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/2" value="6.2V"/>
+<part name="D11" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/2" value="6.2V"/>
+<part name="D12" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/2" value="6.2V"/>
+<part name="D13" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/2" value="6.2V"/>
+<part name="GND38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND41" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="J11" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S6B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143943/2"/>
+<part name="GND42" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10748,7 +10757,7 @@ if unused</text>
 unconected if not used </text>
 <text x="146.05" y="-29.21" size="1.778" layer="91" grouprefs="MAIN_IC">CAP+Choke configuration used for 
 different PCB with less than 2m wiring</text>
-<text x="27.94" y="-88.9" size="1.778" layer="91">SPI Master Connections
+<text x="44.45" y="-87.63" size="1.778" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">SPI Master Connections
 SCLK (GPIO6)
 MOSI (GPIO5)
 MISO (GPIO4)
@@ -10907,38 +10916,38 @@ SS(GPIO3)</text>
 <attribute name="NAME" x="153.924" y="71.501" size="1.778" layer="95"/>
 <attribute name="VALUE" x="153.289" y="66.421" size="1.778" layer="96"/>
 </instance>
-<instance part="C14" gate="G$1" x="39.37" y="-153.67" smashed="yes" rot="MR180" grouprefs="CMOS_TEMP_SENSING">
-<attribute name="NAME" x="36.576" y="-151.511" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="36.576" y="-154.051" size="1.778" layer="96" rot="R180"/>
+<instance part="C14" gate="G$1" x="53.34" y="-148.59" smashed="yes" rot="MR180" grouprefs="CMOS_TEMP_SENSING">
+<attribute name="NAME" x="50.546" y="-146.431" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="50.546" y="-148.971" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R17" gate="G$1" x="31.75" y="-146.05" smashed="yes" rot="MR0" grouprefs="CMOS_TEMP_SENSING">
-<attribute name="NAME" x="35.56" y="-144.5514" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="35.56" y="-149.352" size="1.778" layer="96" rot="MR0"/>
+<instance part="R17" gate="G$1" x="45.72" y="-140.97" smashed="yes" rot="MR0" grouprefs="CMOS_TEMP_SENSING">
+<attribute name="NAME" x="49.53" y="-139.4714" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="49.53" y="-144.272" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C19" gate="G$1" x="182.88" y="-69.85" smashed="yes" rot="MR180" grouprefs="100K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="185.674" y="-66.421" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="185.674" y="-68.961" size="1.778" layer="96" rot="MR180"/>
+<instance part="C19" gate="G$1" x="194.31" y="-71.12" smashed="yes" rot="MR180" grouprefs="100K_NTC_TEMP_SENSING">
+<attribute name="NAME" x="197.104" y="-67.691" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="197.104" y="-70.231" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="R22" gate="G$1" x="175.26" y="-60.96" smashed="yes" rot="MR0" grouprefs="100K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="179.07" y="-59.4614" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="179.07" y="-64.262" size="1.778" layer="96" rot="MR0"/>
+<instance part="R22" gate="G$1" x="186.69" y="-62.23" smashed="yes" rot="MR0" grouprefs="100K_NTC_TEMP_SENSING">
+<attribute name="NAME" x="190.5" y="-60.7314" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="190.5" y="-65.532" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C15" gate="G$1" x="39.37" y="-121.92" smashed="yes" rot="MR180" grouprefs="CMOS_TEMP_SENSING">
-<attribute name="NAME" x="36.576" y="-119.761" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="36.576" y="-122.301" size="1.778" layer="96" rot="R180"/>
+<instance part="C15" gate="G$1" x="53.34" y="-125.73" smashed="yes" rot="MR180" grouprefs="CMOS_TEMP_SENSING">
+<attribute name="NAME" x="50.546" y="-123.571" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="50.546" y="-126.111" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R18" gate="G$1" x="31.75" y="-114.3" smashed="yes" rot="MR0" grouprefs="CMOS_TEMP_SENSING">
-<attribute name="NAME" x="35.56" y="-112.8014" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="35.56" y="-117.602" size="1.778" layer="96" rot="MR0"/>
+<instance part="R18" gate="G$1" x="45.72" y="-118.11" smashed="yes" rot="MR0" grouprefs="CMOS_TEMP_SENSING">
+<attribute name="NAME" x="49.53" y="-116.6114" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="49.53" y="-121.412" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND8" gate="1" x="182.88" y="-78.74" smashed="yes" rot="MR0" grouprefs="100K_NTC_TEMP_SENSING">
-<attribute name="VALUE" x="185.42" y="-81.28" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND8" gate="1" x="194.31" y="-77.47" smashed="yes" rot="MR0" grouprefs="100K_NTC_TEMP_SENSING">
+<attribute name="VALUE" x="196.85" y="-80.01" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND12" gate="1" x="44.45" y="-130.81" smashed="yes" rot="MR0" grouprefs="CMOS_TEMP_SENSING">
-<attribute name="VALUE" x="46.99" y="-133.35" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND12" gate="1" x="58.42" y="-134.62" smashed="yes" rot="MR0" grouprefs="CMOS_TEMP_SENSING">
+<attribute name="VALUE" x="60.96" y="-137.16" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND13" gate="1" x="27.94" y="-162.56" smashed="yes" rot="MR0" grouprefs="CMOS_TEMP_SENSING">
-<attribute name="VALUE" x="30.48" y="-165.1" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND13" gate="1" x="58.42" y="-157.48" smashed="yes" rot="MR0" grouprefs="CMOS_TEMP_SENSING">
+<attribute name="VALUE" x="60.96" y="-160.02" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="U1" gate="G$1" x="143.51" y="45.72" smashed="yes" grouprefs="MAIN_IC">
 <attribute name="NAME" x="144.78" y="50.8" size="1.778" layer="95" align="center-left"/>
@@ -11197,13 +11206,13 @@ SS(GPIO3)</text>
 <instance part="GND7" gate="1" x="-132.08" y="-129.54" smashed="yes" grouprefs="STD_BALANCING">
 <attribute name="VALUE" x="-132.08" y="-125.73" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="D4" gate="G$1" x="49.53" y="-119.38" smashed="yes" rot="MR90" grouprefs="CMOS_TEMP_SENSING">
-<attribute name="NAME" x="51.435" y="-121.666" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="46.101" y="-121.666" size="1.778" layer="96" rot="MR90"/>
+<instance part="D4" gate="G$1" x="63.5" y="-123.19" smashed="yes" rot="MR90" grouprefs="CMOS_TEMP_SENSING">
+<attribute name="NAME" x="65.405" y="-125.476" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="60.071" y="-125.476" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="D5" gate="G$1" x="49.53" y="-152.4" smashed="yes" rot="MR90" grouprefs="CMOS_TEMP_SENSING">
-<attribute name="NAME" x="51.435" y="-154.686" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="46.101" y="-154.686" size="1.778" layer="96" rot="MR90"/>
+<instance part="D5" gate="G$1" x="63.5" y="-147.32" smashed="yes" rot="MR90" grouprefs="CMOS_TEMP_SENSING">
+<attribute name="NAME" x="65.405" y="-149.606" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="60.071" y="-149.606" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="GND26" gate="1" x="184.15" y="-54.61" smashed="yes" rot="MR0" grouprefs="100K_NTC_TEMP_SENSING">
 <attribute name="VALUE" x="186.69" y="-57.15" size="1.778" layer="96" rot="MR0"/>
@@ -11220,65 +11229,65 @@ SS(GPIO3)</text>
 <attribute name="NAME" x="158.75" y="-64.135" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="158.75" y="-74.93" size="1.778" layer="95" rot="MR0"/>
 </instance>
-<instance part="C16" gate="G$1" x="125.73" y="-69.85" smashed="yes" rot="MR180" grouprefs="100K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="128.524" y="-66.421" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="128.524" y="-68.961" size="1.778" layer="96" rot="MR180"/>
+<instance part="C16" gate="G$1" x="133.35" y="-72.39" smashed="yes" rot="MR180" grouprefs="100K_NTC_TEMP_SENSING">
+<attribute name="NAME" x="136.144" y="-68.961" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="136.144" y="-71.501" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="R19" gate="G$1" x="118.11" y="-60.96" smashed="yes" rot="MR0" grouprefs="100K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="121.92" y="-59.4614" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="121.92" y="-64.262" size="1.778" layer="96" rot="MR0"/>
+<instance part="R19" gate="G$1" x="125.73" y="-63.5" smashed="yes" rot="MR0" grouprefs="100K_NTC_TEMP_SENSING">
+<attribute name="NAME" x="129.54" y="-62.0014" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="129.54" y="-66.802" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND9" gate="1" x="125.73" y="-78.74" smashed="yes" rot="MR0" grouprefs="100K_NTC_TEMP_SENSING">
-<attribute name="VALUE" x="128.27" y="-81.28" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND9" gate="1" x="133.35" y="-78.74" smashed="yes" rot="MR0" grouprefs="100K_NTC_TEMP_SENSING">
+<attribute name="VALUE" x="135.89" y="-81.28" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND10" gate="1" x="127" y="-54.61" smashed="yes" rot="MR0" grouprefs="100K_NTC_TEMP_SENSING">
-<attribute name="VALUE" x="129.54" y="-57.15" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND10" gate="1" x="121.92" y="-54.61" smashed="yes" rot="MR0" grouprefs="100K_NTC_TEMP_SENSING">
+<attribute name="VALUE" x="124.46" y="-57.15" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R20" gate="G$1" x="113.03" y="-49.53" smashed="yes" rot="R90" grouprefs="100K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="111.5314" y="-53.34" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="116.332" y="-53.34" size="1.778" layer="96" rot="R90"/>
+<instance part="R20" gate="G$1" x="107.95" y="-49.53" smashed="yes" rot="R90" grouprefs="100K_NTC_TEMP_SENSING">
+<attribute name="NAME" x="106.4514" y="-53.34" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="111.252" y="-53.34" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R21" gate="G$1" x="113.03" y="-68.58" smashed="yes" rot="R90" grouprefs="100K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="111.5314" y="-72.39" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="116.332" y="-72.39" size="1.778" layer="96" rot="R90"/>
+<instance part="R21" gate="G$1" x="107.95" y="-68.58" smashed="yes" rot="R90" grouprefs="100K_NTC_TEMP_SENSING">
+<attribute name="NAME" x="106.4514" y="-72.39" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="111.252" y="-72.39" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="J5" gate="B" x="100.33" y="-67.31" smashed="yes" rot="MR0" grouprefs="100K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="101.6" y="-64.135" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="101.6" y="-74.93" size="1.778" layer="95" rot="MR0"/>
+<instance part="J5" gate="B" x="95.25" y="-67.31" smashed="yes" rot="MR0" grouprefs="100K_NTC_TEMP_SENSING">
+<attribute name="NAME" x="96.52" y="-64.135" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="96.52" y="-74.93" size="1.778" layer="95" rot="MR0"/>
 </instance>
-<instance part="C18" gate="G$1" x="125.73" y="-120.65" smashed="yes" rot="MR180" grouprefs="10K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="128.524" y="-117.221" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="128.524" y="-119.761" size="1.778" layer="96" rot="MR180"/>
+<instance part="C18" gate="G$1" x="132.08" y="-123.19" smashed="yes" rot="MR180" grouprefs="10K_NTC_TEMP_SENSING">
+<attribute name="NAME" x="134.874" y="-119.761" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="134.874" y="-122.301" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="R62" gate="G$1" x="118.11" y="-111.76" smashed="yes" rot="MR0" grouprefs="10K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="121.92" y="-110.2614" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="121.92" y="-115.062" size="1.778" layer="96" rot="MR0"/>
+<instance part="R62" gate="G$1" x="124.46" y="-114.3" smashed="yes" rot="MR0" grouprefs="10K_NTC_TEMP_SENSING">
+<attribute name="NAME" x="128.27" y="-112.8014" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="128.27" y="-117.602" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND28" gate="1" x="125.73" y="-129.54" smashed="yes" rot="MR0" grouprefs="10K_NTC_TEMP_SENSING">
-<attribute name="VALUE" x="128.27" y="-132.08" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND28" gate="1" x="107.95" y="-129.54" smashed="yes" rot="MR0" grouprefs="10K_NTC_TEMP_SENSING">
+<attribute name="VALUE" x="110.49" y="-132.08" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R63" gate="G$1" x="113.03" y="-100.33" smashed="yes" rot="R90" grouprefs="10K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="111.5314" y="-104.14" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="116.332" y="-104.14" size="1.778" layer="96" rot="R90"/>
+<instance part="R63" gate="G$1" x="107.95" y="-100.33" smashed="yes" rot="R90" grouprefs="10K_NTC_TEMP_SENSING">
+<attribute name="NAME" x="106.4514" y="-104.14" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="111.252" y="-104.14" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R64" gate="G$1" x="113.03" y="-119.38" smashed="yes" rot="R90" grouprefs="10K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="111.5314" y="-123.19" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="116.332" y="-123.19" size="1.778" layer="96" rot="R90"/>
+<instance part="R64" gate="G$1" x="107.95" y="-119.38" smashed="yes" rot="R90" grouprefs="10K_NTC_TEMP_SENSING">
+<attribute name="NAME" x="106.4514" y="-123.19" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="111.252" y="-123.19" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="J6" gate="B" x="100.33" y="-118.11" smashed="yes" rot="MR0" grouprefs="10K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="101.6" y="-114.935" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="101.6" y="-125.73" size="1.778" layer="95" rot="MR0"/>
+<instance part="J6" gate="B" x="95.25" y="-118.11" smashed="yes" rot="MR0" grouprefs="10K_NTC_TEMP_SENSING">
+<attribute name="NAME" x="96.52" y="-114.935" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="96.52" y="-125.73" size="1.778" layer="95" rot="MR0"/>
 </instance>
-<instance part="C74" gate="G$1" x="182.88" y="-120.65" smashed="yes" rot="MR180" grouprefs="10K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="185.674" y="-117.221" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="185.674" y="-119.761" size="1.778" layer="96" rot="MR180"/>
+<instance part="C74" gate="G$1" x="195.58" y="-123.19" smashed="yes" rot="MR180" grouprefs="10K_NTC_TEMP_SENSING">
+<attribute name="NAME" x="198.374" y="-119.761" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="198.374" y="-122.301" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="R65" gate="G$1" x="175.26" y="-111.76" smashed="yes" rot="MR0" grouprefs="10K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="179.07" y="-110.2614" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="179.07" y="-115.062" size="1.778" layer="96" rot="MR0"/>
+<instance part="R65" gate="G$1" x="187.96" y="-114.3" smashed="yes" rot="MR0" grouprefs="10K_NTC_TEMP_SENSING">
+<attribute name="NAME" x="191.77" y="-112.8014" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="191.77" y="-117.602" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND31" gate="1" x="182.88" y="-129.54" smashed="yes" rot="MR0" grouprefs="10K_NTC_TEMP_SENSING">
-<attribute name="VALUE" x="185.42" y="-132.08" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND31" gate="1" x="195.58" y="-129.54" smashed="yes" rot="MR0" grouprefs="10K_NTC_TEMP_SENSING">
+<attribute name="VALUE" x="198.12" y="-132.08" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="R66" gate="G$1" x="170.18" y="-100.33" smashed="yes" rot="R90" grouprefs="10K_NTC_TEMP_SENSING">
 <attribute name="NAME" x="168.6814" y="-104.14" size="1.778" layer="95" rot="R90"/>
@@ -11292,67 +11301,55 @@ SS(GPIO3)</text>
 <attribute name="NAME" x="158.75" y="-114.935" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="158.75" y="-125.73" size="1.778" layer="95" rot="MR0"/>
 </instance>
-<instance part="TP38" gate="G$1" x="134.62" y="-109.22" smashed="yes" rot="R90" grouprefs="10K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="135.89" y="-109.22" size="1.27" layer="95"/>
+<instance part="JP1" gate="A" x="10.16" y="-54.61" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<attribute name="NAME" x="3.81" y="-46.355" size="1.778" layer="95"/>
+<attribute name="VALUE" x="3.81" y="-67.31" size="1.778" layer="96"/>
 </instance>
-<instance part="TP40" gate="G$1" x="191.77" y="-109.22" smashed="yes" rot="R90" grouprefs="10K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="193.04" y="-109.22" size="1.27" layer="95"/>
+<instance part="JP2" gate="A" x="35.56" y="-57.15" smashed="yes" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<attribute name="NAME" x="41.91" y="-46.355" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="41.91" y="-67.31" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="TP42" gate="G$1" x="191.77" y="-58.42" smashed="yes" rot="R90" grouprefs="100K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="193.04" y="-57.15" size="1.27" layer="95" rot="MR180"/>
+<instance part="R68" gate="G$1" x="53.34" y="-68.58" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<attribute name="NAME" x="49.53" y="-67.0814" size="1.778" layer="95"/>
+<attribute name="VALUE" x="49.53" y="-71.882" size="1.778" layer="96"/>
 </instance>
-<instance part="TP43" gate="G$1" x="137.16" y="-58.42" smashed="yes" rot="R90" grouprefs="100K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="138.43" y="-57.15" size="1.27" layer="95" rot="MR180"/>
+<instance part="R69" gate="G$1" x="63.5" y="-63.5" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<attribute name="NAME" x="59.69" y="-62.0014" size="1.778" layer="95"/>
+<attribute name="VALUE" x="59.69" y="-66.802" size="1.778" layer="96"/>
 </instance>
-<instance part="JP1" gate="A" x="10.16" y="-57.15" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
-<attribute name="NAME" x="3.81" y="-48.895" size="1.778" layer="95"/>
-<attribute name="VALUE" x="3.81" y="-69.85" size="1.778" layer="96"/>
+<instance part="R70" gate="G$1" x="53.34" y="-58.42" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<attribute name="NAME" x="49.53" y="-56.9214" size="1.778" layer="95"/>
+<attribute name="VALUE" x="49.53" y="-61.722" size="1.778" layer="96"/>
 </instance>
-<instance part="JP2" gate="A" x="35.56" y="-59.69" smashed="yes" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
-<attribute name="NAME" x="41.91" y="-48.895" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="41.91" y="-69.85" size="1.778" layer="96" rot="MR0"/>
+<instance part="R71" gate="G$1" x="63.5" y="-53.34" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<attribute name="NAME" x="59.69" y="-51.8414" size="1.778" layer="95"/>
+<attribute name="VALUE" x="59.69" y="-56.642" size="1.778" layer="96"/>
 </instance>
-<instance part="R68" gate="G$1" x="53.34" y="-71.12" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
-<attribute name="NAME" x="49.53" y="-69.6214" size="1.778" layer="95"/>
-<attribute name="VALUE" x="49.53" y="-74.422" size="1.778" layer="96"/>
+<instance part="R72" gate="G$1" x="52.07" y="-48.26" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<attribute name="NAME" x="48.26" y="-46.7614" size="1.778" layer="95"/>
+<attribute name="VALUE" x="48.26" y="-51.562" size="1.778" layer="96"/>
 </instance>
-<instance part="R69" gate="G$1" x="63.5" y="-66.04" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
-<attribute name="NAME" x="59.69" y="-64.5414" size="1.778" layer="95"/>
-<attribute name="VALUE" x="59.69" y="-69.342" size="1.778" layer="96"/>
+<instance part="R73" gate="G$1" x="62.23" y="-43.18" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<attribute name="NAME" x="58.42" y="-41.6814" size="1.778" layer="95"/>
+<attribute name="VALUE" x="58.42" y="-46.482" size="1.778" layer="96"/>
 </instance>
-<instance part="R70" gate="G$1" x="53.34" y="-60.96" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
-<attribute name="NAME" x="49.53" y="-59.4614" size="1.778" layer="95"/>
-<attribute name="VALUE" x="49.53" y="-64.262" size="1.778" layer="96"/>
+<instance part="GND29" gate="1" x="73.66" y="-72.39" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<attribute name="VALUE" x="71.12" y="-74.93" size="1.778" layer="96"/>
 </instance>
-<instance part="R71" gate="G$1" x="63.5" y="-55.88" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
-<attribute name="NAME" x="59.69" y="-54.3814" size="1.778" layer="95"/>
-<attribute name="VALUE" x="59.69" y="-59.182" size="1.778" layer="96"/>
-</instance>
-<instance part="R72" gate="G$1" x="52.07" y="-50.8" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
-<attribute name="NAME" x="48.26" y="-49.3014" size="1.778" layer="95"/>
-<attribute name="VALUE" x="48.26" y="-54.102" size="1.778" layer="96"/>
-</instance>
-<instance part="R73" gate="G$1" x="62.23" y="-45.72" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
-<attribute name="NAME" x="58.42" y="-44.2214" size="1.778" layer="95"/>
-<attribute name="VALUE" x="58.42" y="-49.022" size="1.778" layer="96"/>
-</instance>
-<instance part="GND29" gate="1" x="73.66" y="-74.93" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
-<attribute name="VALUE" x="71.12" y="-77.47" size="1.778" layer="96"/>
-</instance>
-<instance part="C72" gate="G$1" x="127" y="-45.72" smashed="yes" grouprefs="100K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="129.794" y="-46.609" size="1.778" layer="95"/>
-<attribute name="VALUE" x="129.794" y="-49.149" size="1.778" layer="96"/>
+<instance part="C72" gate="G$1" x="121.92" y="-45.72" smashed="yes" grouprefs="100K_NTC_TEMP_SENSING">
+<attribute name="NAME" x="124.714" y="-46.609" size="1.778" layer="95"/>
+<attribute name="VALUE" x="124.714" y="-49.149" size="1.778" layer="96"/>
 </instance>
 <instance part="C73" gate="G$1" x="184.15" y="-45.72" smashed="yes" grouprefs="100K_NTC_TEMP_SENSING">
 <attribute name="NAME" x="186.944" y="-46.609" size="1.778" layer="95"/>
 <attribute name="VALUE" x="186.944" y="-49.149" size="1.778" layer="96"/>
 </instance>
-<instance part="GND32" gate="1" x="127" y="-105.41" smashed="yes" rot="MR0" grouprefs="10K_NTC_TEMP_SENSING">
-<attribute name="VALUE" x="129.54" y="-107.95" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND32" gate="1" x="121.92" y="-105.41" smashed="yes" rot="MR0" grouprefs="10K_NTC_TEMP_SENSING">
+<attribute name="VALUE" x="124.46" y="-107.95" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C75" gate="G$1" x="127" y="-96.52" smashed="yes" grouprefs="10K_NTC_TEMP_SENSING">
-<attribute name="NAME" x="129.794" y="-97.409" size="1.778" layer="95"/>
-<attribute name="VALUE" x="129.794" y="-99.949" size="1.778" layer="96"/>
+<instance part="C75" gate="G$1" x="121.92" y="-96.52" smashed="yes" grouprefs="10K_NTC_TEMP_SENSING">
+<attribute name="NAME" x="124.714" y="-97.409" size="1.778" layer="95"/>
+<attribute name="VALUE" x="124.714" y="-99.949" size="1.778" layer="96"/>
 </instance>
 <instance part="GND34" gate="1" x="184.15" y="-105.41" smashed="yes" rot="MR0" grouprefs="10K_NTC_TEMP_SENSING">
 <attribute name="VALUE" x="186.69" y="-107.95" size="1.778" layer="96" rot="MR0"/>
@@ -11361,19 +11358,13 @@ SS(GPIO3)</text>
 <attribute name="NAME" x="186.944" y="-97.409" size="1.778" layer="95"/>
 <attribute name="VALUE" x="186.944" y="-99.949" size="1.778" layer="96"/>
 </instance>
-<instance part="J10" gate="B" x="11.43" y="-146.05" smashed="yes" rot="MR0" grouprefs="CMOS_TEMP_SENSING">
-<attribute name="NAME" x="12.7" y="-140.335" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="12.7" y="-153.67" size="1.778" layer="95" rot="MR0"/>
+<instance part="J10" gate="B" x="-1.27" y="-140.97" smashed="yes" rot="MR0" grouprefs="CMOS_TEMP_SENSING">
+<attribute name="NAME" x="0" y="-135.255" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="0" y="-148.59" size="1.778" layer="95" rot="MR0"/>
 </instance>
-<instance part="J9" gate="B" x="11.43" y="-114.3" smashed="yes" rot="MR0" grouprefs="CMOS_TEMP_SENSING">
-<attribute name="NAME" x="12.7" y="-108.585" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="12.7" y="-121.92" size="1.778" layer="95" rot="MR0"/>
-</instance>
-<instance part="TP51" gate="G$1" x="52.07" y="-143.51" smashed="yes" rot="R90" grouprefs="CMOS_TEMP_SENSING">
-<attribute name="NAME" x="50.8" y="-143.51" size="1.27" layer="95" rot="R180"/>
-</instance>
-<instance part="TP52" gate="G$1" x="52.07" y="-111.76" smashed="yes" rot="R90" grouprefs="CMOS_TEMP_SENSING">
-<attribute name="NAME" x="50.8" y="-111.76" size="1.27" layer="95" rot="R180"/>
+<instance part="J9" gate="B" x="-1.27" y="-118.11" smashed="yes" rot="MR0" grouprefs="CMOS_TEMP_SENSING">
+<attribute name="NAME" x="0" y="-112.395" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="0" y="-125.73" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="D6" gate="G$1" x="-83.82" y="-59.055" smashed="yes" rot="MR90" grouprefs="EXTRA_BALANCING_CIRCIUTRY">
 <attribute name="NAME" x="-81.915" y="-61.341" size="1.778" layer="95" rot="MR90"/>
@@ -11453,10 +11444,6 @@ SS(GPIO3)</text>
 <instance part="TP70" gate="G$1" x="-57.15" y="-45.085" smashed="yes" rot="R270" grouprefs="EXTRA_BALANCING_CIRCIUTRY">
 <attribute name="NAME" x="-62.23" y="-46.355" size="1.27" layer="95"/>
 </instance>
-<instance part="J11" gate="B" x="15.24" y="-83.82" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
-<attribute name="NAME" x="13.97" y="-75.565" size="1.778" layer="95"/>
-<attribute name="VALUE" x="13.97" y="-91.44" size="1.778" layer="95"/>
-</instance>
 <instance part="R44" gate="G$1" x="179.07" y="77.47" smashed="yes" rot="R180">
 <attribute name="NAME" x="181.61" y="81.0514" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="181.61" y="75.692" size="1.778" layer="96" rot="R180"/>
@@ -11507,6 +11494,59 @@ SS(GPIO3)</text>
 <attribute name="NAME" x="189.865" y="46.99" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="200.66" y="46.99" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="GND27" gate="1" x="7.62" y="-125.73" smashed="yes" rot="MR0" grouprefs="CMOS_TEMP_SENSING">
+<attribute name="VALUE" x="10.16" y="-128.27" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND30" gate="1" x="7.62" y="-147.32" smashed="yes" rot="MR0" grouprefs="CMOS_TEMP_SENSING">
+<attribute name="VALUE" x="10.16" y="-149.86" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND33" gate="1" x="132.08" y="-129.54" smashed="yes" rot="MR0" grouprefs="10K_NTC_TEMP_SENSING">
+<attribute name="VALUE" x="134.62" y="-132.08" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND35" gate="1" x="170.18" y="-130.81" smashed="yes" rot="MR0" grouprefs="10K_NTC_TEMP_SENSING">
+<attribute name="VALUE" x="172.72" y="-133.35" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND36" gate="1" x="170.18" y="-78.74" smashed="yes" rot="MR0" grouprefs="100K_NTC_TEMP_SENSING">
+<attribute name="VALUE" x="172.72" y="-81.28" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND37" gate="1" x="107.95" y="-78.74" smashed="yes" rot="MR0" grouprefs="100K_NTC_TEMP_SENSING">
+<attribute name="VALUE" x="110.49" y="-81.28" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="D10" gate="G$1" x="0" y="-90.17" smashed="yes" rot="R90" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<attribute name="NAME" x="-1.905" y="-92.456" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="3.429" y="-92.456" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="D11" gate="G$1" x="7.62" y="-90.17" smashed="yes" rot="R90" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<attribute name="NAME" x="5.715" y="-92.456" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="11.049" y="-92.456" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="D12" gate="G$1" x="15.24" y="-90.17" smashed="yes" rot="R90" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<attribute name="NAME" x="13.335" y="-92.456" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="18.669" y="-92.456" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="D13" gate="G$1" x="22.86" y="-90.17" smashed="yes" rot="R90" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<attribute name="NAME" x="20.955" y="-92.456" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="26.289" y="-92.456" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND38" gate="1" x="22.86" y="-97.79" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<attribute name="VALUE" x="20.32" y="-100.33" size="1.778" layer="96"/>
+</instance>
+<instance part="GND39" gate="1" x="15.24" y="-97.79" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<attribute name="VALUE" x="12.7" y="-100.33" size="1.778" layer="96"/>
+</instance>
+<instance part="GND40" gate="1" x="7.62" y="-97.79" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<attribute name="VALUE" x="5.08" y="-100.33" size="1.778" layer="96"/>
+</instance>
+<instance part="GND41" gate="1" x="0" y="-97.79" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<attribute name="VALUE" x="-2.54" y="-100.33" size="1.778" layer="96"/>
+</instance>
+<instance part="J11" gate="B" x="38.1" y="-83.82" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<attribute name="NAME" x="36.83" y="-73.025" size="1.778" layer="95"/>
+<attribute name="VALUE" x="36.83" y="-93.98" size="1.778" layer="95"/>
+</instance>
+<instance part="GND42" gate="1" x="30.48" y="-97.79" smashed="yes" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<attribute name="VALUE" x="27.94" y="-100.33" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11552,19 +11592,9 @@ SS(GPIO3)</text>
 <junction x="156.21" y="-7.62" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
-<pinref part="GND8" gate="1" pin="GND"/>
 <pinref part="C19" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="-76.2" x2="182.88" y2="-74.93" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<pinref part="R61" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="-74.93" x2="182.88" y2="-72.39" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="170.18" y1="-74.93" x2="170.18" y2="-73.66" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="170.18" y1="-74.93" x2="165.1" y2="-74.93" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="165.1" y1="-74.93" x2="165.1" y2="-69.85" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<pinref part="J8" gate="B" pin="2"/>
-<wire x1="165.1" y1="-69.85" x2="162.56" y2="-69.85" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="170.18" y1="-74.93" x2="182.88" y2="-74.93" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<junction x="170.18" y="-74.93" grouprefs="100K_NTC_TEMP_SENSING"/>
-<junction x="182.88" y="-74.93" grouprefs="100K_NTC_TEMP_SENSING"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="194.31" y1="-74.93" x2="194.31" y2="-73.66" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="AVSS@0"/>
@@ -11619,83 +11649,48 @@ SS(GPIO3)</text>
 <pinref part="C73" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="GND9" gate="1" pin="GND"/>
 <pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="125.73" y1="-76.2" x2="125.73" y2="-74.93" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="125.73" y1="-74.93" x2="125.73" y2="-72.39" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="113.03" y1="-74.93" x2="113.03" y2="-73.66" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="113.03" y1="-74.93" x2="107.95" y2="-74.93" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="107.95" y1="-74.93" x2="107.95" y2="-69.85" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<pinref part="J5" gate="B" pin="2"/>
-<wire x1="107.95" y1="-69.85" x2="105.41" y2="-69.85" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="113.03" y1="-74.93" x2="125.73" y2="-74.93" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<junction x="113.03" y="-74.93" grouprefs="100K_NTC_TEMP_SENSING"/>
-<junction x="125.73" y="-74.93" grouprefs="100K_NTC_TEMP_SENSING"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="133.35" y1="-76.2" x2="133.35" y2="-74.93" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
 </segment>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="127" y1="-52.07" x2="127" y2="-50.8" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="121.92" y1="-52.07" x2="121.92" y2="-50.8" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
 <pinref part="C72" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="GND28" gate="1" pin="GND"/>
-<pinref part="C18" gate="G$1" pin="1"/>
-<wire x1="125.73" y1="-127" x2="125.73" y2="-125.73" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<pinref part="R64" gate="G$1" pin="1"/>
-<wire x1="125.73" y1="-125.73" x2="125.73" y2="-123.19" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<wire x1="113.03" y1="-125.73" x2="113.03" y2="-124.46" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<wire x1="113.03" y1="-125.73" x2="107.95" y2="-125.73" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<wire x1="107.95" y1="-125.73" x2="107.95" y2="-120.65" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<pinref part="J6" gate="B" pin="2"/>
-<wire x1="107.95" y1="-120.65" x2="105.41" y2="-120.65" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<wire x1="113.03" y1="-125.73" x2="125.73" y2="-125.73" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<junction x="113.03" y="-125.73" grouprefs="10K_NTC_TEMP_SENSING"/>
-<junction x="125.73" y="-125.73" grouprefs="10K_NTC_TEMP_SENSING"/>
-</segment>
-<segment>
-<pinref part="GND31" gate="1" pin="GND"/>
 <pinref part="C74" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="-127" x2="182.88" y2="-125.73" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<pinref part="R67" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="-125.73" x2="182.88" y2="-123.19" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<wire x1="170.18" y1="-125.73" x2="170.18" y2="-124.46" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<wire x1="170.18" y1="-125.73" x2="165.1" y2="-125.73" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<junction x="170.18" y="-125.73" grouprefs="10K_NTC_TEMP_SENSING"/>
-<wire x1="165.1" y1="-125.73" x2="165.1" y2="-120.65" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<pinref part="J7" gate="B" pin="2"/>
-<wire x1="165.1" y1="-120.65" x2="162.56" y2="-120.65" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<wire x1="170.18" y1="-125.73" x2="182.88" y2="-125.73" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<junction x="182.88" y="-125.73" grouprefs="10K_NTC_TEMP_SENSING"/>
+<pinref part="GND31" gate="1" pin="GND"/>
+<wire x1="195.58" y1="-127" x2="195.58" y2="-125.73" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
 </segment>
 <segment>
 <pinref part="R68" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="-71.12" x2="73.66" y2="-71.12" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="58.42" y1="-68.58" x2="73.66" y2="-68.58" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 <pinref part="GND29" gate="1" pin="GND"/>
-<wire x1="73.66" y1="-71.12" x2="73.66" y2="-72.39" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="73.66" y1="-68.58" x2="73.66" y2="-69.85" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 <pinref part="R69" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="-66.04" x2="73.66" y2="-66.04" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<wire x1="73.66" y1="-66.04" x2="73.66" y2="-71.12" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<junction x="73.66" y="-71.12" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="68.58" y1="-63.5" x2="73.66" y2="-63.5" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="73.66" y1="-63.5" x2="73.66" y2="-68.58" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<junction x="73.66" y="-68.58" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 <pinref part="R71" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="-55.88" x2="73.66" y2="-55.88" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<wire x1="73.66" y1="-55.88" x2="73.66" y2="-60.96" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<junction x="73.66" y="-66.04" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="68.58" y1="-53.34" x2="73.66" y2="-53.34" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="73.66" y1="-53.34" x2="73.66" y2="-58.42" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<junction x="73.66" y="-63.5" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 <pinref part="R70" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="-60.96" x2="73.66" y2="-66.04" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<wire x1="58.42" y1="-60.96" x2="73.66" y2="-60.96" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<junction x="73.66" y="-60.96" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="73.66" y1="-58.42" x2="73.66" y2="-63.5" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="58.42" y1="-58.42" x2="73.66" y2="-58.42" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<junction x="73.66" y="-58.42" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 <pinref part="R72" gate="G$1" pin="2"/>
-<wire x1="57.15" y1="-50.8" x2="73.66" y2="-50.8" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<wire x1="73.66" y1="-50.8" x2="73.66" y2="-55.88" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<junction x="73.66" y="-55.88" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="57.15" y1="-48.26" x2="73.66" y2="-48.26" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="73.66" y1="-48.26" x2="73.66" y2="-53.34" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<junction x="73.66" y="-53.34" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 <pinref part="R73" gate="G$1" pin="2"/>
-<wire x1="67.31" y1="-45.72" x2="73.66" y2="-45.72" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<wire x1="73.66" y1="-45.72" x2="73.66" y2="-50.8" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<junction x="73.66" y="-50.8" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="67.31" y1="-43.18" x2="73.66" y2="-43.18" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="73.66" y1="-43.18" x2="73.66" y2="-48.26" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<junction x="73.66" y="-48.26" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 </segment>
 <segment>
-<wire x1="127" y1="-102.87" x2="127" y2="-101.6" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<wire x1="121.92" y1="-102.87" x2="121.92" y2="-101.6" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
 <pinref part="GND32" gate="1" pin="GND"/>
 <pinref part="C75" gate="G$1" pin="2"/>
 </segment>
@@ -11705,35 +11700,15 @@ SS(GPIO3)</text>
 <pinref part="C76" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="39.37" y1="-156.21" x2="39.37" y2="-158.75" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<wire x1="39.37" y1="-158.75" x2="27.94" y2="-158.75" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="27.94" y1="-158.75" x2="27.94" y2="-160.02" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<pinref part="D5" gate="G$1" pin="A"/>
-<wire x1="49.53" y1="-154.94" x2="49.53" y2="-158.75" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<wire x1="49.53" y1="-158.75" x2="27.94" y2="-158.75" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<junction x="27.94" y="-158.75" grouprefs="CMOS_TEMP_SENSING"/>
-<pinref part="J10" gate="B" pin="3"/>
-<wire x1="16.51" y1="-148.59" x2="25.4" y2="-148.59" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<wire x1="25.4" y1="-148.59" x2="25.4" y2="-158.75" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<wire x1="25.4" y1="-158.75" x2="27.94" y2="-158.75" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-</segment>
-<segment>
-<pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="39.37" y1="-124.46" x2="39.37" y2="-127" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<wire x1="39.37" y1="-127" x2="44.45" y2="-127" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="44.45" y1="-127" x2="44.45" y2="-128.27" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="-128.27" x2="53.34" y2="-130.81" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<wire x1="53.34" y1="-130.81" x2="58.42" y2="-130.81" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<wire x1="58.42" y1="-130.81" x2="58.42" y2="-132.08" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<junction x="58.42" y="-130.81" grouprefs="CMOS_TEMP_SENSING"/>
+<wire x1="63.5" y1="-130.81" x2="58.42" y2="-130.81" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
 <pinref part="D4" gate="G$1" pin="A"/>
-<wire x1="49.53" y1="-121.92" x2="49.53" y2="-127" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<wire x1="49.53" y1="-127" x2="44.45" y2="-127" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<junction x="44.45" y="-127" grouprefs="CMOS_TEMP_SENSING"/>
-<pinref part="J9" gate="B" pin="3"/>
-<wire x1="16.51" y1="-116.84" x2="25.4" y2="-116.84" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<wire x1="25.4" y1="-116.84" x2="25.4" y2="-127" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<wire x1="25.4" y1="-127" x2="39.37" y2="-127" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<junction x="39.37" y="-127" grouprefs="CMOS_TEMP_SENSING"/>
+<wire x1="63.5" y1="-125.73" x2="63.5" y2="-130.81" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
 </segment>
 <segment>
 <pinref part="D9" gate="G$1" pin="C"/>
@@ -11758,6 +11733,104 @@ SS(GPIO3)</text>
 <wire x1="1.27" y1="-22.86" x2="3.81" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="GND22" gate="1" pin="GND"/>
 <wire x1="3.81" y1="-22.86" x2="3.81" y2="-24.13" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J9" gate="B" pin="3"/>
+<wire x1="3.81" y1="-120.65" x2="7.62" y2="-120.65" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<wire x1="7.62" y1="-120.65" x2="7.62" y2="-123.19" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<pinref part="GND27" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="D5" gate="G$1" pin="A"/>
+<wire x1="63.5" y1="-149.86" x2="63.5" y2="-153.67" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="-151.13" x2="53.34" y2="-153.67" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<wire x1="63.5" y1="-153.67" x2="58.42" y2="-153.67" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="58.42" y1="-153.67" x2="53.34" y2="-153.67" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<wire x1="58.42" y1="-154.94" x2="58.42" y2="-153.67" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<junction x="58.42" y="-153.67" grouprefs="CMOS_TEMP_SENSING"/>
+</segment>
+<segment>
+<pinref part="J10" gate="B" pin="3"/>
+<wire x1="3.81" y1="-143.51" x2="7.62" y2="-143.51" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<wire x1="7.62" y1="-143.51" x2="7.62" y2="-144.78" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<pinref part="GND30" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R64" gate="G$1" pin="1"/>
+<wire x1="107.95" y1="-125.73" x2="107.95" y2="-124.46" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<wire x1="107.95" y1="-125.73" x2="102.87" y2="-125.73" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<wire x1="102.87" y1="-125.73" x2="102.87" y2="-120.65" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<pinref part="J6" gate="B" pin="2"/>
+<wire x1="102.87" y1="-120.65" x2="100.33" y2="-120.65" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<pinref part="GND28" gate="1" pin="GND"/>
+<wire x1="107.95" y1="-127" x2="107.95" y2="-125.73" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<junction x="107.95" y="-125.73" grouprefs="10K_NTC_TEMP_SENSING"/>
+</segment>
+<segment>
+<pinref part="GND33" gate="1" pin="GND"/>
+<pinref part="C18" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="-127" x2="132.08" y2="-125.73" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+</segment>
+<segment>
+<pinref part="R67" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="-125.73" x2="170.18" y2="-124.46" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<wire x1="170.18" y1="-125.73" x2="165.1" y2="-125.73" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<wire x1="165.1" y1="-125.73" x2="165.1" y2="-120.65" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<pinref part="J7" gate="B" pin="2"/>
+<wire x1="165.1" y1="-120.65" x2="162.56" y2="-120.65" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<pinref part="GND35" gate="1" pin="GND"/>
+<wire x1="170.18" y1="-128.27" x2="170.18" y2="-125.73" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<junction x="170.18" y="-125.73" grouprefs="10K_NTC_TEMP_SENSING"/>
+</segment>
+<segment>
+<pinref part="R61" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="-74.93" x2="170.18" y2="-73.66" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="170.18" y1="-74.93" x2="165.1" y2="-74.93" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="165.1" y1="-74.93" x2="165.1" y2="-69.85" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<pinref part="J8" gate="B" pin="2"/>
+<wire x1="165.1" y1="-69.85" x2="162.56" y2="-69.85" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<pinref part="GND36" gate="1" pin="GND"/>
+<wire x1="170.18" y1="-76.2" x2="170.18" y2="-74.93" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<junction x="170.18" y="-74.93" grouprefs="100K_NTC_TEMP_SENSING"/>
+</segment>
+<segment>
+<pinref part="R21" gate="G$1" pin="1"/>
+<wire x1="107.95" y1="-74.93" x2="107.95" y2="-73.66" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="107.95" y1="-74.93" x2="102.87" y2="-74.93" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="102.87" y1="-74.93" x2="102.87" y2="-69.85" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<pinref part="J5" gate="B" pin="2"/>
+<wire x1="102.87" y1="-69.85" x2="100.33" y2="-69.85" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<pinref part="GND37" gate="1" pin="GND"/>
+<wire x1="107.95" y1="-76.2" x2="107.95" y2="-74.93" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<junction x="107.95" y="-74.93" grouprefs="100K_NTC_TEMP_SENSING"/>
+</segment>
+<segment>
+<pinref part="D10" gate="G$1" pin="A"/>
+<pinref part="GND41" gate="1" pin="GND"/>
+<wire x1="0" y1="-92.71" x2="0" y2="-95.25" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+</segment>
+<segment>
+<pinref part="D11" gate="G$1" pin="A"/>
+<pinref part="GND40" gate="1" pin="GND"/>
+<wire x1="7.62" y1="-92.71" x2="7.62" y2="-95.25" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+</segment>
+<segment>
+<pinref part="D12" gate="G$1" pin="A"/>
+<pinref part="GND39" gate="1" pin="GND"/>
+<wire x1="15.24" y1="-92.71" x2="15.24" y2="-95.25" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+</segment>
+<segment>
+<pinref part="D13" gate="G$1" pin="A"/>
+<pinref part="GND38" gate="1" pin="GND"/>
+<wire x1="22.86" y1="-92.71" x2="22.86" y2="-95.25" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+</segment>
+<segment>
+<pinref part="J11" gate="B" pin="6"/>
+<wire x1="33.02" y1="-88.9" x2="30.48" y2="-88.9" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="GND42" gate="1" pin="GND"/>
+<wire x1="30.48" y1="-88.9" x2="30.48" y2="-95.25" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -12088,9 +12161,17 @@ SS(GPIO3)</text>
 <label x="158.75" y="10.16" size="1.778" layer="95" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
-<label x="22.86" y="-52.07" size="1.778" layer="95" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<pinref part="JP1" gate="A" pin="2"/>
-<wire x1="15.24" y1="-52.07" x2="22.86" y2="-52.07" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="-140.97" x2="53.34" y2="-143.51" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<wire x1="68.58" y1="-140.97" x2="63.5" y2="-140.97" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<wire x1="63.5" y1="-140.97" x2="53.34" y2="-140.97" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<label x="68.58" y="-140.97" size="1.778" layer="95" grouprefs="CMOS_TEMP_SENSING"/>
+<pinref part="D5" gate="G$1" pin="C"/>
+<wire x1="63.5" y1="-144.78" x2="63.5" y2="-140.97" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<junction x="63.5" y="-140.97" grouprefs="CMOS_TEMP_SENSING"/>
+<wire x1="53.34" y1="-140.97" x2="50.8" y2="-140.97" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<junction x="53.34" y="-140.97" grouprefs="CMOS_TEMP_SENSING"/>
+<pinref part="R17" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="GPIO6" class="0">
@@ -12100,14 +12181,22 @@ SS(GPIO3)</text>
 <label x="158.75" y="22.86" size="1.778" layer="95" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
-<pinref part="J11" gate="B" pin="1"/>
-<wire x1="10.16" y1="-78.74" x2="7.62" y2="-78.74" width="0.1524" layer="91"/>
-<label x="7.62" y="-78.74" size="1.778" layer="95" rot="MR0"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="133.35" y1="-63.5" x2="130.81" y2="-63.5" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<pinref part="C16" gate="G$1" pin="2"/>
+<wire x1="133.35" y1="-63.5" x2="133.35" y2="-67.31" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<junction x="133.35" y="-63.5" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="137.16" y1="-63.5" x2="133.35" y2="-63.5" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<label x="137.16" y="-63.5" size="1.778" layer="95" grouprefs="100K_NTC_TEMP_SENSING"/>
 </segment>
 <segment>
-<label x="22.86" y="-64.77" size="1.778" layer="95" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<pinref part="JP1" gate="A" pin="12"/>
-<wire x1="15.24" y1="-64.77" x2="22.86" y2="-64.77" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<label x="-2.54" y="-78.74" size="1.778" layer="95" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="33.02" y1="-78.74" x2="0" y2="-78.74" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="D10" gate="G$1" pin="C"/>
+<wire x1="0" y1="-78.74" x2="-2.54" y2="-78.74" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="0" y1="-87.63" x2="0" y2="-78.74" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<junction x="0" y="-78.74" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="J11" gate="B" pin="2"/>
 </segment>
 </net>
 <net name="GPIO5" class="0">
@@ -12117,14 +12206,22 @@ SS(GPIO3)</text>
 <label x="158.75" y="20.32" size="1.778" layer="95" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
-<label x="22.86" y="-62.23" size="1.778" layer="95" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<pinref part="JP1" gate="A" pin="10"/>
-<wire x1="15.24" y1="-62.23" x2="22.86" y2="-62.23" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="R22" gate="G$1" pin="1"/>
+<wire x1="194.31" y1="-62.23" x2="191.77" y2="-62.23" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<pinref part="C19" gate="G$1" pin="2"/>
+<wire x1="194.31" y1="-62.23" x2="194.31" y2="-66.04" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<junction x="194.31" y="-62.23" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="198.12" y1="-62.23" x2="194.31" y2="-62.23" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<label x="198.12" y="-62.23" size="1.778" layer="95" grouprefs="100K_NTC_TEMP_SENSING"/>
 </segment>
 <segment>
-<pinref part="J11" gate="B" pin="2"/>
-<wire x1="10.16" y1="-81.28" x2="7.62" y2="-81.28" width="0.1524" layer="91"/>
-<label x="7.62" y="-81.28" size="1.778" layer="95" rot="MR0"/>
+<label x="-2.54" y="-81.28" size="1.778" layer="95" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="-2.54" y1="-81.28" x2="7.62" y2="-81.28" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="D11" gate="G$1" pin="C"/>
+<wire x1="7.62" y1="-81.28" x2="33.02" y2="-81.28" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="7.62" y1="-87.63" x2="7.62" y2="-81.28" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<junction x="7.62" y="-81.28" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="J11" gate="B" pin="3"/>
 </segment>
 </net>
 <net name="GPIO4" class="0">
@@ -12134,14 +12231,22 @@ SS(GPIO3)</text>
 <label x="158.75" y="17.78" size="1.778" layer="95" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
-<pinref part="J11" gate="B" pin="3"/>
-<wire x1="10.16" y1="-83.82" x2="7.62" y2="-83.82" width="0.1524" layer="91"/>
-<label x="7.62" y="-83.82" size="1.778" layer="95" rot="MR0"/>
+<wire x1="132.08" y1="-114.3" x2="135.89" y2="-114.3" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<pinref part="R62" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="-114.3" x2="129.54" y2="-114.3" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<pinref part="C18" gate="G$1" pin="2"/>
+<wire x1="132.08" y1="-114.3" x2="132.08" y2="-118.11" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<junction x="132.08" y="-114.3" grouprefs="10K_NTC_TEMP_SENSING"/>
+<label x="135.89" y="-114.3" size="1.778" layer="95" grouprefs="10K_NTC_TEMP_SENSING"/>
 </segment>
 <segment>
-<label x="22.86" y="-59.69" size="1.778" layer="95" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<pinref part="JP1" gate="A" pin="8"/>
-<wire x1="15.24" y1="-59.69" x2="22.86" y2="-59.69" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<label x="-2.54" y="-83.82" size="1.778" layer="95" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="-2.54" y1="-83.82" x2="15.24" y2="-83.82" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="D12" gate="G$1" pin="C"/>
+<wire x1="15.24" y1="-83.82" x2="33.02" y2="-83.82" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="15.24" y1="-87.63" x2="15.24" y2="-83.82" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<junction x="15.24" y="-83.82" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="J11" gate="B" pin="4"/>
 </segment>
 </net>
 <net name="GPIO3" class="0">
@@ -12151,14 +12256,22 @@ SS(GPIO3)</text>
 <label x="158.75" y="15.24" size="1.778" layer="95" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
-<label x="22.86" y="-57.15" size="1.778" layer="95" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<pinref part="JP1" gate="A" pin="6"/>
-<wire x1="15.24" y1="-57.15" x2="22.86" y2="-57.15" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="R65" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="-114.3" x2="193.04" y2="-114.3" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<pinref part="C74" gate="G$1" pin="2"/>
+<wire x1="195.58" y1="-114.3" x2="195.58" y2="-118.11" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<junction x="195.58" y="-114.3" grouprefs="10K_NTC_TEMP_SENSING"/>
+<wire x1="198.628" y1="-114.3" x2="195.58" y2="-114.3" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<label x="198.12" y="-114.3" size="1.778" layer="95" grouprefs="10K_NTC_TEMP_SENSING"/>
 </segment>
 <segment>
-<pinref part="J11" gate="B" pin="4"/>
-<wire x1="10.16" y1="-86.36" x2="7.62" y2="-86.36" width="0.1524" layer="91"/>
-<label x="7.62" y="-86.36" size="1.778" layer="95" rot="MR0"/>
+<label x="-2.54" y="-86.36" size="1.778" layer="95" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="-2.54" y1="-86.36" x2="22.86" y2="-86.36" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="D13" gate="G$1" pin="C"/>
+<wire x1="22.86" y1="-86.36" x2="33.02" y2="-86.36" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="22.86" y1="-87.63" x2="22.86" y2="-86.36" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<junction x="22.86" y="-86.36" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="J11" gate="B" pin="5"/>
 </segment>
 </net>
 <net name="GPIO2" class="0">
@@ -12168,9 +12281,17 @@ SS(GPIO3)</text>
 <label x="158.75" y="12.7" size="1.778" layer="95" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
-<label x="22.86" y="-54.61" size="1.778" layer="95" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<pinref part="JP1" gate="A" pin="4"/>
-<wire x1="15.24" y1="-54.61" x2="22.86" y2="-54.61" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="C15" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="-118.11" x2="53.34" y2="-120.65" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<wire x1="68.58" y1="-118.11" x2="63.5" y2="-118.11" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<wire x1="63.5" y1="-118.11" x2="53.34" y2="-118.11" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<label x="68.58" y="-118.11" size="1.778" layer="95" grouprefs="CMOS_TEMP_SENSING"/>
+<pinref part="D4" gate="G$1" pin="C"/>
+<wire x1="63.5" y1="-120.65" x2="63.5" y2="-118.11" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<junction x="63.5" y="-118.11" grouprefs="CMOS_TEMP_SENSING"/>
+<wire x1="53.34" y1="-118.11" x2="50.8" y2="-118.11" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<junction x="53.34" y="-118.11" grouprefs="CMOS_TEMP_SENSING"/>
+<pinref part="R18" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="CB0" class="0">
@@ -12495,8 +12616,8 @@ SS(GPIO3)</text>
 <label x="152.4" y="74.93" size="1.778" layer="95" rot="R90" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
-<wire x1="196.85" y1="-41.91" x2="184.15" y2="-41.91" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<label x="196.85" y="-41.91" size="1.778" layer="95" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="198.12" y1="-41.91" x2="184.15" y2="-41.91" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<label x="198.12" y="-41.91" size="1.778" layer="95" grouprefs="100K_NTC_TEMP_SENSING"/>
 <wire x1="184.15" y1="-43.18" x2="184.15" y2="-41.91" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
 <pinref part="R50" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="-44.45" x2="170.18" y2="-41.91" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
@@ -12505,24 +12626,24 @@ SS(GPIO3)</text>
 <pinref part="C73" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="142.24" y1="-41.91" x2="127" y2="-41.91" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<label x="142.24" y="-41.91" size="1.778" layer="95" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="127" y1="-43.18" x2="127" y2="-41.91" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="137.16" y1="-41.91" x2="121.92" y2="-41.91" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<label x="137.16" y="-41.91" size="1.778" layer="95" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="121.92" y1="-43.18" x2="121.92" y2="-41.91" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
 <pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="113.03" y1="-44.45" x2="113.03" y2="-41.91" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="113.03" y1="-41.91" x2="127" y2="-41.91" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<junction x="127" y="-41.91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="107.95" y1="-44.45" x2="107.95" y2="-41.91" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="107.95" y1="-41.91" x2="121.92" y2="-41.91" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<junction x="121.92" y="-41.91" grouprefs="100K_NTC_TEMP_SENSING"/>
 <pinref part="C72" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="139.7" y1="-92.71" x2="127" y2="-92.71" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<label x="139.7" y="-92.71" size="1.778" layer="95" grouprefs="10K_NTC_TEMP_SENSING"/>
+<wire x1="135.89" y1="-92.71" x2="121.92" y2="-92.71" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<label x="135.89" y="-92.71" size="1.778" layer="95" grouprefs="10K_NTC_TEMP_SENSING"/>
 <pinref part="R63" gate="G$1" pin="2"/>
-<wire x1="113.03" y1="-95.25" x2="113.03" y2="-92.71" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<wire x1="113.03" y1="-92.71" x2="127" y2="-92.71" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<wire x1="107.95" y1="-95.25" x2="107.95" y2="-92.71" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<wire x1="107.95" y1="-92.71" x2="121.92" y2="-92.71" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
 <pinref part="C75" gate="G$1" pin="1"/>
-<wire x1="127" y1="-93.98" x2="127" y2="-92.71" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<junction x="127" y="-92.71" grouprefs="10K_NTC_TEMP_SENSING"/>
+<wire x1="121.92" y1="-93.98" x2="121.92" y2="-92.71" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<junction x="121.92" y="-92.71" grouprefs="10K_NTC_TEMP_SENSING"/>
 </segment>
 <segment>
 <pinref part="C76" gate="G$1" pin="1"/>
@@ -12536,17 +12657,18 @@ SS(GPIO3)</text>
 </segment>
 <segment>
 <pinref part="J10" gate="B" pin="1"/>
-<label x="54.61" y="-140.97" size="1.778" layer="95" grouprefs="CMOS_TEMP_SENSING"/>
-<wire x1="16.51" y1="-143.51" x2="19.05" y2="-143.51" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<wire x1="19.05" y1="-143.51" x2="19.05" y2="-140.97" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<wire x1="19.05" y1="-140.97" x2="54.61" y2="-140.97" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<label x="7.62" y="-138.43" size="1.778" layer="95" grouprefs="CMOS_TEMP_SENSING"/>
+<wire x1="3.81" y1="-138.43" x2="7.62" y2="-138.43" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
 </segment>
 <segment>
 <pinref part="J9" gate="B" pin="1"/>
-<wire x1="16.51" y1="-111.76" x2="19.05" y2="-111.76" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<wire x1="19.05" y1="-111.76" x2="19.05" y2="-109.22" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<wire x1="19.05" y1="-109.22" x2="54.61" y2="-109.22" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<label x="54.61" y="-109.22" size="1.778" layer="95" grouprefs="CMOS_TEMP_SENSING"/>
+<wire x1="3.81" y1="-115.57" x2="7.62" y2="-115.57" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<label x="7.62" y="-115.57" size="1.778" layer="95" grouprefs="CMOS_TEMP_SENSING"/>
+</segment>
+<segment>
+<pinref part="J11" gate="B" pin="1"/>
+<wire x1="33.02" y1="-76.2" x2="-2.54" y2="-76.2" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<label x="-2.54" y="-76.2" size="1.778" layer="95" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 </segment>
 </net>
 <net name="NFAULT" class="0">
@@ -13069,259 +13191,159 @@ SS(GPIO3)</text>
 </net>
 <net name="GPIO5T2" class="0">
 <segment>
-<pinref part="R22" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="-60.96" x2="180.34" y2="-60.96" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<pinref part="C19" gate="G$1" pin="2"/>
-<wire x1="182.88" y1="-60.96" x2="182.88" y2="-64.77" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="185.928" y1="-60.96" x2="191.77" y2="-60.96" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<junction x="182.88" y="-60.96" grouprefs="100K_NTC_TEMP_SENSING"/>
-<pinref part="TP42" gate="G$1" pin="P$1"/>
-<wire x1="191.77" y1="-60.96" x2="182.88" y2="-60.96" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<junction x="191.77" y="-60.96" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="191.77" y1="-60.96" x2="196.85" y2="-60.96" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<label x="196.85" y="-60.96" size="1.778" layer="95" grouprefs="100K_NTC_TEMP_SENSING"/>
+<pinref part="JP1" gate="A" pin="9"/>
+<wire x1="7.62" y1="-59.69" x2="0" y2="-59.69" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<label x="0" y="-59.69" size="1.778" layer="95" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="9"/>
-<wire x1="7.62" y1="-62.23" x2="0" y2="-62.23" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<label x="0" y="-62.23" size="1.778" layer="95" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="R50" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="-54.61" x2="170.18" y2="-58.42" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="170.18" y1="-58.42" x2="165.1" y2="-58.42" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="165.1" y1="-58.42" x2="165.1" y2="-67.31" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<pinref part="J8" gate="B" pin="1"/>
+<wire x1="165.1" y1="-67.31" x2="162.56" y2="-67.31" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<pinref part="R61" gate="G$1" pin="2"/>
+<wire x1="170.18" y1="-63.5" x2="170.18" y2="-58.42" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<junction x="170.18" y="-58.42" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="170.18" y1="-58.42" x2="198.12" y2="-58.42" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<label x="198.12" y="-58.42" size="1.778" layer="95" grouprefs="100K_NTC_TEMP_SENSING"/>
 </segment>
 </net>
 <net name="GPIO2V1" class="0">
 <segment>
-<pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="39.37" y1="-114.3" x2="36.83" y2="-114.3" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="39.37" y1="-114.3" x2="39.37" y2="-116.84" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<wire x1="54.61" y1="-114.3" x2="52.07" y2="-114.3" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<wire x1="52.07" y1="-114.3" x2="49.53" y2="-114.3" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<wire x1="49.53" y1="-114.3" x2="39.37" y2="-114.3" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<junction x="39.37" y="-114.3" grouprefs="CMOS_TEMP_SENSING"/>
-<label x="54.61" y="-114.3" size="1.778" layer="95" grouprefs="CMOS_TEMP_SENSING"/>
-<pinref part="D4" gate="G$1" pin="C"/>
-<wire x1="49.53" y1="-116.84" x2="49.53" y2="-114.3" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<junction x="49.53" y="-114.3" grouprefs="CMOS_TEMP_SENSING"/>
-<pinref part="TP52" gate="G$1" pin="P$1"/>
-<junction x="52.07" y="-114.3" grouprefs="CMOS_TEMP_SENSING"/>
+<pinref part="JP1" gate="A" pin="3"/>
+<wire x1="7.62" y1="-52.07" x2="0" y2="-52.07" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<label x="0" y="-52.07" size="1.778" layer="95" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="3"/>
-<wire x1="7.62" y1="-54.61" x2="0" y2="-54.61" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<label x="0" y="-54.61" size="1.778" layer="95" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="J9" gate="B" pin="2"/>
+<wire x1="3.81" y1="-118.11" x2="7.62" y2="-118.11" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<label x="7.62" y="-118.11" size="1.778" layer="95" grouprefs="CMOS_TEMP_SENSING"/>
 </segment>
 </net>
 <net name="GPIO1V2" class="0">
 <segment>
-<pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="39.37" y1="-146.05" x2="36.83" y2="-146.05" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<pinref part="C14" gate="G$1" pin="2"/>
-<wire x1="39.37" y1="-146.05" x2="39.37" y2="-148.59" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<wire x1="54.61" y1="-146.05" x2="52.07" y2="-146.05" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<wire x1="52.07" y1="-146.05" x2="49.53" y2="-146.05" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<wire x1="49.53" y1="-146.05" x2="39.37" y2="-146.05" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<junction x="39.37" y="-146.05" grouprefs="CMOS_TEMP_SENSING"/>
-<label x="54.61" y="-146.05" size="1.778" layer="95" grouprefs="CMOS_TEMP_SENSING"/>
-<pinref part="D5" gate="G$1" pin="C"/>
-<wire x1="49.53" y1="-149.86" x2="49.53" y2="-146.05" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<junction x="49.53" y="-146.05" grouprefs="CMOS_TEMP_SENSING"/>
-<pinref part="TP51" gate="G$1" pin="P$1"/>
-<junction x="52.07" y="-146.05" grouprefs="CMOS_TEMP_SENSING"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="A" pin="1"/>
-<wire x1="7.62" y1="-52.07" x2="0" y2="-52.07" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<label x="0" y="-52.07" size="1.778" layer="95" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="7.62" y1="-49.53" x2="0" y2="-49.53" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<label x="0" y="-49.53" size="1.778" layer="95" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 </segment>
-</net>
-<net name="N$8" class="0">
 <segment>
-<pinref part="R61" gate="G$1" pin="2"/>
-<pinref part="R22" gate="G$1" pin="2"/>
-<wire x1="170.18" y1="-63.5" x2="170.18" y2="-60.96" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<pinref part="R50" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="-54.61" x2="170.18" y2="-58.42" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<junction x="170.18" y="-60.96" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="170.18" y1="-58.42" x2="170.18" y2="-60.96" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="170.18" y1="-58.42" x2="165.1" y2="-58.42" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<junction x="170.18" y="-58.42" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="165.1" y1="-58.42" x2="165.1" y2="-67.31" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<pinref part="J8" gate="B" pin="1"/>
-<wire x1="165.1" y1="-67.31" x2="162.56" y2="-67.31" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<pinref part="J10" gate="B" pin="2"/>
+<wire x1="3.81" y1="-140.97" x2="7.62" y2="-140.97" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<label x="7.62" y="-140.97" size="1.778" layer="95" grouprefs="CMOS_TEMP_SENSING"/>
 </segment>
 </net>
 <net name="GPIO6T1" class="0">
 <segment>
-<pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="125.73" y1="-60.96" x2="123.19" y2="-60.96" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<pinref part="C16" gate="G$1" pin="2"/>
-<wire x1="125.73" y1="-60.96" x2="125.73" y2="-64.77" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="128.778" y1="-60.96" x2="137.16" y2="-60.96" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<junction x="125.73" y="-60.96" grouprefs="100K_NTC_TEMP_SENSING"/>
-<pinref part="TP43" gate="G$1" pin="P$1"/>
-<wire x1="137.16" y1="-60.96" x2="125.73" y2="-60.96" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<junction x="137.16" y="-60.96" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="137.16" y1="-60.96" x2="142.24" y2="-60.96" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<label x="142.24" y="-60.96" size="1.778" layer="95" grouprefs="100K_NTC_TEMP_SENSING"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="A" pin="11"/>
-<wire x1="7.62" y1="-64.77" x2="0" y2="-64.77" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<label x="0" y="-64.77" size="1.778" layer="95" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="7.62" y1="-62.23" x2="0" y2="-62.23" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<label x="0" y="-62.23" size="1.778" layer="95" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 </segment>
-</net>
-<net name="N$9" class="0">
 <segment>
-<pinref part="R21" gate="G$1" pin="2"/>
-<pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="113.03" y1="-63.5" x2="113.03" y2="-60.96" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
 <pinref part="R20" gate="G$1" pin="1"/>
-<wire x1="113.03" y1="-54.61" x2="113.03" y2="-58.42" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<junction x="113.03" y="-60.96" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="113.03" y1="-58.42" x2="113.03" y2="-60.96" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="113.03" y1="-58.42" x2="107.95" y2="-58.42" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
-<junction x="113.03" y="-58.42" grouprefs="100K_NTC_TEMP_SENSING"/>
-<wire x1="107.95" y1="-58.42" x2="107.95" y2="-67.31" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="107.95" y1="-54.61" x2="107.95" y2="-58.42" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="107.95" y1="-58.42" x2="102.87" y2="-58.42" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="102.87" y1="-58.42" x2="102.87" y2="-67.31" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
 <pinref part="J5" gate="B" pin="1"/>
-<wire x1="107.95" y1="-67.31" x2="105.41" y2="-67.31" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="102.87" y1="-67.31" x2="100.33" y2="-67.31" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<pinref part="R21" gate="G$1" pin="2"/>
+<wire x1="107.95" y1="-63.5" x2="107.95" y2="-58.42" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<junction x="107.95" y="-58.42" grouprefs="100K_NTC_TEMP_SENSING"/>
+<wire x1="107.95" y1="-58.42" x2="137.16" y2="-58.42" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<label x="137.16" y="-58.42" size="1.778" layer="95" grouprefs="100K_NTC_TEMP_SENSING"/>
 </segment>
 </net>
 <net name="GPIO4T3" class="0">
 <segment>
-<pinref part="R62" gate="G$1" pin="1"/>
-<wire x1="125.73" y1="-111.76" x2="123.19" y2="-111.76" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<pinref part="C18" gate="G$1" pin="2"/>
-<wire x1="125.73" y1="-111.76" x2="125.73" y2="-115.57" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<wire x1="135.128" y1="-111.76" x2="134.62" y2="-111.76" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<junction x="125.73" y="-111.76" grouprefs="10K_NTC_TEMP_SENSING"/>
-<pinref part="TP38" gate="G$1" pin="P$1"/>
-<wire x1="134.62" y1="-111.76" x2="125.73" y2="-111.76" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<junction x="134.62" y="-111.76" grouprefs="10K_NTC_TEMP_SENSING"/>
-<wire x1="134.62" y1="-111.76" x2="139.7" y2="-111.76" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<label x="139.7" y="-111.76" size="1.778" layer="95" grouprefs="10K_NTC_TEMP_SENSING"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="A" pin="7"/>
-<wire x1="7.62" y1="-59.69" x2="0" y2="-59.69" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<label x="0" y="-59.69" size="1.778" layer="95" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="7.62" y1="-57.15" x2="0" y2="-57.15" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<label x="0" y="-57.15" size="1.778" layer="95" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 </segment>
-</net>
-<net name="N$10" class="0">
 <segment>
-<pinref part="R64" gate="G$1" pin="2"/>
-<pinref part="R62" gate="G$1" pin="2"/>
-<wire x1="113.03" y1="-114.3" x2="113.03" y2="-111.76" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
 <pinref part="R63" gate="G$1" pin="1"/>
-<wire x1="113.03" y1="-105.41" x2="113.03" y2="-109.22" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<junction x="113.03" y="-111.76" grouprefs="10K_NTC_TEMP_SENSING"/>
-<wire x1="113.03" y1="-109.22" x2="113.03" y2="-111.76" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<wire x1="113.03" y1="-109.22" x2="107.95" y2="-109.22" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<junction x="113.03" y="-109.22" grouprefs="10K_NTC_TEMP_SENSING"/>
-<wire x1="107.95" y1="-109.22" x2="107.95" y2="-118.11" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<wire x1="107.95" y1="-105.41" x2="107.95" y2="-109.22" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<wire x1="107.95" y1="-109.22" x2="102.87" y2="-109.22" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<wire x1="102.87" y1="-109.22" x2="102.87" y2="-118.11" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
 <pinref part="J6" gate="B" pin="1"/>
-<wire x1="107.95" y1="-118.11" x2="105.41" y2="-118.11" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<wire x1="102.87" y1="-118.11" x2="100.33" y2="-118.11" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<pinref part="R64" gate="G$1" pin="2"/>
+<wire x1="107.95" y1="-114.3" x2="107.95" y2="-109.22" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<junction x="107.95" y="-109.22" grouprefs="10K_NTC_TEMP_SENSING"/>
+<wire x1="107.95" y1="-109.22" x2="135.89" y2="-109.22" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<label x="135.89" y="-109.22" size="1.778" layer="95" grouprefs="10K_NTC_TEMP_SENSING"/>
 </segment>
 </net>
 <net name="GPIO3T4" class="0">
 <segment>
-<pinref part="R65" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="-111.76" x2="180.34" y2="-111.76" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<pinref part="C74" gate="G$1" pin="2"/>
-<wire x1="182.88" y1="-111.76" x2="182.88" y2="-115.57" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<wire x1="192.278" y1="-111.76" x2="191.77" y2="-111.76" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<junction x="182.88" y="-111.76" grouprefs="10K_NTC_TEMP_SENSING"/>
-<pinref part="TP40" gate="G$1" pin="P$1"/>
-<wire x1="191.77" y1="-111.76" x2="182.88" y2="-111.76" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<junction x="191.77" y="-111.76" grouprefs="10K_NTC_TEMP_SENSING"/>
-<wire x1="191.77" y1="-111.76" x2="196.85" y2="-111.76" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<label x="196.85" y="-111.76" size="1.778" layer="95" grouprefs="10K_NTC_TEMP_SENSING"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="A" pin="5"/>
-<wire x1="7.62" y1="-57.15" x2="0" y2="-57.15" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<label x="0" y="-57.15" size="1.778" layer="95" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="7.62" y1="-54.61" x2="0" y2="-54.61" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<label x="0" y="-54.61" size="1.778" layer="95" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 </segment>
-</net>
-<net name="N$11" class="0">
 <segment>
-<pinref part="R67" gate="G$1" pin="2"/>
-<pinref part="R65" gate="G$1" pin="2"/>
-<wire x1="170.18" y1="-114.3" x2="170.18" y2="-111.76" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
 <pinref part="R66" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="-105.41" x2="170.18" y2="-109.22" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<junction x="170.18" y="-111.76" grouprefs="10K_NTC_TEMP_SENSING"/>
-<wire x1="170.18" y1="-109.22" x2="170.18" y2="-111.76" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
 <wire x1="170.18" y1="-109.22" x2="165.1" y2="-109.22" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
-<junction x="170.18" y="-109.22" grouprefs="10K_NTC_TEMP_SENSING"/>
 <wire x1="165.1" y1="-109.22" x2="165.1" y2="-118.11" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
 <pinref part="J7" gate="B" pin="1"/>
 <wire x1="165.1" y1="-118.11" x2="162.56" y2="-118.11" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<pinref part="R67" gate="G$1" pin="2"/>
+<wire x1="170.18" y1="-114.3" x2="170.18" y2="-109.22" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<junction x="170.18" y="-109.22" grouprefs="10K_NTC_TEMP_SENSING"/>
+<wire x1="170.18" y1="-109.22" x2="198.12" y2="-109.22" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<label x="198.12" y="-109.22" size="1.778" layer="95" grouprefs="10K_NTC_TEMP_SENSING"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="1"/>
-<wire x1="38.1" y1="-52.07" x2="43.18" y2="-52.07" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<wire x1="43.18" y1="-52.07" x2="43.18" y2="-45.72" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="38.1" y1="-49.53" x2="43.18" y2="-49.53" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="43.18" y1="-49.53" x2="43.18" y2="-43.18" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 <pinref part="R73" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="-45.72" x2="57.15" y2="-45.72" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="43.18" y1="-43.18" x2="57.15" y2="-43.18" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="R72" gate="G$1" pin="1"/>
-<wire x1="46.99" y1="-50.8" x2="45.72" y2="-50.8" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<wire x1="45.72" y1="-50.8" x2="45.72" y2="-54.61" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="46.99" y1="-48.26" x2="45.72" y2="-48.26" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="45.72" y1="-48.26" x2="45.72" y2="-52.07" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 <pinref part="JP2" gate="A" pin="2"/>
-<wire x1="45.72" y1="-54.61" x2="38.1" y2="-54.61" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="45.72" y1="-52.07" x2="38.1" y2="-52.07" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="R71" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="-55.88" x2="48.26" y2="-55.88" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<wire x1="48.26" y1="-55.88" x2="48.26" y2="-57.15" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="58.42" y1="-53.34" x2="48.26" y2="-53.34" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="48.26" y1="-53.34" x2="48.26" y2="-54.61" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 <pinref part="JP2" gate="A" pin="3"/>
-<wire x1="48.26" y1="-57.15" x2="38.1" y2="-57.15" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="48.26" y1="-54.61" x2="38.1" y2="-54.61" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="R70" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="-60.96" x2="48.26" y2="-59.69" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="48.26" y1="-58.42" x2="48.26" y2="-57.15" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 <pinref part="JP2" gate="A" pin="4"/>
-<wire x1="48.26" y1="-59.69" x2="38.1" y2="-59.69" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="48.26" y1="-57.15" x2="38.1" y2="-57.15" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="5"/>
-<wire x1="38.1" y1="-62.23" x2="45.72" y2="-62.23" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<wire x1="45.72" y1="-62.23" x2="45.72" y2="-66.04" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="38.1" y1="-59.69" x2="45.72" y2="-59.69" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="45.72" y1="-59.69" x2="45.72" y2="-63.5" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 <pinref part="R69" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="-66.04" x2="58.42" y2="-66.04" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="45.72" y1="-63.5" x2="58.42" y2="-63.5" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
 <pinref part="R68" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="-71.12" x2="43.18" y2="-71.12" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<wire x1="43.18" y1="-71.12" x2="43.18" y2="-64.77" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="48.26" y1="-68.58" x2="43.18" y2="-68.58" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<wire x1="43.18" y1="-68.58" x2="43.18" y2="-62.23" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 <pinref part="JP2" gate="A" pin="6"/>
-<wire x1="43.18" y1="-64.77" x2="38.1" y2="-64.77" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="R17" gate="G$1" pin="2"/>
-<pinref part="J10" gate="B" pin="2"/>
-<wire x1="26.67" y1="-146.05" x2="16.51" y2="-146.05" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-</segment>
-</net>
-<net name="N$27" class="0">
-<segment>
-<pinref part="J9" gate="B" pin="2"/>
-<wire x1="26.67" y1="-114.3" x2="16.51" y2="-114.3" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
-<pinref part="R18" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="-62.23" x2="38.1" y2="-62.23" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -13402,6 +13424,78 @@ SS(GPIO3)</text>
 <wire x1="195.58" y1="50.8" x2="195.58" y2="45.72" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <wire x1="195.58" y1="45.72" x2="199.39" y2="45.72" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <wire x1="199.39" y1="45.72" x2="199.39" y2="43.18" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+</segment>
+</net>
+<net name="GPIO4F" class="0">
+<segment>
+<pinref part="R62" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="-114.3" x2="118.11" y2="-114.3" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<label x="118.11" y="-114.3" size="1.778" layer="95" rot="MR0" grouprefs="10K_NTC_TEMP_SENSING"/>
+</segment>
+<segment>
+<label x="22.86" y="-57.15" size="1.778" layer="95" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="JP1" gate="A" pin="8"/>
+<wire x1="15.24" y1="-57.15" x2="22.86" y2="-57.15" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+</segment>
+</net>
+<net name="GPIO1F" class="0">
+<segment>
+<label x="22.86" y="-49.53" size="1.778" layer="95" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="15.24" y1="-49.53" x2="22.86" y2="-49.53" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+</segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="-140.97" x2="39.37" y2="-140.97" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<label x="39.37" y="-140.97" size="1.778" layer="95" rot="MR0" grouprefs="CMOS_TEMP_SENSING"/>
+</segment>
+</net>
+<net name="GPIO2F" class="0">
+<segment>
+<label x="22.86" y="-52.07" size="1.778" layer="95" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="JP1" gate="A" pin="4"/>
+<wire x1="15.24" y1="-52.07" x2="22.86" y2="-52.07" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+</segment>
+<segment>
+<pinref part="R18" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="-118.11" x2="38.1" y2="-118.11" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
+<label x="38.1" y="-118.11" size="1.778" layer="95" rot="MR0" grouprefs="CMOS_TEMP_SENSING"/>
+</segment>
+</net>
+<net name="GPIO3F" class="0">
+<segment>
+<label x="22.86" y="-54.61" size="1.778" layer="95" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="JP1" gate="A" pin="6"/>
+<wire x1="15.24" y1="-54.61" x2="22.86" y2="-54.61" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+</segment>
+<segment>
+<pinref part="R65" gate="G$1" pin="2"/>
+<wire x1="182.88" y1="-114.3" x2="181.61" y2="-114.3" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
+<label x="181.61" y="-114.3" size="1.778" layer="95" rot="MR0" grouprefs="10K_NTC_TEMP_SENSING"/>
+</segment>
+</net>
+<net name="GPIO5F" class="0">
+<segment>
+<label x="22.86" y="-59.69" size="1.778" layer="95" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="JP1" gate="A" pin="10"/>
+<wire x1="15.24" y1="-59.69" x2="22.86" y2="-59.69" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+</segment>
+<segment>
+<pinref part="R22" gate="G$1" pin="2"/>
+<wire x1="181.61" y1="-62.23" x2="180.34" y2="-62.23" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<label x="180.34" y="-62.23" size="1.778" layer="95" rot="MR0" grouprefs="100K_NTC_TEMP_SENSING"/>
+</segment>
+</net>
+<net name="GPIO6F" class="0">
+<segment>
+<label x="22.86" y="-62.23" size="1.778" layer="95" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+<pinref part="JP1" gate="A" pin="12"/>
+<wire x1="15.24" y1="-62.23" x2="22.86" y2="-62.23" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
+</segment>
+<segment>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="120.65" y1="-63.5" x2="118.11" y2="-63.5" width="0.1524" layer="91" grouprefs="100K_NTC_TEMP_SENSING"/>
+<label x="118.11" y="-63.5" size="1.778" layer="95" rot="MR0" grouprefs="100K_NTC_TEMP_SENSING"/>
 </segment>
 </net>
 </nets>
