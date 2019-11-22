@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7916,6 +7916,82 @@ Source: www.st.com, BAT60J.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-jst-ph" urn="urn:adsk.eagle:library:13143856">
+<description>&lt;b&gt;JST Connectors&lt;/b&gt; - PH 2.0 MM Series&lt;p&gt;
+&lt;p&gt;THIS LIBRARY IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED.&lt;br&gt;
+USE AT YOUR OWN RISK!&lt;p&gt;
+&lt;author&gt;Copyright (C) 2016, Bob Starr&lt;br&gt; http://www.bobstarr.net&lt;br&gt;&lt;/author&gt;</description>
+<packages>
+<package name="S4B-PH-K" urn="urn:adsk.eagle:footprint:13143901/2" library_version="3">
+<pad name="1" x="-3" y="0" drill="0.8128" shape="square" rot="R90"/>
+<pad name="2" x="-1" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<pad name="3" x="1" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<pad name="4" x="3" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<text x="-3.81" y="2.54" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.81" y="-2.54" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-4.95" y1="1.6" x2="4.95" y2="1.6" width="0.0508" layer="51"/>
+<wire x1="4.95" y1="1.6" x2="4.95" y2="-6" width="0.0508" layer="51"/>
+<wire x1="-4.95" y1="-6" x2="-4.95" y2="1.6" width="0.0508" layer="51"/>
+<wire x1="-5.15" y1="1.8" x2="5.15" y2="1.8" width="0.127" layer="21"/>
+<wire x1="5.15" y1="1.8" x2="5.15" y2="-3" width="0.127" layer="21"/>
+<wire x1="-5.15" y1="-3" x2="-5.15" y2="1.8" width="0.127" layer="21"/>
+<wire x1="-4.95" y1="-6" x2="4.95" y2="-6" width="0.0508" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="S4B-PH-K" urn="urn:adsk.eagle:package:13143913/2" type="model" library_version="3">
+<packageinstances>
+<packageinstance name="S4B-PH-K"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="ME04-1" urn="urn:adsk.eagle:symbol:13143867/1" library_version="3">
+<pin name="1" x="-5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<pin name="2" x="-5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<pin name="3" x="-5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<pin name="4" x="-5.08" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<wire x1="1.27" y1="5.08" x2="0" y2="5.08" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="0" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="-1.27" y1="7.62" x2="3.81" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="7.62" x2="-1.27" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="7.62" x2="3.81" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="-5.08" x2="3.81" y2="-5.08" width="0.4064" layer="94"/>
+<text x="-1.27" y="8.255" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.27" y="-7.62" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="S4B-PH-K" urn="urn:adsk.eagle:component:13143956/3" library_version="3">
+<description>Wire to board connector
+
+&lt;p&gt;Model suitable for S4B-PH-K&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Updated: 21.10.19 by Andrey Dovnar, andrevdovnar@gmail.com&lt;/p&gt;</description>
+<gates>
+<gate name="B" symbol="ME04-1" x="0" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="S4B-PH-K">
+<connects>
+<connect gate="B" pin="1" pad="1"/>
+<connect gate="B" pin="2" pad="2"/>
+<connect gate="B" pin="3" pad="3"/>
+<connect gate="B" pin="4" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:13143913/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7959,6 +8035,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="D8" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="BAT60J" device="" package3d_urn="urn:adsk.eagle:package:43461/1"/>
 <part name="D9" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="BAT60J" device="" package3d_urn="urn:adsk.eagle:package:43461/1"/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U$1" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S4B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143913/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -8092,6 +8169,10 @@ Connect external MOSFET to have bigger balance-current</text>
 </instance>
 <instance part="GND22" gate="1" x="-58.42" y="53.34" smashed="yes">
 <attribute name="VALUE" x="-60.96" y="50.8" size="1.778" layer="96"/>
+</instance>
+<instance part="U$1" gate="B" x="22.86" y="78.74" smashed="yes">
+<attribute name="NAME" x="21.59" y="86.995" size="1.778" layer="95"/>
+<attribute name="VALUE" x="21.59" y="71.12" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
