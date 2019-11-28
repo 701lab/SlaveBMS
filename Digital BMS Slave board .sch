@@ -10673,7 +10673,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C1" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="0.33u/50V"/>
 <part name="C2" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="0.33u/50V"/>
-<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100"/>
+<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100, 0.25W"/>
 <part name="R1" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="1206" package3d_urn="urn:adsk.eagle:package:15234388/1" value="47, 0.25W"/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2u/16V"/>
@@ -10703,7 +10703,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="C33" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.47u/16V"/>
 <part name="C28" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.33u/16V"/>
 <part name="C32" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.33u/16V"/>
-<part name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2u/10V"/>
+<part name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2u/16V"/>
 <part name="C14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1u/16V"/>
 <part name="R17" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
 <part name="C19" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1u/16V"/>
@@ -10773,7 +10773,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10"/>
 <part name="C37" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="2.2n"/>
 <part name="C38" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="2.2n"/>
-<part name="X5" library="stmicroelectronics" library_urn="urn:adsk.eagle:library:12979881" deviceset="PESD2CAN" device="" package3d_urn="urn:adsk.eagle:package:15230819/3"/>
+<part name="X1" library="stmicroelectronics" library_urn="urn:adsk.eagle:library:12979881" deviceset="PESD2CAN" device="" package3d_urn="urn:adsk.eagle:package:15230819/3"/>
 <part name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="43"/>
 <part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="43"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -10836,7 +10836,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C45" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="0805" package3d_urn="urn:adsk.eagle:package:13360230/4" value="1u/16V"/>
 <part name="C41" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.47u/16V"/>
-<part name="JP6" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X7" device="" package3d_urn="urn:adsk.eagle:package:22478/2" value="2x7"/>
+<part name="JP4" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X7" device="" package3d_urn="urn:adsk.eagle:package:22478/2" value="2x7"/>
 <part name="JP3" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="PINHD-1X7-OCT" device="" package3d_urn="urn:adsk.eagle:package:13439828/1" value="1x7"/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -10900,12 +10900,12 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="DR1" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]"/>
 <part name="DR6" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]"/>
 <part name="DR5" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]"/>
-<part name="R74" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100"/>
+<part name="R74" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100, 0.25W"/>
 <part name="R44" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k"/>
-<part name="D9" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="LED0805" device="" package3d_urn="urn:adsk.eagle:package:14160208/6" value="GREEN"/>
+<part name="D13" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="LED0805" device="" package3d_urn="urn:adsk.eagle:package:14160208/6" value="GREEN"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J1" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S4B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143913/4"/>
-<part name="J12" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S4B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143913/4"/>
+<part name="J4" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S4B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143913/4"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="CLN" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]"/>
@@ -10931,14 +10931,14 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="D10" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/3" value="6.2V"/>
 <part name="D11" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/3" value="6.2V"/>
 <part name="D12" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/3" value="6.2V"/>
-<part name="D13" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/3" value="6.2V"/>
+<part name="D9" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/3" value="6.2V"/>
 <part name="GND38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND41" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J11" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S6B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143943/4"/>
 <part name="GND42" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="J13" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="MOLEX22-12-4062" device="05-7068" package3d_urn="urn:adsk.eagle:package:15093416/2"/>
+<part name="J12" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="MOLEX22-12-4062" device="05-7068" package3d_urn="urn:adsk.eagle:package:15093416/2"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA3_L" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA3_L" device=""/>
 <part name="GND43" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -11386,7 +11386,7 @@ balanced them and transmit all information to MasterBMS</text>
 <attribute name="NAME" x="-68.834" y="-91.821" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-68.834" y="-94.361" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="JP6" gate="A" x="-115.57" y="-119.38" smashed="yes" rot="MR0" grouprefs="STD_BALANCING">
+<instance part="JP4" gate="A" x="-115.57" y="-119.38" smashed="yes" rot="MR0" grouprefs="STD_BALANCING">
 <attribute name="NAME" x="-109.22" y="-108.585" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="-109.22" y="-132.08" size="1.778" layer="96" rot="MR0"/>
 </instance>
@@ -11624,7 +11624,7 @@ balanced them and transmit all information to MasterBMS</text>
 <attribute name="NAME" x="181.61" y="81.0514" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="181.61" y="75.692" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="D9" gate="G$1" x="189.23" y="69.85" smashed="yes" rot="R270">
+<instance part="D13" gate="G$1" x="189.23" y="69.85" smashed="yes" rot="R270">
 <attribute name="NAME" x="191.008" y="72.644" size="1.778" layer="95"/>
 <attribute name="VALUE" x="188.722" y="69.215" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -11635,7 +11635,7 @@ balanced them and transmit all information to MasterBMS</text>
 <attribute name="NAME" x="-2.54" y="-26.035" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-2.54" y="-10.16" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="J12" gate="B" x="-3.81" y="72.39" smashed="yes" rot="R180" grouprefs="MAIN_IC">
+<instance part="J4" gate="B" x="-3.81" y="72.39" smashed="yes" rot="R180" grouprefs="MAIN_IC">
 <attribute name="NAME" x="-2.54" y="64.135" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-2.54" y="80.01" size="1.778" layer="95" rot="R180"/>
 </instance>
@@ -11693,7 +11693,7 @@ balanced them and transmit all information to MasterBMS</text>
 <attribute name="NAME" x="13.335" y="-100.076" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="18.669" y="-100.076" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="D13" gate="G$1" x="22.86" y="-97.79" smashed="yes" rot="R90" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
+<instance part="D9" gate="G$1" x="22.86" y="-97.79" smashed="yes" rot="R90" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION">
 <attribute name="NAME" x="20.955" y="-100.076" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="26.289" y="-100.076" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -11812,7 +11812,7 @@ balanced them and transmit all information to MasterBMS</text>
 <wire x1="-120.65" y1="-127" x2="-132.08" y2="-127" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="-132.08" y1="-127" x2="-132.08" y2="-129.54" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
-<pinref part="JP6" gate="A" pin="14"/>
+<pinref part="JP4" gate="A" pin="14"/>
 </segment>
 <segment>
 <pinref part="GND26" gate="1" pin="GND"/>
@@ -11882,7 +11882,7 @@ balanced them and transmit all information to MasterBMS</text>
 <wire x1="63.5" y1="-130.81" x2="63.5" y2="-135.89" width="0.1524" layer="91" grouprefs="CMOS_TEMP_SENSING"/>
 </segment>
 <segment>
-<pinref part="D9" gate="G$1" pin="C"/>
+<pinref part="D13" gate="G$1" pin="C"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="189.23" y1="67.31" x2="189.23" y2="64.77" width="0.1524" layer="91"/>
 </segment>
@@ -11993,7 +11993,7 @@ balanced them and transmit all information to MasterBMS</text>
 <wire x1="15.24" y1="-100.33" x2="15.24" y2="-102.87" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 </segment>
 <segment>
-<pinref part="D13" gate="G$1" pin="A"/>
+<pinref part="D9" gate="G$1" pin="A"/>
 <pinref part="GND38" gate="1" pin="GND"/>
 <wire x1="22.86" y1="-100.33" x2="22.86" y2="-102.87" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 </segment>
@@ -12038,7 +12038,7 @@ balanced them and transmit all information to MasterBMS</text>
 <wire x1="-120.65" y1="-111.76" x2="-132.08" y2="-111.76" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
 <wire x1="-132.08" y1="-111.76" x2="-132.08" y2="-107.95" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
-<pinref part="JP6" gate="A" pin="2"/>
+<pinref part="JP4" gate="A" pin="2"/>
 </segment>
 <segment>
 <wire x1="8.89" y1="58.42" x2="12.7" y2="58.42" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
@@ -12174,10 +12174,10 @@ balanced them and transmit all information to MasterBMS</text>
 <segment>
 <wire x1="-120.65" y1="-119.38" x2="-132.08" y2="-119.38" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <label x="-132.08" y="-119.38" size="1.778" layer="95" rot="MR0" grouprefs="STD_BALANCING"/>
-<pinref part="JP6" gate="A" pin="8"/>
+<pinref part="JP4" gate="A" pin="8"/>
 </segment>
 <segment>
-<pinref part="J12" gate="B" pin="2"/>
+<pinref part="J4" gate="B" pin="2"/>
 <wire x1="1.27" y1="69.85" x2="6.35" y2="69.85" width="0.1524" layer="91"/>
 <label x="5.08" y="69.85" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
 </segment>
@@ -12199,7 +12199,7 @@ balanced them and transmit all information to MasterBMS</text>
 <segment>
 <wire x1="-120.65" y1="-121.92" x2="-132.08" y2="-121.92" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <label x="-132.08" y="-121.92" size="1.778" layer="95" rot="MR0" grouprefs="STD_BALANCING"/>
-<pinref part="JP6" gate="A" pin="10"/>
+<pinref part="JP4" gate="A" pin="10"/>
 </segment>
 <segment>
 <pinref part="J1" gate="B" pin="2"/>
@@ -12224,10 +12224,10 @@ balanced them and transmit all information to MasterBMS</text>
 <segment>
 <wire x1="-120.65" y1="-124.46" x2="-132.08" y2="-124.46" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <label x="-132.08" y="-124.46" size="1.778" layer="95" rot="MR0" grouprefs="STD_BALANCING"/>
-<pinref part="JP6" gate="A" pin="12"/>
+<pinref part="JP4" gate="A" pin="12"/>
 </segment>
 <segment>
-<pinref part="J12" gate="B" pin="3"/>
+<pinref part="J4" gate="B" pin="3"/>
 <wire x1="1.27" y1="72.39" x2="6.35" y2="72.39" width="0.1524" layer="91"/>
 <label x="5.08" y="72.39" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
 </segment>
@@ -12327,10 +12327,10 @@ balanced them and transmit all information to MasterBMS</text>
 <segment>
 <wire x1="-120.65" y1="-114.3" x2="-132.08" y2="-114.3" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <label x="-132.08" y="-114.3" size="1.778" layer="95" rot="MR0" grouprefs="STD_BALANCING"/>
-<pinref part="JP6" gate="A" pin="4"/>
+<pinref part="JP4" gate="A" pin="4"/>
 </segment>
 <segment>
-<pinref part="J12" gate="B" pin="1"/>
+<pinref part="J4" gate="B" pin="1"/>
 <wire x1="1.27" y1="67.31" x2="6.35" y2="67.31" width="0.1524" layer="91"/>
 <label x="5.08" y="67.31" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
 </segment>
@@ -12448,7 +12448,7 @@ balanced them and transmit all information to MasterBMS</text>
 <segment>
 <label x="-2.54" y="-93.98" size="1.778" layer="95" rot="MR0" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 <wire x1="-2.54" y1="-93.98" x2="22.86" y2="-93.98" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
-<pinref part="D13" gate="G$1" pin="C"/>
+<pinref part="D9" gate="G$1" pin="C"/>
 <wire x1="22.86" y1="-93.98" x2="33.02" y2="-93.98" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 <wire x1="22.86" y1="-95.25" x2="22.86" y2="-93.98" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 <junction x="22.86" y="-93.98" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
@@ -13273,7 +13273,7 @@ balanced them and transmit all information to MasterBMS</text>
 <segment>
 <wire x1="-120.65" y1="-116.84" x2="-132.08" y2="-116.84" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <label x="-132.08" y="-116.84" size="1.778" layer="95" rot="MR0" grouprefs="STD_BALANCING"/>
-<pinref part="JP6" gate="A" pin="6"/>
+<pinref part="JP4" gate="A" pin="6"/>
 </segment>
 <segment>
 <pinref part="J1" gate="B" pin="3"/>
@@ -13288,7 +13288,7 @@ balanced them and transmit all information to MasterBMS</text>
 <wire x1="-105.41" y1="-88.9" x2="-105.41" y2="-111.76" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <wire x1="-105.41" y1="-111.76" x2="-113.03" y2="-111.76" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <label x="-104.14" y="-86.36" size="1.778" layer="95"/>
-<pinref part="JP6" gate="A" pin="1"/>
+<pinref part="JP4" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="SB3" class="0">
@@ -13296,7 +13296,7 @@ balanced them and transmit all information to MasterBMS</text>
 <pinref part="R33" gate="G$1" pin="1"/>
 <wire x1="-95.25" y1="-119.38" x2="-113.03" y2="-119.38" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <label x="-100.33" y="-116.84" size="1.778" layer="95"/>
-<pinref part="JP6" gate="A" pin="7"/>
+<pinref part="JP4" gate="A" pin="7"/>
 </segment>
 </net>
 <net name="SB2" class="0">
@@ -13306,7 +13306,7 @@ balanced them and transmit all information to MasterBMS</text>
 <wire x1="-100.33" y1="-129.54" x2="-100.33" y2="-121.92" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <wire x1="-100.33" y1="-121.92" x2="-113.03" y2="-121.92" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <label x="-99.06" y="-127" size="1.778" layer="95"/>
-<pinref part="JP6" gate="A" pin="9"/>
+<pinref part="JP4" gate="A" pin="9"/>
 </segment>
 </net>
 <net name="SB1" class="0">
@@ -13316,7 +13316,7 @@ balanced them and transmit all information to MasterBMS</text>
 <wire x1="-102.87" y1="-139.7" x2="-102.87" y2="-124.46" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <wire x1="-102.87" y1="-124.46" x2="-113.03" y2="-124.46" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <label x="-101.6" y="-137.16" size="1.778" layer="95"/>
-<pinref part="JP6" gate="A" pin="11"/>
+<pinref part="JP4" gate="A" pin="11"/>
 </segment>
 </net>
 <net name="SB5" class="0">
@@ -13326,7 +13326,7 @@ balanced them and transmit all information to MasterBMS</text>
 <wire x1="-102.87" y1="-99.06" x2="-102.87" y2="-114.3" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <wire x1="-102.87" y1="-114.3" x2="-113.03" y2="-114.3" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <label x="-101.6" y="-96.52" size="1.778" layer="95"/>
-<pinref part="JP6" gate="A" pin="3"/>
+<pinref part="JP4" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="SB4" class="0">
@@ -13336,7 +13336,7 @@ balanced them and transmit all information to MasterBMS</text>
 <wire x1="-100.33" y1="-109.22" x2="-100.33" y2="-116.84" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <wire x1="-100.33" y1="-116.84" x2="-113.03" y2="-116.84" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <label x="-100.33" y="-106.68" size="1.778" layer="95"/>
-<pinref part="JP6" gate="A" pin="5"/>
+<pinref part="JP4" gate="A" pin="5"/>
 </segment>
 </net>
 <net name="SB0" class="0">
@@ -13346,7 +13346,7 @@ balanced them and transmit all information to MasterBMS</text>
 <wire x1="-105.41" y1="-127" x2="-105.41" y2="-149.86" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <wire x1="-105.41" y1="-149.86" x2="-95.25" y2="-149.86" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
 <label x="-104.14" y="-147.32" size="1.778" layer="95"/>
-<pinref part="JP6" gate="A" pin="13"/>
+<pinref part="JP4" gate="A" pin="13"/>
 </segment>
 </net>
 <net name="GPIO5T2" class="0">
@@ -13508,7 +13508,7 @@ balanced them and transmit all information to MasterBMS</text>
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="D9" gate="G$1" pin="A"/>
+<pinref part="D13" gate="G$1" pin="A"/>
 <wire x1="189.23" y1="74.93" x2="189.23" y2="77.47" width="0.1524" layer="91"/>
 <pinref part="R44" gate="G$1" pin="1"/>
 <wire x1="189.23" y1="77.47" x2="184.15" y2="77.47" width="0.1524" layer="91"/>
@@ -13516,7 +13516,7 @@ balanced them and transmit all information to MasterBMS</text>
 </net>
 <net name="4" class="0">
 <segment>
-<pinref part="J12" gate="B" pin="4"/>
+<pinref part="J4" gate="B" pin="4"/>
 <wire x1="1.27" y1="74.93" x2="6.35" y2="74.93" width="0.1524" layer="91"/>
 <label x="5.08" y="74.93" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
 </segment>
@@ -13762,7 +13762,7 @@ balanced them and transmit all information to MasterBMS</text>
 <attribute name="NAME" x="-91.186" y="73.279" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="-91.186" y="75.819" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="X5" gate="G$1" x="-107.95" y="91.44" smashed="yes" rot="MR180" grouprefs="STAK_DEVICE_COMMUNICATION1">
+<instance part="X1" gate="G$1" x="-107.95" y="91.44" smashed="yes" rot="MR180" grouprefs="STAK_DEVICE_COMMUNICATION1">
 <attribute name="NAME" x="-113.665" y="84.1375" size="1.2" layer="95" ratio="10" rot="MR180"/>
 <attribute name="VALUE" x="-113.7412" y="85.8012" size="1.2" layer="96" ratio="10" rot="MR180"/>
 </instance>
@@ -13945,23 +13945,23 @@ balanced them and transmit all information to MasterBMS</text>
 <instance part="FHP" gate="G$1" x="-49.53" y="-73.66" smashed="yes" rot="MR90">
 <attribute name="NAME" x="-48.26" y="-73.66" size="1.27" layer="95" rot="MR180"/>
 </instance>
-<instance part="J13" gate="-1" x="77.47" y="73.66" smashed="yes" grouprefs="UART_TO_ISO_COMMUNICATION1">
+<instance part="J12" gate="-1" x="77.47" y="73.66" smashed="yes" grouprefs="UART_TO_ISO_COMMUNICATION1">
 <attribute name="NAME" x="80.01" y="72.898" size="1.524" layer="95"/>
 <attribute name="VALUE" x="76.708" y="82.677" size="1.778" layer="96"/>
 </instance>
-<instance part="J13" gate="-2" x="77.47" y="78.74" smashed="yes" grouprefs="UART_TO_ISO_COMMUNICATION1">
+<instance part="J12" gate="-2" x="77.47" y="78.74" smashed="yes" grouprefs="UART_TO_ISO_COMMUNICATION1">
 <attribute name="NAME" x="80.01" y="77.978" size="1.524" layer="95"/>
 </instance>
-<instance part="J13" gate="-3" x="77.47" y="76.2" smashed="yes" grouprefs="UART_TO_ISO_COMMUNICATION1">
+<instance part="J12" gate="-3" x="77.47" y="76.2" smashed="yes" grouprefs="UART_TO_ISO_COMMUNICATION1">
 <attribute name="NAME" x="80.01" y="75.438" size="1.524" layer="95"/>
 </instance>
-<instance part="J13" gate="-4" x="77.47" y="81.28" smashed="yes" grouprefs="UART_TO_ISO_COMMUNICATION1">
+<instance part="J12" gate="-4" x="77.47" y="81.28" smashed="yes" grouprefs="UART_TO_ISO_COMMUNICATION1">
 <attribute name="NAME" x="80.01" y="80.518" size="1.524" layer="95"/>
 </instance>
-<instance part="J13" gate="-5" x="77.47" y="71.12" smashed="yes" grouprefs="UART_TO_ISO_COMMUNICATION1">
+<instance part="J12" gate="-5" x="77.47" y="71.12" smashed="yes" grouprefs="UART_TO_ISO_COMMUNICATION1">
 <attribute name="NAME" x="80.01" y="70.358" size="1.524" layer="95"/>
 </instance>
-<instance part="J13" gate="-6" x="77.47" y="68.58" smashed="yes" grouprefs="UART_TO_ISO_COMMUNICATION1">
+<instance part="J12" gate="-6" x="77.47" y="68.58" smashed="yes" grouprefs="UART_TO_ISO_COMMUNICATION1">
 <attribute name="NAME" x="80.01" y="67.818" size="1.524" layer="95"/>
 </instance>
 <instance part="FRAME2" gate="G$1" x="-195.58" y="-130.81" smashed="yes"/>
@@ -13992,7 +13992,7 @@ balanced them and transmit all information to MasterBMS</text>
 <junction x="-140.97" y="43.18" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 </segment>
 <segment>
-<pinref part="X5" gate="G$1" pin="3"/>
+<pinref part="X1" gate="G$1" pin="3"/>
 <wire x1="-102.87" y1="91.44" x2="-97.79" y2="91.44" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="-97.79" y1="91.44" x2="-97.79" y2="88.9" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
@@ -14057,7 +14057,7 @@ balanced them and transmit all information to MasterBMS</text>
 <wire x1="57.15" y1="57.15" x2="73.66" y2="57.15" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <wire x1="73.66" y1="57.15" x2="73.66" y2="68.58" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <wire x1="73.66" y1="68.58" x2="74.93" y2="68.58" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<pinref part="J13" gate="-6" pin="S"/>
+<pinref part="J12" gate="-6" pin="S"/>
 </segment>
 <segment>
 <pinref part="GND24" gate="1" pin="GND"/>
@@ -14222,7 +14222,7 @@ balanced them and transmit all information to MasterBMS</text>
 <pinref part="R13" gate="G$1" pin="2"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="-113.03" y1="106.68" x2="-120.65" y2="106.68" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
-<pinref part="X5" gate="G$1" pin="2"/>
+<pinref part="X1" gate="G$1" pin="2"/>
 <wire x1="-120.65" y1="106.68" x2="-123.19" y2="106.68" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <wire x1="-117.094" y1="93.98" x2="-120.65" y2="93.98" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <wire x1="-120.65" y1="93.98" x2="-120.65" y2="106.68" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
@@ -14234,7 +14234,7 @@ balanced them and transmit all information to MasterBMS</text>
 <pinref part="R12" gate="G$1" pin="2"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="-113.03" y1="76.2" x2="-120.65" y2="76.2" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
-<pinref part="X5" gate="G$1" pin="1"/>
+<pinref part="X1" gate="G$1" pin="1"/>
 <wire x1="-120.65" y1="76.2" x2="-123.19" y2="76.2" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <wire x1="-117.094" y1="88.9" x2="-120.65" y2="88.9" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <wire x1="-120.65" y1="88.9" x2="-120.65" y2="76.2" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
@@ -14511,7 +14511,7 @@ balanced them and transmit all information to MasterBMS</text>
 <junction x="29.21" y="97.79" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <label x="0" y="97.79" size="1.778" layer="95" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <wire x1="40.64" y1="97.79" x2="29.21" y2="97.79" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<pinref part="J13" gate="-4" pin="S"/>
+<pinref part="J12" gate="-4" pin="S"/>
 </segment>
 </net>
 <net name="NFAULT" class="0">
@@ -14528,7 +14528,7 @@ balanced them and transmit all information to MasterBMS</text>
 <label x="6.35" y="67.31" size="1.778" layer="95" rot="MR0" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <wire x1="71.12" y1="67.31" x2="71.12" y2="71.12" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <wire x1="71.12" y1="71.12" x2="74.93" y2="71.12" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<pinref part="J13" gate="-5" pin="S"/>
+<pinref part="J12" gate="-5" pin="S"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -14537,7 +14537,7 @@ balanced them and transmit all information to MasterBMS</text>
 <label x="6.35" y="82.55" size="1.778" layer="95" rot="MR0" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <wire x1="71.12" y1="82.55" x2="71.12" y2="78.74" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <wire x1="71.12" y1="78.74" x2="74.93" y2="78.74" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<pinref part="J13" gate="-2" pin="S"/>
+<pinref part="J12" gate="-2" pin="S"/>
 </segment>
 </net>
 <net name="WAKEUP" class="0">
@@ -14558,7 +14558,7 @@ balanced them and transmit all information to MasterBMS</text>
 <junction x="26.67" y="73.66" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <wire x1="22.86" y1="73.66" x2="22.86" y2="72.39" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <wire x1="22.86" y1="72.39" x2="6.35" y2="72.39" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<pinref part="J13" gate="-1" pin="S"/>
+<pinref part="J12" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="RX1" class="0">
@@ -14576,7 +14576,7 @@ balanced them and transmit all information to MasterBMS</text>
 <wire x1="22.86" y1="77.47" x2="22.86" y2="76.2" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <wire x1="22.86" y1="76.2" x2="29.21" y2="76.2" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <junction x="29.21" y="76.2" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<pinref part="J13" gate="-3" pin="S"/>
+<pinref part="J12" gate="-3" pin="S"/>
 </segment>
 </net>
 <net name="RX" class="0">
