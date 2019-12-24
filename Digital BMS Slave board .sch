@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10648,6 +10648,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 <class number="1" name="Power" width="0" drill="0">
+<clearance class="1" value="0.2032"/>
 </class>
 <class number="2" name="diff pairs" width="0" drill="0">
 </class>
@@ -12014,7 +12015,7 @@ balanced them and transmit all information to MasterBMS</text>
 <junction x="12.7" y="-77.47"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="VCC" class="1">
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
@@ -13917,9 +13918,9 @@ balanced them and transmit all information to MasterBMS</text>
 <instance part="GND24" gate="1" x="26.67" y="49.53" smashed="yes" grouprefs="UART_TO_ISO_COMMUNICATION1">
 <attribute name="VALUE" x="24.13" y="46.99" size="1.778" layer="96"/>
 </instance>
-<instance part="R74" gate="G$1" x="15.24" y="77.47" smashed="yes" rot="R180" grouprefs="UART_TO_ISO_COMMUNICATION1">
-<attribute name="NAME" x="12.7" y="78.9686" size="1.778" layer="95"/>
-<attribute name="VALUE" x="12.7" y="74.168" size="1.778" layer="96"/>
+<instance part="R74" gate="G$1" x="58.42" y="77.47" smashed="yes" rot="R180" grouprefs="UART_TO_ISO_COMMUNICATION1">
+<attribute name="NAME" x="55.88" y="78.9686" size="1.778" layer="95"/>
+<attribute name="VALUE" x="55.88" y="74.168" size="1.778" layer="96"/>
 </instance>
 <instance part="CLN" gate="G$1" x="-147.32" y="104.14" smashed="yes" rot="MR270">
 <attribute name="NAME" x="-146.05" y="104.14" size="1.27" layer="95" rot="MR180"/>
@@ -14561,29 +14562,19 @@ balanced them and transmit all information to MasterBMS</text>
 <pinref part="J12" gate="-1" pin="S"/>
 </segment>
 </net>
-<net name="RX1" class="0">
-<segment>
-<pinref part="R47" gate="G$1" pin="1"/>
-<wire x1="31.75" y1="76.2" x2="29.21" y2="76.2" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="29.21" y1="85.09" x2="29.21" y2="76.2" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<pinref part="C57" gate="G$1" pin="2"/>
-<wire x1="31.75" y1="66.04" x2="31.75" y2="76.2" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<junction x="31.75" y="76.2" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="32.258" y1="76.2" x2="31.75" y2="76.2" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="74.93" y1="76.2" x2="31.75" y2="76.2" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<pinref part="R74" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="77.47" x2="22.86" y2="77.47" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="22.86" y1="77.47" x2="22.86" y2="76.2" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="22.86" y1="76.2" x2="29.21" y2="76.2" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<junction x="29.21" y="76.2" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<pinref part="J12" gate="-3" pin="S"/>
-</segment>
-</net>
 <net name="RX" class="0">
 <segment>
 <pinref part="R74" gate="G$1" pin="2"/>
-<wire x1="10.16" y1="77.47" x2="6.35" y2="77.47" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="53.34" y1="77.47" x2="31.75" y2="77.47" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <label x="6.35" y="77.47" size="1.778" layer="95" rot="MR0" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<pinref part="R47" gate="G$1" pin="1"/>
+<wire x1="31.75" y1="77.47" x2="29.21" y2="77.47" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="29.21" y1="77.47" x2="6.35" y2="77.47" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="29.21" y1="85.09" x2="29.21" y2="77.47" width="0.1524" layer="91"/>
+<junction x="29.21" y="77.47"/>
+<pinref part="C57" gate="G$1" pin="2"/>
+<wire x1="31.75" y1="66.04" x2="31.75" y2="77.47" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<junction x="31.75" y="77.47"/>
 </segment>
 </net>
 <net name="ISO_FAULTL_N" class="0">
@@ -14604,6 +14595,15 @@ balanced them and transmit all information to MasterBMS</text>
 <pinref part="J2" gate="B" pin="2"/>
 <wire x1="-46.99" y1="68.58" x2="-69.85" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="L2" gate="A" pin="3"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R74" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="77.47" x2="68.58" y2="77.47" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="77.47" x2="68.58" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="J12" gate="-3" pin="S"/>
+<wire x1="68.58" y1="76.2" x2="74.93" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
