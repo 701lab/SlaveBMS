@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -8210,19 +8210,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <text x="0" y="1.905" size="1.27" layer="25" align="center">&gt;NAME</text>
 <smd name="1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
 </package>
-<package name="SOLDER_BRIDGE" urn="urn:adsk.eagle:footprint:13096593/4" library_version="7">
-<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.762" y="0" dx="1.27" dy="0.889" layer="1" cream="no"/>
-<smd name="2" x="0.762" y="0" dx="1.27" dy="0.889" layer="1" cream="no"/>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<text x="0" y="1.905" size="1.27" layer="25" align="center">&gt;NAME</text>
-</package>
 <package name="TP1.27MM_MASK_SILKSCREEN" urn="urn:adsk.eagle:footprint:15234682/1" library_version="7">
 <circle x="0" y="0" radius="0.762" width="0" layer="39"/>
 <circle x="0" y="0" radius="0.81319375" width="0.127" layer="21"/>
@@ -8235,9 +8222,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <text x="0" y="1.905" size="1.27" layer="25" align="center">&gt;NAME</text>
 <smd name="1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
 </package>
-<package name="SMD_PAD" urn="urn:adsk.eagle:footprint:16041860/1" library_version="9">
+<package name="SMD_PAD" urn="urn:adsk.eagle:footprint:16041860/2" library_version="10">
 <description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
-<smd name="1" x="0" y="0" dx="2.54" dy="5.08" layer="1"/>
+<smd name="1" x="0" y="0" dx="2.54" dy="5.08" layer="1" thermals="no" cream="no"/>
 <text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
 <text x="-1.5" y="-2.5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 </package>
@@ -8261,11 +8248,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <packageinstance name="TP1.27MM"/>
 </packageinstances>
 </package3d>
-<package3d name="SOLDER_BRIDGE" urn="urn:adsk.eagle:package:13096608/4" type="model" library_version="7">
-<packageinstances>
-<packageinstance name="SOLDER_BRIDGE"/>
-</packageinstances>
-</package3d>
 <package3d name="TP1.27MM_MASK_SILKSCREEN" urn="urn:adsk.eagle:package:15234684/2" type="model" library_version="7">
 <packageinstances>
 <packageinstance name="TP1.27MM_MASK_SILKSCREEN"/>
@@ -8276,7 +8258,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <packageinstance name="TP1MM_MASK_SILKSCREEN"/>
 </packageinstances>
 </package3d>
-<package3d name="SMD2,54-5,08" urn="urn:adsk.eagle:package:16041846/3" type="model" library_version="9">
+<package3d name="SMD2,54-5,08" urn="urn:adsk.eagle:package:16041846/4" type="model" library_version="10">
 <description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="SMD_PAD"/>
@@ -8293,17 +8275,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pin name="P$1" x="-2.54" y="0" visible="off" length="short"/>
 <text x="2.54" y="0" size="1.27" layer="95">&gt;NAME</text>
 <circle x="0.762" y="0" radius="0.71841875" width="0.254" layer="94"/>
-</symbol>
-<symbol name="SOLDER_BRIDGE" urn="urn:adsk.eagle:symbol:13096592/1" library_version="1">
-<pin name="1" x="-4.572" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
-<pin name="2" x="4.572" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<wire x1="-0.508" y1="-1.524" x2="-0.508" y2="1.524" width="0.2032" layer="94"/>
-<wire x1="-0.508" y1="1.524" x2="-2.032" y2="0" width="0.2032" layer="94" curve="90"/>
-<wire x1="-2.032" y1="0" x2="-0.508" y2="-1.524" width="0.2032" layer="94" curve="90"/>
-<wire x1="0.508" y1="1.524" x2="0.508" y2="-1.524" width="0.2032" layer="94"/>
-<wire x1="0.508" y1="-1.524" x2="2.032" y2="0" width="0.2032" layer="94" curve="90"/>
-<wire x1="2.032" y1="0" x2="0.508" y2="1.524" width="0.2032" layer="94" curve="90"/>
-<text x="-3.81" y="2.54" size="1.778" layer="95" align="center-left">&gt;NAME</text>
 </symbol>
 <symbol name="PAD" urn="urn:adsk.eagle:symbol:16041856/1" library_version="9">
 <wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
@@ -8378,26 +8349,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SOLDER_BRIDGE" urn="urn:adsk.eagle:component:13096613/4" prefix="SB" library_version="7">
-<gates>
-<gate name="G$1" symbol="SOLDER_BRIDGE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOLDER_BRIDGE">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:13096608/4"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SMD_PAD" urn="urn:adsk.eagle:component:16041857/2" prefix="PAD" uservalue="yes" library_version="9">
+<deviceset name="SMD_PAD" urn="urn:adsk.eagle:component:16041857/3" prefix="PAD" uservalue="yes" library_version="10">
 <description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="PAD" x="0" y="0"/>
@@ -8408,7 +8360,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <connect gate="1" pin="P" pad="1"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:16041846/3"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16041846/4"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -9245,6 +9197,81 @@ www.irf.com&lt;p&gt;
 <rectangle x1="7.239" y1="-5.461" x2="8.001" y2="-4.699" layer="21"/>
 <rectangle x1="7.239" y1="-4.699" x2="8.001" y2="-2.921" layer="51"/>
 </package>
+<package name="2X03" urn="urn:adsk.eagle:footprint:22348/1" library_version="4">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-3.81" y1="-1.905" x2="-3.175" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-2.54" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-2.54" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-1.905" x2="-3.81" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.905" x2="-3.175" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="2.54" x2="-1.905" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="2.54" x2="-1.27" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="2.54" x2="1.27" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.905" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-2.54" x2="0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-2.54" x2="-1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-2.54" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.905" x2="1.905" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="2.54" x2="3.175" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="2.54" x2="3.81" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="1.905" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-2.54" x2="3.175" y2="-2.54" width="0.1524" layer="21"/>
+<pad name="1" x="-2.54" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="2" x="-2.54" y="1.27" drill="1.016" shape="octagon"/>
+<pad name="3" x="0" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="4" x="0" y="1.27" drill="1.016" shape="octagon"/>
+<pad name="5" x="2.54" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="6" x="2.54" y="1.27" drill="1.016" shape="octagon"/>
+<text x="-3.81" y="3.175" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.794" y1="-1.524" x2="-2.286" y2="-1.016" layer="51"/>
+<rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="51"/>
+<rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="51"/>
+<rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="51"/>
+<rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
+<rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
+</package>
+<package name="2X03/90" urn="urn:adsk.eagle:footprint:22349/1" library_version="4">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-3.81" y1="-1.905" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="6.985" x2="-2.54" y2="1.27" width="0.762" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="6.985" x2="0" y2="1.27" width="0.762" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-1.905" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="6.985" x2="2.54" y2="1.27" width="0.762" layer="21"/>
+<pad name="2" x="-2.54" y="-3.81" drill="1.016" shape="octagon"/>
+<pad name="4" x="0" y="-3.81" drill="1.016" shape="octagon"/>
+<pad name="6" x="2.54" y="-3.81" drill="1.016" shape="octagon"/>
+<pad name="1" x="-2.54" y="-6.35" drill="1.016" shape="octagon"/>
+<pad name="3" x="0" y="-6.35" drill="1.016" shape="octagon"/>
+<pad name="5" x="2.54" y="-6.35" drill="1.016" shape="octagon"/>
+<text x="-4.445" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="5.715" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.921" y1="0.635" x2="-2.159" y2="1.143" layer="21"/>
+<rectangle x1="-0.381" y1="0.635" x2="0.381" y2="1.143" layer="21"/>
+<rectangle x1="2.159" y1="0.635" x2="2.921" y2="1.143" layer="21"/>
+<rectangle x1="-2.921" y1="-2.921" x2="-2.159" y2="-1.905" layer="21"/>
+<rectangle x1="-0.381" y1="-2.921" x2="0.381" y2="-1.905" layer="21"/>
+<rectangle x1="-2.921" y1="-5.461" x2="-2.159" y2="-4.699" layer="21"/>
+<rectangle x1="-2.921" y1="-4.699" x2="-2.159" y2="-2.921" layer="51"/>
+<rectangle x1="-0.381" y1="-4.699" x2="0.381" y2="-2.921" layer="51"/>
+<rectangle x1="-0.381" y1="-5.461" x2="0.381" y2="-4.699" layer="21"/>
+<rectangle x1="2.159" y1="-2.921" x2="2.921" y2="-1.905" layer="21"/>
+<rectangle x1="2.159" y1="-5.461" x2="2.921" y2="-4.699" layer="21"/>
+<rectangle x1="2.159" y1="-4.699" x2="2.921" y2="-2.921" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="2X07" urn="urn:adsk.eagle:package:22478/2" type="model" library_version="4">
@@ -9257,6 +9284,18 @@ www.irf.com&lt;p&gt;
 <description>PIN HEADER</description>
 <packageinstances>
 <packageinstance name="2X07/90"/>
+</packageinstances>
+</package3d>
+<package3d name="2X03" urn="urn:adsk.eagle:package:22462/2" type="model" library_version="4">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="2X03"/>
+</packageinstances>
+</package3d>
+<package3d name="2X03/90" urn="urn:adsk.eagle:package:22464/2" type="model" library_version="4">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="2X03/90"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -9282,6 +9321,20 @@ www.irf.com&lt;p&gt;
 <pin name="12" x="5.08" y="-5.08" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="13" x="-2.54" y="-7.62" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="14" x="5.08" y="-7.62" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
+</symbol>
+<symbol name="PINH2X3" urn="urn:adsk.eagle:symbol:22347/1" library_version="4">
+<wire x1="-6.35" y1="-5.08" x2="8.89" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="8.89" y1="-5.08" x2="8.89" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="8.89" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-5.08" width="0.4064" layer="94"/>
+<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="5.08" y="2.54" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="3" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="4" x="5.08" y="0" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="5" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="6" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9340,6 +9393,50 @@ www.irf.com&lt;p&gt;
 <technologies>
 <technology name="">
 <attribute name="POPULARITY" value="1" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PINHD-2X3" urn="urn:adsk.eagle:component:22532/4" prefix="JP" uservalue="yes" library_version="4">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="PINH2X3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2X03">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+<connect gate="A" pin="5" pad="5"/>
+<connect gate="A" pin="6" pad="6"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22462/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="62" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="/90" package="2X03/90">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+<connect gate="A" pin="5" pad="5"/>
+<connect gate="A" pin="6" pad="6"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22464/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -10273,7 +10370,7 @@ Metric Code Size 1608</description>
 <rectangle x1="-7.874" y1="-0.254" x2="-7.366" y2="0.254" layer="51"/>
 <rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
 </package>
-<package name="1X06" urn="urn:adsk.eagle:footprint:15093414/1" locally_modified="yes" library_version="4" library_locally_modified="yes">
+<package name="1X06" urn="urn:adsk.eagle:footprint:15093414/2" library_version="7">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
@@ -10399,6 +10496,21 @@ Metric Code Size 1608</description>
 <rectangle x1="-4.064" y1="-2.5146" x2="-3.556" y2="-0.2794" layer="51"/>
 <rectangle x1="-6.604" y1="-2.5146" x2="-6.096" y2="-0.2794" layer="51"/>
 </package>
+<package name="2,54/1,1" urn="urn:adsk.eagle:footprint:30818/1" library_version="9">
+<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.27" x2="0.762" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.27" x2="-0.762" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="-0.762" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.27" x2="0.762" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="-0.762" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="1.016" width="0.1524" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.1176" diameter="2.54" shape="octagon"/>
+<text x="-1.27" y="1.524" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="1" size="0.0254" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="1X07" urn="urn:adsk.eagle:package:13439828/1" type="model" library_version="1" library_locally_modified="yes">
@@ -10407,7 +10519,7 @@ Metric Code Size 1608</description>
 <packageinstance name="1X07"/>
 </packageinstances>
 </package3d>
-<package3d name="1X06" urn="urn:adsk.eagle:package:15093418/1" type="model" library_version="4" library_locally_modified="yes">
+<package3d name="1X06" urn="urn:adsk.eagle:package:15093418/2" type="model" library_version="7">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="1X06"/>
@@ -10417,6 +10529,12 @@ Metric Code Size 1608</description>
 <description>&lt;b&gt;KK® 254 Wire-to-Board Header, Right Angle, with Friction Lock, 6 Circuits&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/022057068_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
 <packageinstances>
 <packageinstance name="7395-06"/>
+</packageinstances>
+</package3d>
+<package3d name="2,54/1,1" urn="urn:adsk.eagle:package:16053046/2" type="model" library_version="9">
+<description>THROUGH-HOLE PAD</description>
+<packageinstances>
+<packageinstance name="2,54/1,1"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -10461,6 +10579,13 @@ Metric Code Size 1608</description>
 <text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
 <pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 </symbol>
+<symbol name="PAD" urn="urn:adsk.eagle:symbol:16053050/1" library_version="9">
+<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
+<text x="-1.143" y="1.8542" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.143" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PINHD-1X7-OCT" urn="urn:adsk.eagle:component:15093421/1" prefix="JP" uservalue="yes" library_version="3">
@@ -10490,7 +10615,7 @@ Metric Code Size 1608</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINHD-1X6-OCT" urn="urn:adsk.eagle:component:15093420/1" prefix="JP" uservalue="yes" library_version="4" library_locally_modified="yes">
+<deviceset name="PINHD-1X6-OCT" urn="urn:adsk.eagle:component:15093420/2" prefix="JP" uservalue="yes" library_version="7">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="A" symbol="PINHD6" x="0" y="-2.54"/>
@@ -10506,7 +10631,7 @@ Metric Code Size 1608</description>
 <connect gate="A" pin="6" pad="6"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:15093418/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15093418/2"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -10516,7 +10641,7 @@ Metric Code Size 1608</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOLEX22-12-4062" urn="urn:adsk.eagle:component:15093419/2" prefix="J" library_version="4" library_locally_modified="yes">
+<deviceset name="MOLEX22-12-4062" urn="urn:adsk.eagle:component:15093419/2" prefix="J" library_version="4">
 <description>&lt;b&gt;CONNECTOR&lt;/b&gt;&lt;p&gt;
 wire to board 2.54 mm (.1 inch) pitch header</description>
 <gates>
@@ -10547,6 +10672,27 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
 <attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WIRE_TO_BOARD_2,54/1,1" urn="urn:adsk.eagle:component:16053051/1" prefix="PAD" uservalue="yes" library_version="9">
+<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="PAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2,54/1,1">
+<connects>
+<connect gate="1" pin="P" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16053046/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="6" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -10905,67 +11051,6 @@ Source: www.st.com, BAT60J.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="wirepad" urn="urn:adsk.eagle:library:412">
-<description>&lt;b&gt;Single Pads&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="2,54/1,1" urn="urn:adsk.eagle:footprint:30818/1" library_version="2">
-<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="1.27" x2="0.762" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="1.27" x2="-0.762" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-1.27" x2="-0.762" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-1.27" x2="0.762" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-1.27" x2="1.27" y2="-0.762" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="1.016" width="0.1524" layer="51"/>
-<pad name="1" x="0" y="0" drill="1.1176" diameter="2.54" shape="octagon"/>
-<text x="-1.27" y="1.524" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="0" y="1" size="0.0254" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="2,54/1,1" urn="urn:adsk.eagle:package:30836/1" type="box" library_version="2">
-<description>THROUGH-HOLE PAD</description>
-<packageinstances>
-<packageinstance name="2,54/1,1"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="PAD" urn="urn:adsk.eagle:symbol:30808/1" library_version="2">
-<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
-<text x="-1.143" y="1.8542" size="1.778" layer="95">&gt;NAME</text>
-<text x="-1.143" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="2,54/1,1" urn="urn:adsk.eagle:component:30855/2" prefix="PAD" uservalue="yes" library_version="2">
-<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="PAD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="2,54/1,1">
-<connects>
-<connect gate="1" pin="P" pad="1"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:30836/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="6" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11007,12 +11092,8 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2u/16V"/>
 <part name="C10" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2u/16V"/>
-<part name="C11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2u/16V"/>
-<part name="C7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2u/16V"/>
 <part name="C6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2u/16V"/>
 <part name="C4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2u/16V"/>
-<part name="R6" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="100k"/>
-<part name="C12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1u/16V"/>
 <part name="R23" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="47"/>
 <part name="R24" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="47"/>
 <part name="R25" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="47"/>
@@ -11141,7 +11222,6 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="C57" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="51p"/>
 <part name="C58" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1nF"/>
 <part name="C59" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1nF"/>
-<part name="SB1" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="SOLDER_BRIDGE" device="" package3d_urn="urn:adsk.eagle:package:13096608/4"/>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C40" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.47u/16V"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -11195,7 +11275,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="R67" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU-X" device="0603" package3d_urn="urn:adsk.eagle:package:13360604/3"/>
 <part name="J7" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S2B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143949/4"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X7" device="" package3d_urn="urn:adsk.eagle:package:22478/2"/>
-<part name="JP2" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="PINHD-1X6-OCT" device="" package3d_urn="urn:adsk.eagle:package:15093418/1"/>
+<part name="JP2" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="PINHD-1X6-OCT" device="" package3d_urn="urn:adsk.eagle:package:15093418/2"/>
 <part name="R68" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10k"/>
 <part name="R69" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10k"/>
 <part name="R70" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10k"/>
@@ -11273,33 +11353,38 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="GND43" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SW1" library="buttons and switches" library_urn="urn:adsk.eagle:library:14616530" deviceset="6PIN-DIP-SWITCH" device="" package3d_urn="urn:adsk.eagle:package:16040935/3"/>
 <part name="R75" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k"/>
-<part name="PAD1" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="SMD_PAD" device="" package3d_urn="urn:adsk.eagle:package:16041846/3"/>
-<part name="PAD2" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="SMD_PAD" device="" package3d_urn="urn:adsk.eagle:package:16041846/3"/>
+<part name="PAD1" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="SMD_PAD" device="" package3d_urn="urn:adsk.eagle:package:16041846/4"/>
+<part name="PAD2" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="SMD_PAD" device="" package3d_urn="urn:adsk.eagle:package:16041846/4"/>
 <part name="R76" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k"/>
 <part name="R77" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k"/>
 <part name="R78" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k"/>
 <part name="R79" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k"/>
 <part name="R80" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k"/>
-<part name="WP0" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:30836/1"/>
-<part name="WP1" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:30836/1"/>
-<part name="WP2" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:30836/1"/>
-<part name="WP3" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:30836/1"/>
-<part name="WP4" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:30836/1"/>
-<part name="WP5" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:30836/1"/>
-<part name="WP6" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:30836/1"/>
-<part name="P3" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]"/>
-<part name="P4" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]"/>
-<part name="P8" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]"/>
-<part name="P9" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]"/>
-<part name="P1" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]"/>
-<part name="P2" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]"/>
+<part name="WP0" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="WIRE_TO_BOARD_2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:16053046/2"/>
+<part name="WP1" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="WIRE_TO_BOARD_2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:16053046/2"/>
+<part name="WP2" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="WIRE_TO_BOARD_2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:16053046/2"/>
+<part name="WP3" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="WIRE_TO_BOARD_2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:16053046/2"/>
+<part name="WP4" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="WIRE_TO_BOARD_2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:16053046/2"/>
+<part name="WP5" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="WIRE_TO_BOARD_2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:16053046/2"/>
+<part name="WP6" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="WIRE_TO_BOARD_2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:16053046/2"/>
+<part name="AVDD" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]"/>
+<part name="VSS" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]"/>
+<part name="BAT" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]"/>
+<part name="REF" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]"/>
 <part name="GND" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="5000" device="" package3d_urn="urn:adsk.eagle:package:13096607/2"/>
+<part name="C12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1u/16V"/>
+<part name="R6" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="100k"/>
+<part name="VLDO" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]"/>
+<part name="C7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2u/16V"/>
+<part name="C11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2u/16V"/>
+<part name="JP5" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="170.18" y="13.97" size="1.778" layer="91" grouprefs="MAIN_IC">Connect GIPO through 
-10k resistor to AVSS 
+<text x="161.29" y="12.7" size="1.778" layer="91" grouprefs="MAIN_IC">Connect GIPO
+through 10k 
+resistor to AVSS 
 if unused</text>
 <text x="146.05" y="-21.59" size="1.778" layer="91" grouprefs="MAIN_IC">left COM** and FAULT** (8pins total)
 unconected if not used </text>
@@ -11325,11 +11410,11 @@ balanced them and transmit all information to MasterBMS</text>
 <instance part="GND3" gate="1" x="151.13" y="-12.7" smashed="yes" grouprefs="MAIN_IC">
 <attribute name="VALUE" x="148.59" y="-15.24" size="1.778" layer="96"/>
 </instance>
-<instance part="GND4" gate="1" x="170.18" y="26.67" smashed="yes" grouprefs="MAIN_IC">
-<attribute name="VALUE" x="167.64" y="24.13" size="1.778" layer="96"/>
+<instance part="GND4" gate="1" x="170.18" y="31.75" smashed="yes" grouprefs="MAIN_IC">
+<attribute name="VALUE" x="167.64" y="29.21" size="1.778" layer="96"/>
 </instance>
-<instance part="GND5" gate="1" x="139.7" y="58.42" smashed="yes" grouprefs="MAIN_IC">
-<attribute name="VALUE" x="142.24" y="58.42" size="1.778" layer="96"/>
+<instance part="GND5" gate="1" x="139.7" y="59.69" smashed="yes" grouprefs="MAIN_IC">
+<attribute name="VALUE" x="142.24" y="60.96" size="1.778" layer="96"/>
 </instance>
 <instance part="P+1" gate="VCC" x="22.86" y="66.04" smashed="yes" grouprefs="MAIN_IC">
 <attribute name="VALUE" x="20.32" y="63.5" size="1.778" layer="96" rot="R90"/>
@@ -11341,36 +11426,28 @@ balanced them and transmit all information to MasterBMS</text>
 <attribute name="NAME" x="128.524" y="71.501" size="1.778" layer="95"/>
 <attribute name="VALUE" x="127.889" y="68.199" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="C2" gate="G$1" x="170.18" y="40.64" smashed="yes" grouprefs="MAIN_IC">
-<attribute name="NAME" x="171.704" y="41.021" size="1.778" layer="95"/>
-<attribute name="VALUE" x="171.704" y="35.941" size="1.778" layer="96"/>
+<instance part="C2" gate="G$1" x="170.18" y="43.18" smashed="yes" grouprefs="MAIN_IC">
+<attribute name="NAME" x="171.704" y="43.561" size="1.778" layer="95"/>
+<attribute name="VALUE" x="171.704" y="38.481" size="1.778" layer="96"/>
 </instance>
 <instance part="R2" gate="G$1" x="113.03" y="64.77" smashed="yes" rot="R90" grouprefs="MAIN_IC">
 <attribute name="NAME" x="110.49" y="65.8114" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="110.49" y="62.992" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R1" gate="G$1" x="161.29" y="55.88" smashed="yes" grouprefs="MAIN_IC">
-<attribute name="NAME" x="157.48" y="57.3786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="157.48" y="52.578" size="1.778" layer="96"/>
+<instance part="R1" gate="G$1" x="161.29" y="57.15" smashed="yes" grouprefs="MAIN_IC">
+<attribute name="NAME" x="157.48" y="58.6486" size="1.778" layer="95"/>
+<attribute name="VALUE" x="157.48" y="53.848" size="1.778" layer="96"/>
 </instance>
-<instance part="P+3" gate="VCC" x="170.18" y="60.96" smashed="yes" grouprefs="MAIN_IC">
-<attribute name="VALUE" x="167.64" y="58.42" size="1.778" layer="96" rot="R90"/>
+<instance part="P+3" gate="VCC" x="170.18" y="62.23" smashed="yes" grouprefs="MAIN_IC">
+<attribute name="VALUE" x="167.64" y="59.69" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C9" gate="G$1" x="156.21" y="0" smashed="yes" grouprefs="MAIN_IC">
-<attribute name="NAME" x="160.274" y="-2.159" size="1.778" layer="95"/>
-<attribute name="VALUE" x="157.734" y="-4.699" size="1.778" layer="96"/>
+<instance part="C9" gate="G$1" x="154.94" y="0" smashed="yes" grouprefs="MAIN_IC">
+<attribute name="NAME" x="159.004" y="-2.159" size="1.778" layer="95"/>
+<attribute name="VALUE" x="156.464" y="-4.699" size="1.778" layer="96"/>
 </instance>
-<instance part="C10" gate="G$1" x="157.48" y="38.1" smashed="yes" grouprefs="MAIN_IC">
-<attribute name="NAME" x="159.004" y="38.481" size="1.778" layer="95"/>
-<attribute name="VALUE" x="159.004" y="33.401" size="1.778" layer="96"/>
-</instance>
-<instance part="C11" gate="G$1" x="168.91" y="0" smashed="yes" grouprefs="MAIN_IC">
-<attribute name="NAME" x="172.974" y="-2.159" size="1.778" layer="95"/>
-<attribute name="VALUE" x="170.434" y="-4.699" size="1.778" layer="96"/>
-</instance>
-<instance part="C7" gate="G$1" x="181.61" y="0" smashed="yes" grouprefs="MAIN_IC">
-<attribute name="NAME" x="185.674" y="-2.159" size="1.778" layer="95"/>
-<attribute name="VALUE" x="183.134" y="-4.699" size="1.778" layer="96"/>
+<instance part="C10" gate="G$1" x="157.48" y="41.91" smashed="yes" grouprefs="MAIN_IC">
+<attribute name="NAME" x="159.004" y="42.291" size="1.778" layer="95"/>
+<attribute name="VALUE" x="159.004" y="37.211" size="1.778" layer="96"/>
 </instance>
 <instance part="C6" gate="G$1" x="165.1" y="72.39" smashed="yes" grouprefs="MAIN_IC">
 <attribute name="NAME" x="166.624" y="72.771" size="1.778" layer="95"/>
@@ -11379,14 +11456,6 @@ balanced them and transmit all information to MasterBMS</text>
 <instance part="C4" gate="G$1" x="139.7" y="71.12" smashed="yes" rot="MR0" grouprefs="MAIN_IC">
 <attribute name="NAME" x="141.224" y="71.501" size="1.778" layer="95"/>
 <attribute name="VALUE" x="140.589" y="66.421" size="1.778" layer="96"/>
-</instance>
-<instance part="R6" gate="G$1" x="1.27" y="-71.12" smashed="yes" rot="R90">
-<attribute name="NAME" x="2.54" y="-70.8914" size="1.778" layer="95"/>
-<attribute name="VALUE" x="2.54" y="-73.152" size="1.778" layer="96"/>
-</instance>
-<instance part="C12" gate="G$1" x="21.59" y="-69.85" smashed="yes">
-<attribute name="NAME" x="24.384" y="-70.739" size="1.778" layer="95"/>
-<attribute name="VALUE" x="24.384" y="-73.279" size="1.778" layer="96"/>
 </instance>
 <instance part="R23" gate="G$1" x="43.18" y="58.42" smashed="yes" grouprefs="MAIN_IC">
 <attribute name="NAME" x="39.37" y="59.9186" size="1.778" layer="95"/>
@@ -11972,15 +12041,15 @@ balanced them and transmit all information to MasterBMS</text>
 <instance part="DR5" gate="G$1" x="-97.79" y="-30.48" smashed="yes" rot="R180" grouprefs="EXTRA_BALANCING_CIRCIUTRY">
 <attribute name="NAME" x="-100.33" y="-30.48" size="1.27" layer="95" rot="R180"/>
 </instance>
-<instance part="R44" gate="G$1" x="179.07" y="77.47" smashed="yes" rot="R180">
+<instance part="R44" gate="G$1" x="179.07" y="77.47" smashed="yes" rot="R180" grouprefs="MAIN_IC">
 <attribute name="NAME" x="181.61" y="81.0514" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="181.61" y="75.692" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="D13" gate="G$1" x="189.23" y="69.85" smashed="yes" rot="R270">
+<instance part="D13" gate="G$1" x="189.23" y="69.85" smashed="yes" rot="R270" grouprefs="MAIN_IC">
 <attribute name="NAME" x="191.008" y="72.644" size="1.778" layer="95"/>
 <attribute name="VALUE" x="188.722" y="69.215" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND11" gate="1" x="189.23" y="62.23" smashed="yes">
+<instance part="GND11" gate="1" x="189.23" y="62.23" smashed="yes" grouprefs="MAIN_IC">
 <attribute name="VALUE" x="186.69" y="59.69" size="1.778" layer="96"/>
 </instance>
 <instance part="J1" gate="B" x="-3.81" y="-17.78" smashed="yes" rot="R180" grouprefs="MAIN_IC">
@@ -12077,23 +12146,36 @@ balanced them and transmit all information to MasterBMS</text>
 <instance part="GND43" gate="1" x="12.7" y="-80.01" smashed="yes">
 <attribute name="VALUE" x="10.16" y="-82.55" size="1.778" layer="96"/>
 </instance>
-<instance part="P3" gate="G$1" x="181.61" y="7.62" smashed="yes" rot="R90">
-<attribute name="NAME" x="182.88" y="8.255" size="1.27" layer="95"/>
+<instance part="AVDD" gate="G$1" x="172.72" y="80.01" smashed="yes" rot="R90" grouprefs="MAIN_IC">
+<attribute name="NAME" x="166.37" y="80.645" size="1.27" layer="95"/>
 </instance>
-<instance part="P4" gate="G$1" x="172.72" y="80.01" smashed="yes" rot="R90">
-<attribute name="NAME" x="168.91" y="80.645" size="1.27" layer="95"/>
-</instance>
-<instance part="P8" gate="G$1" x="148.59" y="-7.62" smashed="yes" rot="R180">
+<instance part="VSS" gate="G$1" x="148.59" y="-7.62" smashed="yes" rot="R180">
 <attribute name="NAME" x="147.32" y="-9.525" size="1.27" layer="95" rot="R180"/>
 </instance>
-<instance part="P9" gate="G$1" x="120.65" y="67.31" smashed="yes" rot="R90">
-<attribute name="NAME" x="119.38" y="69.215" size="1.27" layer="95" rot="R180"/>
-</instance>
-<instance part="P1" gate="G$1" x="110.49" y="54.61" smashed="yes" rot="MR0">
+<instance part="BAT" gate="G$1" x="110.49" y="54.61" smashed="yes" rot="MR0">
 <attribute name="NAME" x="110.49" y="55.88" size="1.27" layer="95" rot="MR90"/>
 </instance>
-<instance part="P2" gate="G$1" x="142.24" y="74.93" smashed="yes" rot="MR180">
+<instance part="REF" gate="G$1" x="142.24" y="74.93" smashed="yes" rot="MR180">
 <attribute name="NAME" x="143.51" y="77.47" size="1.27" layer="95" rot="MR180"/>
+</instance>
+<instance part="C12" gate="G$1" x="1.27" y="-71.12" smashed="yes">
+<attribute name="NAME" x="4.064" y="-72.009" size="1.778" layer="95"/>
+<attribute name="VALUE" x="4.064" y="-74.549" size="1.778" layer="96"/>
+</instance>
+<instance part="R6" gate="G$1" x="21.59" y="-72.39" smashed="yes" rot="R90">
+<attribute name="NAME" x="22.86" y="-72.1614" size="1.778" layer="95"/>
+<attribute name="VALUE" x="22.86" y="-74.422" size="1.778" layer="96"/>
+</instance>
+<instance part="VLDO" gate="G$1" x="161.29" y="7.62" smashed="yes" rot="R90" grouprefs="MAIN_IC">
+<attribute name="NAME" x="162.56" y="8.255" size="1.27" layer="95"/>
+</instance>
+<instance part="C7" gate="G$1" x="167.64" y="0" smashed="yes" grouprefs="MAIN_IC">
+<attribute name="NAME" x="170.434" y="-2.159" size="1.778" layer="95"/>
+<attribute name="VALUE" x="167.894" y="-4.699" size="1.778" layer="96"/>
+</instance>
+<instance part="C11" gate="G$1" x="180.34" y="13.97" smashed="yes">
+<attribute name="NAME" x="184.404" y="11.811" size="1.778" layer="95"/>
+<attribute name="VALUE" x="180.594" y="9.271" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -12103,35 +12185,36 @@ balanced them and transmit all information to MasterBMS</text>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="170.18" y1="35.56" x2="170.18" y2="30.48" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<wire x1="170.18" y1="30.48" x2="170.18" y2="29.21" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<wire x1="148.59" y1="30.48" x2="157.48" y2="30.48" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="170.18" y1="38.1" x2="170.18" y2="35.56" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="170.18" y1="35.56" x2="170.18" y2="34.29" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="33.02" x2="157.48" y2="30.48" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="157.48" y1="36.83" x2="157.48" y2="35.56" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="U1" gate="G$1" pin="DVSS"/>
-<wire x1="157.48" y1="30.48" x2="170.18" y2="30.48" width="0.1524" layer="91"/>
-<junction x="157.48" y="30.48"/>
-<junction x="170.18" y="30.48"/>
+<wire x1="157.48" y1="35.56" x2="170.18" y2="35.56" width="0.1524" layer="91"/>
+<junction x="157.48" y="35.56"/>
+<junction x="170.18" y="35.56"/>
+<wire x1="148.59" y1="30.48" x2="157.48" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="30.48" x2="157.48" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="CVSS"/>
 <wire x1="148.59" y1="7.62" x2="151.13" y2="7.62" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <wire x1="151.13" y1="7.62" x2="151.13" y2="-7.62" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="C11" gate="G$1" pin="2"/>
 <wire x1="151.13" y1="-7.62" x2="151.13" y2="-10.16" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<wire x1="168.91" y1="-7.62" x2="168.91" y2="-5.08" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="181.61" y1="-5.08" x2="181.61" y2="-7.62" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<wire x1="181.61" y1="-7.62" x2="168.91" y2="-7.62" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<junction x="168.91" y="-7.62" grouprefs="MAIN_IC"/>
-<wire x1="151.13" y1="-7.62" x2="156.21" y2="-7.62" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="167.64" y1="-7.62" x2="167.64" y2="-5.08" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="180.34" y1="8.89" x2="180.34" y2="-7.62" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="180.34" y1="-7.62" x2="167.64" y2="-7.62" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<junction x="167.64" y="-7.62" grouprefs="MAIN_IC"/>
+<wire x1="151.13" y1="-7.62" x2="154.94" y2="-7.62" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <junction x="151.13" y="-7.62" grouprefs="MAIN_IC"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="156.21" y1="-7.62" x2="168.91" y2="-7.62" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<wire x1="156.21" y1="-5.08" x2="156.21" y2="-7.62" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<junction x="156.21" y="-7.62" grouprefs="MAIN_IC"/>
-<pinref part="P8" gate="G$1" pin="P$1"/>
+<wire x1="154.94" y1="-7.62" x2="167.64" y2="-7.62" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="154.94" y1="-5.08" x2="154.94" y2="-7.62" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<junction x="154.94" y="-7.62" grouprefs="MAIN_IC"/>
+<pinref part="VSS" gate="G$1" pin="P$1"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<pinref part="C7" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="C19" gate="G$1" pin="1"/>
@@ -12150,7 +12233,7 @@ balanced them and transmit all information to MasterBMS</text>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="139.7" y1="60.96" x2="139.7" y2="64.77" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="139.7" y1="62.23" x2="139.7" y2="64.77" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="127" y1="66.04" x2="127" y2="64.77" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="U1" gate="G$1" pin="AVSS@1"/>
@@ -12165,11 +12248,9 @@ balanced them and transmit all information to MasterBMS</text>
 <wire x1="127" y1="64.77" x2="139.7" y2="64.77" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <junction x="139.7" y="64.77" grouprefs="MAIN_IC"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="67.31" x2="165.1" y2="64.77" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="64.77" x2="152.4" y2="64.77" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="67.31" x2="165.1" y2="64.77" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="165.1" y1="64.77" x2="152.4" y2="64.77" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <junction x="152.4" y="64.77"/>
-<pinref part="P9" gate="G$1" pin="P$1"/>
-<junction x="120.65" y="64.77"/>
 </segment>
 <segment>
 <pinref part="C40" gate="G$1" pin="1"/>
@@ -12257,7 +12338,7 @@ balanced them and transmit all information to MasterBMS</text>
 <segment>
 <pinref part="D13" gate="G$1" pin="C"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="189.23" y1="67.31" x2="189.23" y2="64.77" width="0.1524" layer="91"/>
+<wire x1="189.23" y1="67.31" x2="189.23" y2="64.77" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
 <pinref part="C25" gate="G$1" pin="1"/>
@@ -12377,14 +12458,13 @@ balanced them and transmit all information to MasterBMS</text>
 <wire x1="30.48" y1="-96.52" x2="30.48" y2="-102.87" width="0.1524" layer="91" grouprefs="JUMPER_GPIO_TO_GND_CONNECTION"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="GND43" gate="1" pin="GND"/>
 <wire x1="1.27" y1="-76.2" x2="1.27" y2="-77.47" width="0.1524" layer="91"/>
 <wire x1="1.27" y1="-77.47" x2="12.7" y2="-77.47" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="2"/>
-<wire x1="21.59" y1="-74.93" x2="21.59" y2="-77.47" width="0.1524" layer="91"/>
 <wire x1="21.59" y1="-77.47" x2="12.7" y2="-77.47" width="0.1524" layer="91"/>
 <junction x="12.7" y="-77.47"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="C12" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="VCC" class="1">
@@ -12400,12 +12480,12 @@ balanced them and transmit all information to MasterBMS</text>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="166.37" y1="55.88" x2="170.18" y2="55.88" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="166.37" y1="57.15" x2="170.18" y2="57.15" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
-<wire x1="170.18" y1="55.88" x2="170.18" y2="58.42" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="170.18" y1="57.15" x2="170.18" y2="59.69" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="55.88" x2="170.18" y2="43.18" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<junction x="170.18" y="55.88" grouprefs="MAIN_IC"/>
+<wire x1="170.18" y1="57.15" x2="170.18" y2="45.72" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<junction x="170.18" y="57.15" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
 <wire x1="-120.65" y1="-111.76" x2="-132.08" y2="-111.76" width="0.1524" layer="91" grouprefs="STD_BALANCING"/>
@@ -12439,39 +12519,9 @@ balanced them and transmit all information to MasterBMS</text>
 <net name="LDOIN" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="140.97" y1="50.8" x2="140.97" y2="55.88" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<wire x1="140.97" y1="55.88" x2="156.21" y2="55.88" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="140.97" y1="50.8" x2="140.97" y2="57.15" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="140.97" y1="57.15" x2="156.21" y2="57.15" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="U1" gate="G$1" pin="LDOIN"/>
-</segment>
-</net>
-<net name="VIO" class="0">
-<segment>
-<wire x1="138.43" y1="53.34" x2="153.67" y2="53.34" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<wire x1="153.67" y1="53.34" x2="153.67" y2="25.4" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<wire x1="153.67" y1="25.4" x2="153.67" y2="5.08" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<wire x1="148.59" y1="25.4" x2="153.67" y2="25.4" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<junction x="153.67" y="25.4" grouprefs="MAIN_IC"/>
-<wire x1="138.43" y1="50.8" x2="138.43" y2="53.34" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<pinref part="U1" gate="G$1" pin="VIO"/>
-<pinref part="U1" gate="G$1" pin="VLDO"/>
-<wire x1="153.67" y1="25.4" x2="158.75" y2="25.4" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<label x="158.75" y="25.4" size="1.778" layer="95" grouprefs="MAIN_IC"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="181.61" y1="5.08" x2="181.61" y2="2.54" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="168.91" y1="5.08" x2="168.91" y2="2.54" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<junction x="168.91" y="5.08" grouprefs="MAIN_IC"/>
-<wire x1="168.91" y1="5.08" x2="181.61" y2="5.08" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="156.21" y1="5.08" x2="156.21" y2="2.54" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<wire x1="156.21" y1="5.08" x2="168.91" y2="5.08" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<junction x="156.21" y="5.08" grouprefs="MAIN_IC"/>
-<wire x1="148.59" y1="5.08" x2="153.67" y2="5.08" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<pinref part="U1" gate="G$1" pin="CVDD"/>
-<wire x1="153.67" y1="5.08" x2="156.21" y2="5.08" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<junction x="153.67" y="5.08" grouprefs="MAIN_IC"/>
-<pinref part="P3" gate="G$1" pin="P$1"/>
-<junction x="181.61" y="5.08"/>
 </segment>
 </net>
 <net name="DVDD" class="0">
@@ -12479,7 +12529,7 @@ balanced them and transmit all information to MasterBMS</text>
 <wire x1="148.59" y1="33.02" x2="148.59" y2="45.72" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="U1" gate="G$1" pin="DVDD"/>
 <pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="157.48" y1="40.64" x2="157.48" y2="45.72" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="157.48" y1="44.45" x2="157.48" y2="45.72" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <wire x1="157.48" y1="45.72" x2="148.59" y2="45.72" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 </segment>
 </net>
@@ -12493,11 +12543,11 @@ balanced them and transmit all information to MasterBMS</text>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="77.47" x2="165.1" y2="74.93" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <label x="165.1" y="77.47" size="1.778" layer="95" grouprefs="MAIN_IC"/>
-<wire x1="165.1" y1="77.47" x2="172.72" y2="77.47" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="77.47" x2="172.72" y2="77.47" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="R44" gate="G$1" pin="2"/>
-<pinref part="P4" gate="G$1" pin="P$1"/>
-<wire x1="172.72" y1="77.47" x2="173.99" y2="77.47" width="0.1524" layer="91"/>
-<junction x="172.72" y="77.47"/>
+<pinref part="AVDD" gate="G$1" pin="P$1"/>
+<wire x1="172.72" y1="77.47" x2="173.99" y2="77.47" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<junction x="172.72" y="77.47" grouprefs="MAIN_IC"/>
 </segment>
 </net>
 <net name="REF1" class="0">
@@ -12510,7 +12560,7 @@ balanced them and transmit all information to MasterBMS</text>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="76.2" x2="139.7" y2="74.93" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <label x="139.7" y="74.93" size="1.778" layer="95" rot="R90" grouprefs="MAIN_IC"/>
-<pinref part="P2" gate="G$1" pin="P$1"/>
+<pinref part="REF" gate="G$1" pin="P$1"/>
 <wire x1="139.7" y1="74.93" x2="139.7" y2="73.66" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <junction x="139.7" y="74.93"/>
 </segment>
@@ -12520,7 +12570,7 @@ balanced them and transmit all information to MasterBMS</text>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="BAT"/>
 <wire x1="113.03" y1="59.69" x2="113.03" y2="54.61" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<pinref part="P1" gate="G$1" pin="P$1"/>
+<pinref part="BAT" gate="G$1" pin="P$1"/>
 <wire x1="113.03" y1="54.61" x2="113.03" y2="50.8" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <junction x="113.03" y="54.61"/>
 </segment>
@@ -12528,17 +12578,17 @@ balanced them and transmit all information to MasterBMS</text>
 <net name="VPROG" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="VPROG"/>
-<wire x1="148.59" y1="27.94" x2="158.75" y2="27.94" width="0.1524" layer="91"/>
-<label x="158.75" y="27.94" size="1.778" layer="95"/>
+<wire x1="148.59" y1="27.94" x2="152.4" y2="27.94" width="0.1524" layer="91"/>
+<label x="152.4" y="27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="14"/>
 <wire x1="15.24" y1="-64.77" x2="21.59" y2="-64.77" width="0.1524" layer="91"/>
 <label x="22.86" y="-64.77" size="1.778" layer="95"/>
-<pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="21.59" y1="-64.77" x2="22.86" y2="-64.77" width="0.1524" layer="91"/>
 <wire x1="21.59" y1="-67.31" x2="21.59" y2="-64.77" width="0.1524" layer="91"/>
 <junction x="21.59" y="-64.77"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="BAT3" class="0">
@@ -12722,8 +12772,8 @@ balanced them and transmit all information to MasterBMS</text>
 <net name="GPIO1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GIPO1"/>
-<wire x1="148.59" y1="10.16" x2="158.75" y2="10.16" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<label x="158.75" y="10.16" size="1.778" layer="95" grouprefs="MAIN_IC"/>
+<wire x1="148.59" y1="10.16" x2="152.4" y2="10.16" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<label x="152.4" y="10.16" size="1.778" layer="95" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
 <pinref part="C14" gate="G$1" pin="2"/>
@@ -12742,8 +12792,8 @@ balanced them and transmit all information to MasterBMS</text>
 <net name="GPIO6" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GIPO6"/>
-<wire x1="148.59" y1="22.86" x2="158.75" y2="22.86" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<label x="158.75" y="22.86" size="1.778" layer="95" grouprefs="MAIN_IC"/>
+<wire x1="148.59" y1="22.86" x2="152.4" y2="22.86" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<label x="152.4" y="22.86" size="1.778" layer="95" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
@@ -12767,8 +12817,8 @@ balanced them and transmit all information to MasterBMS</text>
 <net name="GPIO5" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GIPO5"/>
-<wire x1="148.59" y1="20.32" x2="158.75" y2="20.32" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<label x="158.75" y="20.32" size="1.778" layer="95" grouprefs="MAIN_IC"/>
+<wire x1="148.59" y1="20.32" x2="152.4" y2="20.32" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<label x="152.4" y="20.32" size="1.778" layer="95" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
 <pinref part="R22" gate="G$1" pin="1"/>
@@ -12792,8 +12842,8 @@ balanced them and transmit all information to MasterBMS</text>
 <net name="GPIO4" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GIPO4"/>
-<wire x1="148.59" y1="17.78" x2="158.75" y2="17.78" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<label x="158.75" y="17.78" size="1.778" layer="95" grouprefs="MAIN_IC"/>
+<wire x1="148.59" y1="17.78" x2="152.4" y2="17.78" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<label x="152.4" y="17.78" size="1.778" layer="95" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
 <wire x1="132.08" y1="-114.3" x2="135.89" y2="-114.3" width="0.1524" layer="91" grouprefs="10K_NTC_TEMP_SENSING"/>
@@ -12817,8 +12867,8 @@ balanced them and transmit all information to MasterBMS</text>
 <net name="GPIO3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GIPO3"/>
-<wire x1="148.59" y1="15.24" x2="158.75" y2="15.24" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<label x="158.75" y="15.24" size="1.778" layer="95" grouprefs="MAIN_IC"/>
+<wire x1="148.59" y1="15.24" x2="152.4" y2="15.24" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<label x="152.4" y="15.24" size="1.778" layer="95" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
 <pinref part="R65" gate="G$1" pin="1"/>
@@ -12842,8 +12892,8 @@ balanced them and transmit all information to MasterBMS</text>
 <net name="GPIO2" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GIPO2"/>
-<wire x1="148.59" y1="12.7" x2="158.75" y2="12.7" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<label x="158.75" y="12.7" size="1.778" layer="95" grouprefs="MAIN_IC"/>
+<wire x1="148.59" y1="12.7" x2="152.4" y2="12.7" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<label x="152.4" y="12.7" size="1.778" layer="95" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
 <pinref part="C15" gate="G$1" pin="2"/>
@@ -13893,9 +13943,9 @@ balanced them and transmit all information to MasterBMS</text>
 <net name="N$28" class="0">
 <segment>
 <pinref part="D13" gate="G$1" pin="A"/>
-<wire x1="189.23" y1="74.93" x2="189.23" y2="77.47" width="0.1524" layer="91"/>
+<wire x1="189.23" y1="74.93" x2="189.23" y2="77.47" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="R44" gate="G$1" pin="1"/>
-<wire x1="189.23" y1="77.47" x2="184.15" y2="77.47" width="0.1524" layer="91"/>
+<wire x1="189.23" y1="77.47" x2="184.15" y2="77.47" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 </segment>
 </net>
 <net name="4" class="0">
@@ -14036,28 +14086,68 @@ balanced them and transmit all information to MasterBMS</text>
 <net name="N$1" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="13"/>
-<pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="-64.77" x2="1.27" y2="-64.77" width="0.1524" layer="91"/>
-<wire x1="1.27" y1="-64.77" x2="1.27" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="1.27" y1="-64.77" x2="1.27" y2="-68.58" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="VIO" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="VIO"/>
+<label x="185.42" y="25.4" size="1.778" layer="95" grouprefs="MAIN_IC"/>
+<wire x1="148.59" y1="25.4" x2="180.34" y2="25.4" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="180.34" y1="25.4" x2="185.42" y2="25.4" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="180.34" y1="16.51" x2="180.34" y2="25.4" width="0.1524" layer="91"/>
+<junction x="180.34" y="25.4"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="VLDO" class="0">
+<segment>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="5.08" x2="167.64" y2="2.54" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="161.29" y1="5.08" x2="167.64" y2="5.08" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<pinref part="VLDO" gate="G$1" pin="P$1"/>
+<junction x="161.29" y="5.08" grouprefs="MAIN_IC"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="154.94" y1="5.08" x2="154.94" y2="2.54" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="154.94" y1="5.08" x2="161.29" y2="5.08" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<junction x="154.94" y="5.08" grouprefs="MAIN_IC"/>
+<wire x1="148.59" y1="5.08" x2="154.94" y2="5.08" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<pinref part="U1" gate="G$1" pin="CVDD"/>
+<wire x1="167.64" y1="5.08" x2="172.72" y2="5.08" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<junction x="167.64" y="5.08" grouprefs="MAIN_IC"/>
+<label x="172.72" y="5.08" size="1.778" layer="95" grouprefs="MAIN_IC"/>
+</segment>
+<segment>
+<wire x1="138.43" y1="50.8" x2="138.43" y2="54.61" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<pinref part="U1" gate="G$1" pin="VLDO"/>
+<label x="138.43" y="52.07" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
 </sheet>
 <sheet>
 <plain>
-<text x="22.86" y="64.77" size="1.778" layer="91" rot="R180" grouprefs="UART_TO_ISO_COMMUNICATION1">For stacked devices 
+<text x="22.86" y="60.96" size="1.778" layer="91" rot="R180" grouprefs="UART_TO_ISO_COMMUNICATION1">For stacked devices 
 WAKEUP should be 
 tied to AVSS.
 RX pulled up
 NFAULT and TX
 left unconnected</text>
-<text x="0" y="87.63" size="1.778" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1">10 kΩ - 100 kΩ
+<text x="-3.81" y="87.63" size="1.778" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1">10 kΩ - 100 kΩ
 RX pull up resistor
 nominal value</text>
 <text x="93.98" y="-105.41" size="1.9304" layer="97">Slave BMS is a part of Battery Management System,
 that measure battery module temperature, individual cells voltages, 
 balanced them and transmit all information to MasterBMS</text>
 <text x="93.98" y="-123.19" size="1.778" layer="97">https://github.com/701lab/SlaveBMS</text>
+<text x="-1.27" y="109.22" size="1.778" layer="91">For BASE device
+connect VIO to 
+SYS_RAIL 
+
+For STACK device
+to CVDD 5V signal</text>
 </plain>
 <instances>
 <instance part="R3" gate="G$1" x="-151.13" y="43.18" smashed="yes" rot="MR270" grouprefs="STAK_DEVICE_COMMUNICATION1">
@@ -14268,8 +14358,8 @@ balanced them and transmit all information to MasterBMS</text>
 <attribute name="VALUE" x="-111.6838" y="-13.5128" size="1.778" layer="96" ratio="10" rot="SR180"/>
 <attribute name="NAME" x="-114.2746" y="-4.6228" size="1.778" layer="95" ratio="10" rot="SR180"/>
 </instance>
-<instance part="GND23" gate="1" x="57.15" y="49.53" smashed="yes" grouprefs="UART_TO_ISO_COMMUNICATION1">
-<attribute name="VALUE" x="54.61" y="46.99" size="1.778" layer="96"/>
+<instance part="GND23" gate="1" x="57.15" y="45.72" smashed="yes" grouprefs="UART_TO_ISO_COMMUNICATION1">
+<attribute name="VALUE" x="54.61" y="43.18" size="1.778" layer="96"/>
 </instance>
 <instance part="R45" gate="G$1" x="52.07" y="90.17" smashed="yes" rot="R90" grouprefs="UART_TO_ISO_COMMUNICATION1">
 <attribute name="NAME" x="58.42" y="91.2114" size="1.778" layer="95" rot="R180"/>
@@ -14279,27 +14369,24 @@ balanced them and transmit all information to MasterBMS</text>
 <attribute name="NAME" x="46.99" y="91.2114" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="46.99" y="88.392" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R47" gate="G$1" x="29.21" y="90.17" smashed="yes" rot="R90" grouprefs="UART_TO_ISO_COMMUNICATION1">
-<attribute name="NAME" x="35.56" y="91.2114" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="35.56" y="88.392" size="1.778" layer="96" rot="R180"/>
+<instance part="R47" gate="G$1" x="25.4" y="90.17" smashed="yes" rot="R90" grouprefs="UART_TO_ISO_COMMUNICATION1">
+<attribute name="NAME" x="31.75" y="91.2114" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="31.75" y="88.392" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C57" gate="G$1" x="31.75" y="60.96" smashed="yes" rot="R180" grouprefs="UART_TO_ISO_COMMUNICATION1">
-<attribute name="NAME" x="39.116" y="63.119" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="39.116" y="60.579" size="1.778" layer="96" rot="R180"/>
+<instance part="C57" gate="G$1" x="29.21" y="57.15" smashed="yes" rot="R180" grouprefs="UART_TO_ISO_COMMUNICATION1">
+<attribute name="NAME" x="36.576" y="59.309" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="36.576" y="56.769" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C58" gate="G$1" x="43.18" y="60.96" smashed="yes" rot="R180" grouprefs="UART_TO_ISO_COMMUNICATION1">
-<attribute name="NAME" x="50.546" y="63.119" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="50.546" y="60.579" size="1.778" layer="96" rot="R180"/>
+<instance part="C58" gate="G$1" x="43.18" y="57.15" smashed="yes" rot="R180" grouprefs="UART_TO_ISO_COMMUNICATION1">
+<attribute name="NAME" x="50.546" y="59.309" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="50.546" y="56.769" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C59" gate="G$1" x="54.61" y="60.96" smashed="yes" rot="R180" grouprefs="UART_TO_ISO_COMMUNICATION1">
-<attribute name="NAME" x="61.976" y="64.389" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="61.976" y="61.849" size="1.778" layer="96" rot="R180"/>
+<instance part="C59" gate="G$1" x="54.61" y="57.15" smashed="yes" rot="R180" grouprefs="UART_TO_ISO_COMMUNICATION1">
+<attribute name="NAME" x="61.976" y="60.579" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="61.976" y="58.039" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SB1" gate="G$1" x="26.67" y="58.42" smashed="yes" rot="R90" grouprefs="UART_TO_ISO_COMMUNICATION1">
-<attribute name="NAME" x="27.94" y="54.61" size="1.778" layer="95" align="center-left"/>
-</instance>
-<instance part="GND24" gate="1" x="26.67" y="49.53" smashed="yes" grouprefs="UART_TO_ISO_COMMUNICATION1">
-<attribute name="VALUE" x="24.13" y="46.99" size="1.778" layer="96"/>
+<instance part="GND24" gate="1" x="39.37" y="45.72" smashed="yes" grouprefs="UART_TO_ISO_COMMUNICATION1">
+<attribute name="VALUE" x="36.83" y="43.18" size="1.778" layer="96"/>
 </instance>
 <instance part="R74" gate="G$1" x="58.42" y="77.47" smashed="yes" rot="R180" grouprefs="UART_TO_ISO_COMMUNICATION1">
 <attribute name="NAME" x="55.88" y="78.9686" size="1.778" layer="95"/>
@@ -14421,6 +14508,10 @@ balanced them and transmit all information to MasterBMS</text>
 <instance part="GND" gate="G$1" x="48.26" y="-40.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="46.99" y="-33.02" size="1.778" layer="95" align="center-left"/>
 </instance>
+<instance part="JP5" gate="A" x="27.94" y="71.12" smashed="yes">
+<attribute name="NAME" x="16.51" y="65.405" size="1.778" layer="95"/>
+<attribute name="VALUE" x="21.59" y="63.5" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14493,27 +14584,28 @@ balanced them and transmit all information to MasterBMS</text>
 <segment>
 <pinref part="GND23" gate="1" pin="GND"/>
 <pinref part="C59" gate="G$1" pin="1"/>
-<wire x1="57.15" y1="57.15" x2="57.15" y2="52.07" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="54.61" y1="58.42" x2="54.61" y2="57.15" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="54.61" y1="57.15" x2="57.15" y2="57.15" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<junction x="57.15" y="57.15" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="57.15" y1="53.34" x2="57.15" y2="48.26" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="54.61" y1="54.61" x2="54.61" y2="53.34" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="54.61" y1="53.34" x2="57.15" y2="53.34" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<junction x="57.15" y="53.34" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <pinref part="C58" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="58.42" x2="43.18" y2="57.15" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="43.18" y1="57.15" x2="54.61" y2="57.15" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<junction x="54.61" y="57.15" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="43.18" y1="54.61" x2="43.18" y2="53.34" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="43.18" y1="53.34" x2="54.61" y2="53.34" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<junction x="54.61" y="53.34" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <pinref part="C57" gate="G$1" pin="1"/>
-<wire x1="31.75" y1="58.42" x2="31.75" y2="57.15" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="31.75" y1="57.15" x2="43.18" y2="57.15" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<junction x="43.18" y="57.15" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="57.15" y1="57.15" x2="73.66" y2="57.15" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="73.66" y1="57.15" x2="73.66" y2="68.58" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="29.21" y1="54.61" x2="29.21" y2="53.34" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="29.21" y1="53.34" x2="43.18" y2="53.34" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<junction x="43.18" y="53.34" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="57.15" y1="53.34" x2="73.66" y2="53.34" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="73.66" y1="53.34" x2="73.66" y2="68.58" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <wire x1="73.66" y1="68.58" x2="74.93" y2="68.58" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <pinref part="J12" gate="-6" pin="S"/>
 </segment>
 <segment>
 <pinref part="GND24" gate="1" pin="GND"/>
-<pinref part="SB1" gate="G$1" pin="1"/>
-<wire x1="26.67" y1="52.07" x2="26.67" y2="53.848" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="39.37" y1="48.26" x2="39.37" y2="68.58" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="39.37" y1="68.58" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="JP5" gate="A" pin="6"/>
 </segment>
 </net>
 <net name="FL1_N" class="0">
@@ -14944,40 +15036,19 @@ balanced them and transmit all information to MasterBMS</text>
 <wire x1="-127" y1="-38.1" x2="-146.05" y2="-38.1" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 </segment>
 </net>
-<net name="VIO" class="0">
-<segment>
-<wire x1="74.93" y1="81.28" x2="72.39" y2="81.28" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="72.39" y1="81.28" x2="72.39" y2="97.79" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="72.39" y1="97.79" x2="52.07" y2="97.79" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="52.07" y1="97.79" x2="40.64" y2="97.79" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<pinref part="R46" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="95.25" x2="40.64" y2="97.79" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<junction x="40.64" y="97.79" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<pinref part="R45" gate="G$1" pin="2"/>
-<wire x1="52.07" y1="95.25" x2="52.07" y2="97.79" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<junction x="52.07" y="97.79" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="29.21" y1="97.79" x2="0" y2="97.79" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<pinref part="R47" gate="G$1" pin="2"/>
-<wire x1="29.21" y1="95.25" x2="29.21" y2="97.79" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<junction x="29.21" y="97.79" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<label x="0" y="97.79" size="1.778" layer="95" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="40.64" y1="97.79" x2="29.21" y2="97.79" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<pinref part="J12" gate="-4" pin="S"/>
-</segment>
-</net>
 <net name="NFAULT" class="0">
 <segment>
 <pinref part="C59" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="67.31" x2="54.61" y2="67.31" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="54.61" y1="67.31" x2="52.07" y2="67.31" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="54.61" y1="66.04" x2="54.61" y2="67.31" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<junction x="54.61" y="67.31" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="71.12" y1="63.5" x2="54.61" y2="63.5" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="54.61" y1="63.5" x2="52.07" y2="63.5" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="54.61" y1="62.23" x2="54.61" y2="63.5" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<junction x="54.61" y="63.5" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <pinref part="R45" gate="G$1" pin="1"/>
-<wire x1="52.07" y1="85.09" x2="52.07" y2="67.31" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<junction x="52.07" y="67.31" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="52.07" y1="67.31" x2="6.35" y2="67.31" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<label x="6.35" y="67.31" size="1.778" layer="95" rot="MR0" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="71.12" y1="67.31" x2="71.12" y2="71.12" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="52.07" y1="85.09" x2="52.07" y2="63.5" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<junction x="52.07" y="63.5" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="52.07" y1="63.5" x2="6.35" y2="63.5" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<label x="6.35" y="63.5" size="1.778" layer="95" rot="MR0" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="71.12" y1="63.5" x2="71.12" y2="71.12" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <wire x1="71.12" y1="71.12" x2="74.93" y2="71.12" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <pinref part="J12" gate="-5" pin="S"/>
 </segment>
@@ -14991,40 +15062,19 @@ balanced them and transmit all information to MasterBMS</text>
 <pinref part="J12" gate="-2" pin="S"/>
 </segment>
 </net>
-<net name="WAKEUP" class="0">
-<segment>
-<pinref part="C58" gate="G$1" pin="2"/>
-<wire x1="74.93" y1="73.66" x2="43.18" y2="73.66" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="43.18" y1="73.66" x2="40.64" y2="73.66" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="43.18" y1="66.04" x2="43.18" y2="73.66" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<junction x="43.18" y="73.66" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<pinref part="R46" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="85.09" x2="40.64" y2="73.66" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<junction x="40.64" y="73.66" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="40.64" y1="73.66" x2="26.67" y2="73.66" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<label x="6.35" y="72.39" size="1.778" layer="95" rot="MR0" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<pinref part="SB1" gate="G$1" pin="2"/>
-<wire x1="26.67" y1="62.992" x2="26.67" y2="73.66" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="26.67" y1="73.66" x2="22.86" y2="73.66" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<junction x="26.67" y="73.66" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="22.86" y1="73.66" x2="22.86" y2="72.39" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="22.86" y1="72.39" x2="6.35" y2="72.39" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<pinref part="J12" gate="-1" pin="S"/>
-</segment>
-</net>
 <net name="RX" class="0">
 <segment>
 <pinref part="R74" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="77.47" x2="31.75" y2="77.47" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="53.34" y1="77.47" x2="29.21" y2="77.47" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <label x="6.35" y="77.47" size="1.778" layer="95" rot="MR0" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <pinref part="R47" gate="G$1" pin="1"/>
-<wire x1="31.75" y1="77.47" x2="29.21" y2="77.47" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="29.21" y1="77.47" x2="6.35" y2="77.47" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<wire x1="29.21" y1="85.09" x2="29.21" y2="77.47" width="0.1524" layer="91"/>
-<junction x="29.21" y="77.47"/>
+<wire x1="29.21" y1="77.47" x2="25.4" y2="77.47" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="25.4" y1="77.47" x2="6.35" y2="77.47" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="25.4" y1="85.09" x2="25.4" y2="77.47" width="0.1524" layer="91"/>
+<junction x="25.4" y="77.47"/>
 <pinref part="C57" gate="G$1" pin="2"/>
-<wire x1="31.75" y1="66.04" x2="31.75" y2="77.47" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
-<junction x="31.75" y="77.47"/>
+<wire x1="29.21" y1="62.23" x2="29.21" y2="77.47" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<junction x="29.21" y="77.47"/>
 </segment>
 </net>
 <net name="ISO_FAULTL_N" class="0">
@@ -15195,6 +15245,68 @@ balanced them and transmit all information to MasterBMS</text>
 <pinref part="WP1" gate="1" pin="P"/>
 <wire x1="36.83" y1="-12.7" x2="74.93" y2="-12.7" width="0.1524" layer="91" grouprefs="RESISTOR_LADDER"/>
 <wire x1="74.93" y1="-12.7" x2="74.93" y2="-1.27" width="0.1524" layer="91" grouprefs="RESISTOR_LADDER"/>
+</segment>
+</net>
+<net name="125" class="0">
+<segment>
+<pinref part="C58" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="73.66" x2="40.64" y2="73.66" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="43.18" y1="62.23" x2="43.18" y2="73.66" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<pinref part="R46" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="85.09" x2="40.64" y2="73.66" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="40.64" y1="73.66" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
+<junction x="40.64" y="73.66"/>
+<pinref part="JP5" gate="A" pin="2"/>
+</segment>
+</net>
+<net name="WAKEUP" class="0">
+<segment>
+<wire x1="66.04" y1="71.12" x2="66.04" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="J12" gate="-1" pin="S"/>
+<wire x1="66.04" y1="73.66" x2="74.93" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="71.12" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="JP5" gate="A" pin="4"/>
+<label x="38.1" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SYS_RAIL" class="0">
+<segment>
+<wire x1="74.93" y1="81.28" x2="72.39" y2="81.28" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="72.39" y1="81.28" x2="72.39" y2="97.79" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="72.39" y1="97.79" x2="52.07" y2="97.79" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="52.07" y1="97.79" x2="40.64" y2="97.79" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<pinref part="R46" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="95.25" x2="40.64" y2="97.79" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<junction x="40.64" y="97.79" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<pinref part="R45" gate="G$1" pin="2"/>
+<wire x1="52.07" y1="95.25" x2="52.07" y2="97.79" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<junction x="52.07" y="97.79" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="25.4" y1="97.79" x2="19.05" y2="97.79" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<pinref part="R47" gate="G$1" pin="2"/>
+<wire x1="19.05" y1="97.79" x2="0" y2="97.79" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="25.4" y1="95.25" x2="25.4" y2="97.79" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<junction x="25.4" y="97.79" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<label x="0" y="97.79" size="1.778" layer="95" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<wire x1="40.64" y1="97.79" x2="25.4" y2="97.79" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
+<pinref part="J12" gate="-4" pin="S"/>
+<pinref part="JP5" gate="A" pin="1"/>
+<wire x1="25.4" y1="73.66" x2="19.05" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="19.05" y1="73.66" x2="19.05" y2="97.79" width="0.1524" layer="91"/>
+<junction x="19.05" y="97.79"/>
+</segment>
+</net>
+<net name="VIO" class="0">
+<segment>
+<pinref part="JP5" gate="A" pin="3"/>
+<wire x1="25.4" y1="71.12" x2="6.35" y2="71.12" width="0.1524" layer="91"/>
+<label x="6.35" y="71.12" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="VLDO" class="0">
+<segment>
+<pinref part="JP5" gate="A" pin="5"/>
+<wire x1="25.4" y1="68.58" x2="6.35" y2="68.58" width="0.1524" layer="91"/>
+<label x="6.35" y="68.58" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 </nets>
