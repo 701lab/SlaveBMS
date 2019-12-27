@@ -11378,6 +11378,8 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="C7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2u/16V"/>
 <part name="C11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2u/16V"/>
 <part name="JP5" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2"/>
+<part name="PROG+" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="SMD_PAD" device="" package3d_urn="urn:adsk.eagle:package:16041846/4"/>
+<part name="PROG-" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="SMD_PAD" device="" package3d_urn="urn:adsk.eagle:package:16041846/4"/>
 </parts>
 <sheets>
 <sheet>
@@ -12177,6 +12179,14 @@ balanced them and transmit all information to MasterBMS</text>
 <attribute name="NAME" x="184.404" y="11.811" size="1.778" layer="95"/>
 <attribute name="VALUE" x="180.594" y="9.271" size="1.778" layer="96"/>
 </instance>
+<instance part="PROG+" gate="1" x="162.56" y="27.94" smashed="yes" rot="R180">
+<attribute name="NAME" x="163.957" y="25.9842" size="1.778" layer="95"/>
+<attribute name="VALUE" x="163.703" y="31.242" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PROG-" gate="1" x="175.26" y="35.56" smashed="yes" rot="R180">
+<attribute name="NAME" x="176.657" y="34.8742" size="1.778" layer="95"/>
+<attribute name="VALUE" x="176.403" y="38.862" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -12195,6 +12205,8 @@ balanced them and transmit all information to MasterBMS</text>
 <junction x="170.18" y="35.56"/>
 <wire x1="148.59" y1="30.48" x2="157.48" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="30.48" x2="157.48" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="PROG-" gate="1" pin="P"/>
+<wire x1="172.72" y1="35.56" x2="170.18" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="CVSS"/>
@@ -12578,8 +12590,9 @@ balanced them and transmit all information to MasterBMS</text>
 <net name="VPROG" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="VPROG"/>
-<wire x1="148.59" y1="27.94" x2="152.4" y2="27.94" width="0.1524" layer="91"/>
-<label x="152.4" y="27.94" size="1.778" layer="95"/>
+<wire x1="148.59" y1="27.94" x2="160.02" y2="27.94" width="0.1524" layer="91"/>
+<label x="151.13" y="27.94" size="1.778" layer="95"/>
+<pinref part="PROG+" gate="1" pin="P"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="14"/>
