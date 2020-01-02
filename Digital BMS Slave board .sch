@@ -8228,7 +8228,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
 <text x="-1.5" y="-2.5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 </package>
-<package name="5000" urn="urn:adsk.eagle:footprint:13096597/2" library_version="10">
+<package name="TEST_RING" urn="urn:adsk.eagle:footprint:13096597/3" library_version="11">
 <pad name="1" x="0" y="0" drill="1.02" diameter="1.6"/>
 <circle x="0" y="0" radius="1.27" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
@@ -8264,9 +8264,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <packageinstance name="SMD_PAD"/>
 </packageinstances>
 </package3d>
-<package3d name="5000" urn="urn:adsk.eagle:package:13096607/2" type="model" library_version="10">
+<package3d name="5000" urn="urn:adsk.eagle:package:13096607/3" type="model" library_version="11">
 <packageinstances>
-<packageinstance name="5000"/>
+<packageinstance name="TEST_RING"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -8283,13 +8283,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <text x="-1.143" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="5000" urn="urn:adsk.eagle:symbol:13096596/1" library_version="10">
-<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
-<text x="6.35" y="5.08" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<pin name="1" x="-10.16" y="0" length="middle"/>
+<symbol name="TEST_RING" urn="urn:adsk.eagle:symbol:16170568/1" library_version="11">
+<pin name="P$1" x="-2.54" y="0" visible="off" length="short"/>
+<text x="2.54" y="0" size="1.27" layer="95">&gt;NAME</text>
+<circle x="0.762" y="0" radius="0.71841875" width="0.254" layer="94"/>
+<circle x="0.762" y="0" radius="1.27" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -8370,17 +8368,20 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="5000" urn="urn:adsk.eagle:component:13096612/2" prefix="TP" library_version="10">
+<deviceset name="TEST_RING" urn="urn:adsk.eagle:component:13096612/3" prefix="TP" library_version="11">
+<description>&lt;p&gt;Test rings are used to fixing multimeter probe and doing measurements hands-free&lt;/P&gt;
+
+&lt;p&gt;&lt;b&gt;Updated: 02.01.2020 by Denis Yaskevich, denis.jaskevich@yandex.by&lt;/b&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="5000" x="0" y="0"/>
+<gate name="G$1" symbol="TEST_RING" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="5000">
+<device name="" package="TEST_RING">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="P$1" pad="1"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:13096607/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:13096607/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -10641,7 +10642,7 @@ Metric Code Size 1608</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOLEX22-12-4062" urn="urn:adsk.eagle:component:15093419/2" prefix="J" library_version="4">
+<deviceset name="MOLEX22-12-4062" urn="urn:adsk.eagle:component:15093419/2" prefix="J" library_version="10">
 <description>&lt;b&gt;CONNECTOR&lt;/b&gt;&lt;p&gt;
 wire to board 2.54 mm (.1 inch) pitch header</description>
 <gates>
@@ -11371,7 +11372,6 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="VSS" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]"/>
 <part name="BAT" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]"/>
 <part name="REF" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]"/>
-<part name="GND" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="5000" device="" package3d_urn="urn:adsk.eagle:package:13096607/2"/>
 <part name="C12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1u/16V"/>
 <part name="R6" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="100k"/>
 <part name="VLDO" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]"/>
@@ -11380,6 +11380,14 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="JP5" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2"/>
 <part name="PROG+" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="SMD_PAD" device="" package3d_urn="urn:adsk.eagle:package:16041846/4"/>
 <part name="PROG-" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="SMD_PAD" device="" package3d_urn="urn:adsk.eagle:package:16041846/4"/>
+<part name="TP1" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_RING" device="" package3d_urn="urn:adsk.eagle:package:13096607/3"/>
+<part name="BAT6" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_RING" device="" package3d_urn="urn:adsk.eagle:package:13096607/3"/>
+<part name="BAT4" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_RING" device="" package3d_urn="urn:adsk.eagle:package:13096607/3"/>
+<part name="BAT2" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_RING" device="" package3d_urn="urn:adsk.eagle:package:13096607/3"/>
+<part name="BAT0" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_RING" device="" package3d_urn="urn:adsk.eagle:package:13096607/3"/>
+<part name="BAT1" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_RING" device="" package3d_urn="urn:adsk.eagle:package:13096607/3"/>
+<part name="BAT3" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_RING" device="" package3d_urn="urn:adsk.eagle:package:13096607/3"/>
+<part name="BAT5" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_RING" device="" package3d_urn="urn:adsk.eagle:package:13096607/3"/>
 </parts>
 <sheets>
 <sheet>
@@ -12062,11 +12070,11 @@ balanced them and transmit all information to MasterBMS</text>
 <attribute name="NAME" x="-2.54" y="64.135" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-2.54" y="80.01" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="P+5" gate="VCC" x="3.81" y="-10.16" smashed="yes">
-<attribute name="VALUE" x="3.81" y="-15.24" size="1.778" layer="96"/>
+<instance part="P+5" gate="VCC" x="11.43" y="-10.16" smashed="yes">
+<attribute name="VALUE" x="11.43" y="-15.24" size="1.778" layer="96"/>
 </instance>
-<instance part="GND22" gate="1" x="3.81" y="-26.67" smashed="yes">
-<attribute name="VALUE" x="3.81" y="-22.86" size="1.778" layer="96"/>
+<instance part="GND22" gate="1" x="11.43" y="-26.67" smashed="yes">
+<attribute name="VALUE" x="11.43" y="-22.86" size="1.778" layer="96"/>
 </instance>
 <instance part="VC0" gate="G$1" x="86.36" y="-5.08" smashed="yes" rot="MR270">
 <attribute name="NAME" x="85.09" y="-5.08" size="1.27" layer="95" rot="MR0"/>
@@ -12186,6 +12194,27 @@ balanced them and transmit all information to MasterBMS</text>
 <instance part="PROG-" gate="1" x="175.26" y="35.56" smashed="yes" rot="R180">
 <attribute name="NAME" x="176.657" y="34.8742" size="1.778" layer="95"/>
 <attribute name="VALUE" x="176.403" y="38.862" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="BAT6" gate="G$1" x="2.54" y="-10.16" smashed="yes" rot="R90">
+<attribute name="NAME" x="0" y="-7.62" size="1.27" layer="95"/>
+</instance>
+<instance part="BAT4" gate="G$1" x="7.62" y="-10.16" smashed="yes" rot="R90">
+<attribute name="NAME" x="5.08" y="-7.62" size="1.27" layer="95"/>
+</instance>
+<instance part="BAT2" gate="G$1" x="2.54" y="-27.94" smashed="yes" rot="R270">
+<attribute name="NAME" x="2.54" y="-30.48" size="1.27" layer="95" rot="R180"/>
+</instance>
+<instance part="BAT0" gate="G$1" x="7.62" y="-27.94" smashed="yes" rot="R270">
+<attribute name="NAME" x="7.62" y="-30.48" size="1.27" layer="95" rot="R180"/>
+</instance>
+<instance part="BAT1" gate="G$1" x="2.54" y="78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="2.54" y="81.28" size="1.27" layer="95"/>
+</instance>
+<instance part="BAT3" gate="G$1" x="7.62" y="78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="7.62" y="81.28" size="1.27" layer="95"/>
+</instance>
+<instance part="BAT5" gate="G$1" x="5.08" y="63.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="7.62" y="63.5" size="1.27" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -12367,9 +12396,13 @@ balanced them and transmit all information to MasterBMS</text>
 </segment>
 <segment>
 <pinref part="J1" gate="B" pin="1"/>
-<wire x1="1.27" y1="-22.86" x2="3.81" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="1.27" y1="-22.86" x2="7.62" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="3.81" y1="-22.86" x2="3.81" y2="-24.13" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-22.86" x2="11.43" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="11.43" y1="-22.86" x2="11.43" y2="-24.13" width="0.1524" layer="91"/>
+<pinref part="BAT0" gate="G$1" pin="P$1"/>
+<wire x1="7.62" y1="-25.4" x2="7.62" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="7.62" y="-22.86"/>
 </segment>
 <segment>
 <pinref part="J9" gate="B" pin="3"/>
@@ -12523,9 +12556,13 @@ balanced them and transmit all information to MasterBMS</text>
 </segment>
 <segment>
 <pinref part="J1" gate="B" pin="4"/>
-<wire x1="1.27" y1="-15.24" x2="3.81" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="1.27" y1="-15.24" x2="2.54" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
-<wire x1="3.81" y1="-12.7" x2="3.81" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-15.24" x2="11.43" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="11.43" y1="-12.7" x2="11.43" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="BAT6" gate="G$1" pin="P$1"/>
+<wire x1="2.54" y1="-12.7" x2="2.54" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="2.54" y="-15.24"/>
 </segment>
 </net>
 <net name="LDOIN" class="0">
@@ -12625,8 +12662,12 @@ balanced them and transmit all information to MasterBMS</text>
 </segment>
 <segment>
 <pinref part="J4" gate="B" pin="2"/>
-<wire x1="1.27" y1="69.85" x2="6.35" y2="69.85" width="0.1524" layer="91"/>
-<label x="5.08" y="69.85" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
+<wire x1="1.27" y1="69.85" x2="7.62" y2="69.85" width="0.1524" layer="91"/>
+<label x="10.16" y="69.85" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
+<pinref part="BAT3" gate="G$1" pin="P$1"/>
+<wire x1="7.62" y1="69.85" x2="10.16" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="76.2" x2="7.62" y2="69.85" width="0.1524" layer="91"/>
+<junction x="7.62" y="69.85"/>
 </segment>
 </net>
 <net name="BAT2" class="0">
@@ -12650,8 +12691,12 @@ balanced them and transmit all information to MasterBMS</text>
 </segment>
 <segment>
 <pinref part="J1" gate="B" pin="2"/>
-<wire x1="1.27" y1="-20.32" x2="3.81" y2="-20.32" width="0.1524" layer="91"/>
-<label x="3.81" y="-20.32" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
+<wire x1="1.27" y1="-20.32" x2="2.54" y2="-20.32" width="0.1524" layer="91"/>
+<label x="11.43" y="-20.32" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
+<pinref part="BAT2" gate="G$1" pin="P$1"/>
+<wire x1="2.54" y1="-20.32" x2="11.43" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-25.4" x2="2.54" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="2.54" y="-20.32"/>
 </segment>
 </net>
 <net name="BAT1" class="0">
@@ -12675,8 +12720,12 @@ balanced them and transmit all information to MasterBMS</text>
 </segment>
 <segment>
 <pinref part="J4" gate="B" pin="3"/>
-<wire x1="1.27" y1="72.39" x2="6.35" y2="72.39" width="0.1524" layer="91"/>
-<label x="5.08" y="72.39" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
+<wire x1="1.27" y1="72.39" x2="2.54" y2="72.39" width="0.1524" layer="91"/>
+<label x="10.16" y="72.39" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
+<pinref part="BAT1" gate="G$1" pin="P$1"/>
+<wire x1="2.54" y1="72.39" x2="10.16" y2="72.39" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="76.2" x2="2.54" y2="72.39" width="0.1524" layer="91"/>
+<junction x="2.54" y="72.39"/>
 </segment>
 </net>
 <net name="VC5" class="0">
@@ -12778,8 +12827,12 @@ balanced them and transmit all information to MasterBMS</text>
 </segment>
 <segment>
 <pinref part="J4" gate="B" pin="1"/>
-<wire x1="1.27" y1="67.31" x2="6.35" y2="67.31" width="0.1524" layer="91"/>
-<label x="5.08" y="67.31" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
+<wire x1="1.27" y1="67.31" x2="5.08" y2="67.31" width="0.1524" layer="91"/>
+<label x="10.16" y="67.31" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
+<pinref part="BAT5" gate="G$1" pin="P$1"/>
+<wire x1="5.08" y1="67.31" x2="10.16" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="66.04" x2="5.08" y2="67.31" width="0.1524" layer="91"/>
+<junction x="5.08" y="67.31"/>
 </segment>
 </net>
 <net name="GPIO1" class="0">
@@ -13724,8 +13777,12 @@ balanced them and transmit all information to MasterBMS</text>
 </segment>
 <segment>
 <pinref part="J1" gate="B" pin="3"/>
-<wire x1="1.27" y1="-17.78" x2="3.81" y2="-17.78" width="0.1524" layer="91"/>
-<label x="3.81" y="-17.78" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
+<wire x1="1.27" y1="-17.78" x2="7.62" y2="-17.78" width="0.1524" layer="91"/>
+<label x="11.43" y="-17.78" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
+<pinref part="BAT4" gate="G$1" pin="P$1"/>
+<wire x1="7.62" y1="-17.78" x2="11.43" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="7.62" y="-17.78"/>
 </segment>
 </net>
 <net name="SB6" class="0">
@@ -13964,8 +14021,8 @@ balanced them and transmit all information to MasterBMS</text>
 <net name="4" class="0">
 <segment>
 <pinref part="J4" gate="B" pin="4"/>
-<wire x1="1.27" y1="74.93" x2="6.35" y2="74.93" width="0.1524" layer="91"/>
-<label x="5.08" y="74.93" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
+<wire x1="1.27" y1="74.93" x2="10.16" y2="74.93" width="0.1524" layer="91"/>
+<label x="10.16" y="74.93" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
 </segment>
 </net>
 <net name="FAULTL_P" class="0">
@@ -14518,12 +14575,12 @@ to CVDD 5V signal</text>
 <attribute name="NAME" x="41.783" y="5.7658" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="39.878" y="6.223" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND" gate="G$1" x="48.26" y="-40.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="46.99" y="-33.02" size="1.778" layer="95" align="center-left"/>
-</instance>
 <instance part="JP5" gate="A" x="27.94" y="71.12" smashed="yes">
 <attribute name="NAME" x="16.51" y="65.405" size="1.778" layer="95"/>
 <attribute name="VALUE" x="21.59" y="63.5" size="1.778" layer="96"/>
+</instance>
+<instance part="TP1" gate="G$1" x="53.34" y="-45.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="53.34" y="-43.18" size="1.27" layer="95" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -15179,11 +15236,12 @@ to CVDD 5V signal</text>
 <pinref part="WP0" gate="1" pin="P"/>
 <wire x1="10.16" y1="-50.8" x2="10.16" y2="-49.53" width="0.1524" layer="91" grouprefs="RESISTOR_LADDER"/>
 <wire x1="80.01" y1="2.54" x2="80.01" y2="-50.8" width="0.1524" layer="91" grouprefs="RESISTOR_LADDER"/>
-<wire x1="80.01" y1="-50.8" x2="48.26" y2="-50.8" width="0.1524" layer="91" grouprefs="RESISTOR_LADDER"/>
 <junction x="10.16" y="-50.8" grouprefs="RESISTOR_LADDER"/>
-<pinref part="GND" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="-50.8" x2="10.16" y2="-50.8" width="0.1524" layer="91" grouprefs="RESISTOR_LADDER"/>
-<junction x="48.26" y="-50.8"/>
+<wire x1="80.01" y1="-50.8" x2="53.34" y2="-50.8" width="0.1524" layer="91" grouprefs="RESISTOR_LADDER"/>
+<pinref part="TP1" gate="G$1" pin="P$1"/>
+<wire x1="53.34" y1="-50.8" x2="10.16" y2="-50.8" width="0.1524" layer="91" grouprefs="RESISTOR_LADDER"/>
+<wire x1="53.34" y1="-48.26" x2="53.34" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="53.34" y="-50.8"/>
 </segment>
 </net>
 <net name="N$13" class="0">
