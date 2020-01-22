@@ -3948,23 +3948,26 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 </library>
 <library name="Semiconductor_devices" urn="urn:adsk.eagle:library:13440980">
 <packages>
-<package name="SOD323_ST" urn="urn:adsk.eagle:footprint:15234401/1" library_version="9">
+<package name="SOD323_ST" urn="urn:adsk.eagle:footprint:15234401/2" library_version="11">
 <description>&lt;b&gt;SOD-323&lt;/b&gt;&lt;p&gt;
 Source: www.st.com, BAT60J.pdf</description>
-<wire x1="-0.85" y1="0.55" x2="0.85" y2="0.55" width="0.1016" layer="21"/>
+<wire x1="-0.85" y1="0.55" x2="0.85" y2="0.55" width="0.1016" layer="25"/>
 <wire x1="0.85" y1="0.55" x2="0.85" y2="-0.55" width="0.1016" layer="51"/>
-<wire x1="0.85" y1="-0.55" x2="-0.85" y2="-0.55" width="0.1016" layer="21"/>
+<wire x1="0.85" y1="-0.55" x2="-0.85" y2="-0.55" width="0.1016" layer="25"/>
 <wire x1="-0.85" y1="-0.55" x2="-0.85" y2="0.55" width="0.1016" layer="51"/>
-<wire x1="-1.651" y1="0.635" x2="-1.651" y2="-0.635" width="0.1016" layer="48"/>
+<wire x1="-1.651" y1="0.635" x2="-1.651" y2="0.127" width="0.1016" layer="48"/>
+<wire x1="-1.651" y1="0.127" x2="-1.651" y2="-0.635" width="0.1016" layer="48"/>
 <wire x1="-1.651" y1="-0.635" x2="1.651" y2="-0.635" width="0.1016" layer="48"/>
 <wire x1="1.651" y1="-0.635" x2="1.651" y2="0.635" width="0.1016" layer="48"/>
-<wire x1="1.651" y1="0.635" x2="-1.651" y2="0.635" width="0.1016" layer="48"/>
+<wire x1="1.651" y1="0.635" x2="-1.143" y2="0.635" width="0.1016" layer="48"/>
+<wire x1="-1.143" y1="0.635" x2="-1.651" y2="0.635" width="0.1016" layer="48"/>
+<wire x1="-1.143" y1="0.635" x2="-1.651" y2="0.127" width="0.1016" layer="48"/>
 <smd name="C" x="-1.25" y="0" dx="0.8" dy="0.6" layer="1"/>
 <smd name="A" x="1.25" y="0" dx="0.8" dy="0.6" layer="1"/>
 <text x="0" y="1.524" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="0" y="-1.524" size="1.27" layer="27" align="center">&gt;VALUE</text>
 <text x="0" y="0" size="0.6096" layer="48" align="center">&gt;Name</text>
-<rectangle x1="-0.65" y1="-0.55" x2="-0.05" y2="0.55" layer="21"/>
+<rectangle x1="-0.65" y1="-0.55" x2="-0.05" y2="0.55" layer="25"/>
 <rectangle x1="-1.35" y1="-0.15" x2="-0.8" y2="0.15" layer="51"/>
 <rectangle x1="0.8" y1="-0.15" x2="1.35" y2="0.15" layer="51"/>
 <rectangle x1="-0.85" y1="-0.55" x2="-0.05" y2="0.55" layer="51"/>
@@ -4031,7 +4034,7 @@ Source: www.st.com, BAT60J.pdf</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="SOD323_ST" urn="urn:adsk.eagle:package:13440997/3" type="model" library_version="9">
+<package3d name="SOD323_ST" urn="urn:adsk.eagle:package:13440997/4" type="model" library_version="11">
 <description>&lt;b&gt;SOD-323&lt;/b&gt;&lt;p&gt;
 Source: www.st.com, BAT60J.pdf</description>
 <packageinstances>
@@ -4135,7 +4138,7 @@ Source: www.st.com, BAT60J.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SOD323-ZENER" urn="urn:adsk.eagle:component:13440991/4" prefix="D" uservalue="yes" library_version="9">
+<deviceset name="SOD323-ZENER" urn="urn:adsk.eagle:component:13440991/5" prefix="D" uservalue="yes" library_version="11">
 <description>&lt;b&gt;Schottky barrier diode&lt;/b&gt;&lt;p&gt;
 Source: www.st.com, BAT60J.pdf</description>
 <gates>
@@ -4148,7 +4151,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:13440997/3"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:13440997/4"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -4381,8 +4384,10 @@ Source: www.st.com, BAT60J.pdf</description>
 <attributes>
 </attributes>
 <variantdefs>
+<variantdef name="Full_Assembly_TOP"/>
+<variantdef name="Full_Assembly_BOT"/>
 <variantdef name="PC_Test_TOP"/>
-<variantdef name="PC_Test_Bottom"/>
+<variantdef name="PC_Test_BOT"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -4414,684 +4419,901 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C1" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="0.33u/50V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C2" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="0.33u/50V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R2" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="100, 0.25W">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R1" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="1206" package3d_urn="urn:adsk.eagle:package:15234388/1" value="47, 0.25W">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C9" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="2.2u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C10" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="2.2u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C6" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="2.2u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C4" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="2.2u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R23" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="47">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R24" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="47">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R25" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="47">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R26" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="47">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R27" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="47">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R28" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="47">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R29" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="47">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C20" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="0.1u/100V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C21" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="0.1u/100V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C22" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="0.1u/100V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C23" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="0.1u/100V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C24" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="0.1u/100V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C25" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="0.1u/100V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C27" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.47u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C29" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="0805" package3d_urn="urn:adsk.eagle:package:13360230/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C31" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.47u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C33" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.47u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C28" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.33u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C32" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.33u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C3" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="2.2u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C14" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R17" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C19" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R22" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C15" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R18" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U1" library="texas Instrumets" library_urn="urn:adsk.eagle:library:12980074" deviceset="BQ79606A-Q1-" device="HTQFP|48|9VIA" package3d_urn="urn:adsk.eagle:package:15014219/7" value="BQ79606A-Q1-HTQFP|48|9VIA">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C60" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R100" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="100">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="RB1" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="2512" package3d_urn="urn:adsk.eagle:package:15234385/3" value="20">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="Q1" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="BSS123" device="" package3d_urn="urn:adsk.eagle:package:16527237/1">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C61" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R48" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R49" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="100">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C62" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="RB2" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="2512" package3d_urn="urn:adsk.eagle:package:15234385/3" value="20">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="Q2" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="BSS123" device="" package3d_urn="urn:adsk.eagle:package:16527237/1">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C63" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R51" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R52" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="100">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C64" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="RB3" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="2512" package3d_urn="urn:adsk.eagle:package:15234385/3" value="20">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="Q3" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="BSS123" device="" package3d_urn="urn:adsk.eagle:package:16527237/1">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C65" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R53" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R54" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="100">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C66" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="RB4" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="2512" package3d_urn="urn:adsk.eagle:package:15234385/3" value="20">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="Q4" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="BSS123" device="" package3d_urn="urn:adsk.eagle:package:16527237/1">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C67" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R55" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R56" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="100">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C68" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="RB5" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="2512" package3d_urn="urn:adsk.eagle:package:15234385/3" value="20">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="Q5" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="BSS123" device="" package3d_urn="urn:adsk.eagle:package:16527237/1">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C69" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R57" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R58" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="100">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C70" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="RB6" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="2512" package3d_urn="urn:adsk.eagle:package:15234385/3" value="20">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="Q6" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="BSS123" device="" package3d_urn="urn:adsk.eagle:package:16527237/1">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C71" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R59" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R60" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="100">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R3" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C5" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="51p">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C8" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="51p">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R4" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R5" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C13" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="2.2n">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C34" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="2.2n">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="J2" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S4B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143913/4">
+<variant name="Full_Assembly_TOP" populate="no"/>
 <variant name="PC_Test_TOP" populate="no"/>
 </part>
 <part name="J3" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S4B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143913/4">
+<variant name="Full_Assembly_TOP" populate="no"/>
 <variant name="PC_Test_TOP" populate="no"/>
 </part>
 <part name="X2" library="stmicroelectronics" library_urn="urn:adsk.eagle:library:12979881" deviceset="PESD2CAN" device="" package3d_urn="urn:adsk.eagle:package:15230819/3">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R7" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="43">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R8" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="43">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L1" library="Inductors" library_urn="urn:adsk.eagle:library:13309331" deviceset="TDK_ACT45B" device="IND_BOURNS_SRF4532-M" package3d_urn="urn:adsk.eagle:package:13309334/9" value="100uH">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R9" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C35" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="51p">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C36" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="51p">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R10" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R11" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C37" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="2.2n">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C38" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="2.2n">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="X1" library="stmicroelectronics" library_urn="urn:adsk.eagle:library:12979881" deviceset="PESD2CAN" device="" package3d_urn="urn:adsk.eagle:package:15230819/3">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R12" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="43">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R13" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="43">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L2" library="Inductors" library_urn="urn:adsk.eagle:library:13309331" deviceset="TDK_ACT45B" device="IND_BOURNS_SRF4532-M" package3d_urn="urn:adsk.eagle:package:13309334/9" value="100uH">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R14" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C39" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="51p">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C49" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="51p">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R15" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R16" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C50" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="2.2n">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C51" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="2.2n">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="X3" library="stmicroelectronics" library_urn="urn:adsk.eagle:library:12979881" deviceset="PESD2CAN" device="" package3d_urn="urn:adsk.eagle:package:15230819/3">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R37" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="43">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R38" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="43">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L3" library="Inductors" library_urn="urn:adsk.eagle:library:13309331" deviceset="TDK_ACT45B" device="IND_BOURNS_SRF4532-M" package3d_urn="urn:adsk.eagle:package:13309334/9" value="100uH">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R39" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C52" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="51p">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C53" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="51p">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R40" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R41" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C54" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="2.2n">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C56" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="1206" package3d_urn="urn:adsk.eagle:package:13360228/4" value="2.2n">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="X4" library="stmicroelectronics" library_urn="urn:adsk.eagle:library:12979881" deviceset="PESD2CAN" device="" package3d_urn="urn:adsk.eagle:package:15230819/3">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R42" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="43">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R43" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="43">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L4" library="Inductors" library_urn="urn:adsk.eagle:library:13309331" deviceset="TDK_ACT45B" device="IND_BOURNS_SRF4532-M" package3d_urn="urn:adsk.eagle:package:13309334/9" value="100uH">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R45" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R46" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R47" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C57" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="51p">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C58" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1nF">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C59" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1nF">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C40" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.47u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C30" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="0805" package3d_urn="urn:adsk.eagle:package:13360230/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C26" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.47u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="VC1" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R30" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="1210" package3d_urn="urn:adsk.eagle:package:16405030/1" value="10, 1/4W">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R31" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="1210" package3d_urn="urn:adsk.eagle:package:16405030/1" value="10, 1/4W">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R32" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="1210" package3d_urn="urn:adsk.eagle:package:16405030/1" value="10, 1/4W">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R33" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="1210" package3d_urn="urn:adsk.eagle:package:16405030/1" value="10, 1/4W">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R34" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="1210" package3d_urn="urn:adsk.eagle:package:16405030/1" value="10, 1/4W">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R35" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="1210" package3d_urn="urn:adsk.eagle:package:16405030/1" value="10, 1/4W">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R36" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="1210" package3d_urn="urn:adsk.eagle:package:16405030/1" value="10, 1/4W">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C43" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.47u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C44" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="0805" package3d_urn="urn:adsk.eagle:package:13360230/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C47" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.47u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C48" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.47u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C42" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.33u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C46" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.33u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C55" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.47u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C45" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K" device="0805" package3d_urn="urn:adsk.eagle:package:13360230/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C41" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.47u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="JP4" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="PINHD-2X7" device="" package3d_urn="urn:adsk.eagle:package:16527745/1" value="2x7">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="JP3" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="PINHD-1X7-OCT" device="" package3d_urn="urn:adsk.eagle:package:13439828/2" value="1x7">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="D4" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/3" value="6.2V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<part name="D4" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/4" value="6.2V">
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
-<part name="D5" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/3" value="6.2V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<part name="D5" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/4" value="6.2V">
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R50" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="100k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R61" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU-X" device="0603" package3d_urn="urn:adsk.eagle:package:13360604/3">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="J8" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S2B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143949/4">
+<variant name="Full_Assembly_TOP" populate="no"/>
 <variant name="PC_Test_TOP" populate="no"/>
 </part>
 <part name="C16" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R19" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R20" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="100k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R21" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU-X" device="0603" package3d_urn="urn:adsk.eagle:package:13360604/3">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="J5" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S2B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143949/4">
+<variant name="Full_Assembly_TOP" populate="no"/>
 <variant name="PC_Test_TOP" populate="no"/>
 </part>
 <part name="C18" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R62" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R63" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R64" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU-X" device="0603" package3d_urn="urn:adsk.eagle:package:13360604/3">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="J6" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S2B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143949/4">
+<variant name="Full_Assembly_TOP" populate="no"/>
 <variant name="PC_Test_TOP" populate="no"/>
 </part>
 <part name="C74" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R65" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R66" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R67" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU-X" device="0603" package3d_urn="urn:adsk.eagle:package:13360604/3">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="J7" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S2B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143949/4">
+<variant name="Full_Assembly_TOP" populate="no"/>
 <variant name="PC_Test_TOP" populate="no"/>
 </part>
 <part name="JP1" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="PINHD-2X7" device="" package3d_urn="urn:adsk.eagle:package:16527745/1">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="JP2" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="PINHD-1X6-OCT" device="" package3d_urn="urn:adsk.eagle:package:15093418/3">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R68" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R69" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R70" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R71" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R72" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R73" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C72" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K-X" device="0603" package3d_urn="urn:adsk.eagle:package:13360222/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C73" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K-X" device="0603" package3d_urn="urn:adsk.eagle:package:13360222/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C75" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K-X" device="0603" package3d_urn="urn:adsk.eagle:package:13360222/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C76" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-K-X" device="0603" package3d_urn="urn:adsk.eagle:package:13360222/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="J10" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S3B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143944/4">
+<variant name="Full_Assembly_TOP" populate="no"/>
 <variant name="PC_Test_TOP" populate="no"/>
 </part>
 <part name="J9" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S3B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143944/4">
+<variant name="Full_Assembly_TOP" populate="no"/>
 <variant name="PC_Test_TOP" populate="no"/>
 </part>
-<part name="D6" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/3" value="6.2V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<part name="D6" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/4" value="6.2V">
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
-<part name="D1" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/3" value="6.2V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<part name="D1" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/4" value="6.2V">
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
-<part name="D2" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/3" value="6.2V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<part name="D2" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/4" value="6.2V">
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
-<part name="D3" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/3" value="6.2V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<part name="D3" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/4" value="6.2V">
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
-<part name="D7" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/3" value="6.2V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<part name="D7" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/4" value="6.2V">
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
-<part name="D8" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/3" value="6.2V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<part name="D8" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/4" value="6.2V">
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="G1" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="G2" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="G3" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="G4" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="G5" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="G6" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="DR3" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="DR4" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="DR2" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="DR1" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="DR6" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="DR5" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R74" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="100, 0.25W">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R44" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="D13" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="LED0805" device="" package3d_urn="urn:adsk.eagle:package:14160208/6" value="GREEN">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J1" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S4B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143913/4">
+<variant name="Full_Assembly_TOP" populate="no"/>
 <variant name="PC_Test_TOP" populate="no"/>
 </part>
 <part name="J4" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S4B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143913/4">
+<variant name="Full_Assembly_TOP" populate="no"/>
 <variant name="PC_Test_TOP" populate="no"/>
 </part>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="CLN" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="CLP" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="FLN" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="FLP" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="CHN" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="CHP" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="FHN" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="FHP" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="VC0" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="VC2" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="VC3" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="VC4" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="VC5" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="VC6" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -5099,170 +5321,231 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="GND35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="D10" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/3" value="6.2V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<part name="D10" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/4" value="6.2V">
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
-<part name="D11" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/3" value="6.2V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<part name="D11" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/4" value="6.2V">
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
-<part name="D12" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/3" value="6.2V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<part name="D12" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/4" value="6.2V">
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
-<part name="D9" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/3" value="6.2V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<part name="D9" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD323-ZENER" device="" package3d_urn="urn:adsk.eagle:package:13440997/4" value="6.2V">
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND41" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J11" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S6B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143943/4">
+<variant name="Full_Assembly_TOP" populate="no"/>
 <variant name="PC_Test_TOP" populate="no"/>
 </part>
 <part name="GND42" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J12" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="MOLEX22-12-4062" device="05-7068" package3d_urn="urn:adsk.eagle:package:15093416/5">
+<variant name="Full_Assembly_TOP" populate="no"/>
 <variant name="PC_Test_TOP" populate="no"/>
 </part>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA3_L" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA3_L" device=""/>
 <part name="GND43" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R75" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="POS" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="SMD_PAD" device="" package3d_urn="urn:adsk.eagle:package:16041846/4">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="NEG" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="SMD_PAD" device="" package3d_urn="urn:adsk.eagle:package:16041846/4">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R76" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R77" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R78" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R79" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R80" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="1k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="WP0" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="WIRE_TO_BOARD_2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:16053046/2">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="WP1" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="WIRE_TO_BOARD_2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:16053046/2">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="WP2" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="WIRE_TO_BOARD_2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:16053046/2">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="WP3" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="WIRE_TO_BOARD_2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:16053046/2">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="WP4" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="WIRE_TO_BOARD_2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:16053046/2">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="WP5" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="WIRE_TO_BOARD_2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:16053046/2">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="WP6" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="WIRE_TO_BOARD_2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:16053046/2">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="AVDD" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="VSS" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="BAT" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="REF" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1MM_SK]" package3d_urn="urn:adsk.eagle:package:15234683/2" value="TEST_PAD-[1MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C12" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="1u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="R6" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="100k">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="VLDO" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_PAD" device="-[1.27MM_SK]" package3d_urn="urn:adsk.eagle:package:15234684/2" value="TEST_PAD-[1.27MM_SK]">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C7" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="2.2u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="C11" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="2.2u/16V">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="JP5" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:16527744/1">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="PROG+" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="SMD_PAD" device="" package3d_urn="urn:adsk.eagle:package:16041846/4">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="PROG-" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="SMD_PAD" device="" package3d_urn="urn:adsk.eagle:package:16041846/4">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="GND" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_RING" device="" package3d_urn="urn:adsk.eagle:package:13096607/3">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="BAT6" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_RING" device="" package3d_urn="urn:adsk.eagle:package:13096607/3">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="BAT4" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_RING" device="" package3d_urn="urn:adsk.eagle:package:13096607/3">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="BAT2" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_RING" device="" package3d_urn="urn:adsk.eagle:package:13096607/3">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="BAT0" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_RING" device="" package3d_urn="urn:adsk.eagle:package:13096607/3">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="BAT1" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_RING" device="" package3d_urn="urn:adsk.eagle:package:13096607/3">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="BAT3" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_RING" device="" package3d_urn="urn:adsk.eagle:package:13096607/3">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="BAT5" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_RING" device="" package3d_urn="urn:adsk.eagle:package:13096607/3">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="J14" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S2B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143949/4">
+<variant name="Full_Assembly_TOP" populate="no"/>
 <variant name="PC_Test_TOP" populate="no"/>
 </part>
 <part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SW1" library="buttons and switches" library_urn="urn:adsk.eagle:library:14616530" deviceset="5PIN-DIP-SWITCH" device="" package3d_urn="urn:adsk.eagle:package:16361597/3">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="JP8" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:15172269/2">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="U2" library="texas Instrumets" library_urn="urn:adsk.eagle:library:12980074" deviceset="ISO7342" device="" package3d_urn="urn:adsk.eagle:package:16309878/4">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_TOP" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="JP7" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:15172269/2">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="VPROG" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="SMD_PAD" device="" package3d_urn="urn:adsk.eagle:package:16041846/4">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="J15" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S6B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143943/4">
+<variant name="Full_Assembly_TOP" populate="no"/>
 <variant name="PC_Test_TOP" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="J13" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S2B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143949/4">
+<variant name="Full_Assembly_TOP" populate="no"/>
 <variant name="PC_Test_TOP" populate="no"/>
 </part>
 <part name="JP6" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:16530062/1">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_TOP" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="JP10" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:15172269/2">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_TOP" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 <part name="JP9" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:15172269/2">
-<variant name="PC_Test_Bottom" populate="no"/>
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_TOP" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
+</part>
+<part name="R81" library="Resistors" library_urn="urn:adsk.eagle:library:13360588" deviceset="R-EU" device="0603" package3d_urn="urn:adsk.eagle:package:13360607/2" value="10k">
+<variant name="Full_Assembly_BOT" populate="no"/>
+<variant name="PC_Test_BOT" populate="no"/>
 </part>
 </parts>
 <sheets>
@@ -8092,7 +8375,7 @@ SYS_RAIL
 
 For STACK device
 to CVDD 5V signal</text>
-<text x="95.25" y="27.94" size="1.778" layer="91">VPROG 
+<text x="97.79" y="15.24" size="1.778" layer="91">VPROG 
 JP holder</text>
 </plain>
 <instances>
@@ -8458,8 +8741,8 @@ JP holder</text>
 <attribute name="NAME" x="48.26" y="-5.461" size="1.778" layer="95"/>
 <attribute name="VALUE" x="48.26" y="-8.636" size="1.778" layer="95"/>
 </instance>
-<instance part="GND44" gate="1" x="15.24" y="10.16" smashed="yes">
-<attribute name="VALUE" x="12.7" y="7.62" size="1.778" layer="96"/>
+<instance part="GND44" gate="1" x="17.78" y="12.7" smashed="yes">
+<attribute name="VALUE" x="15.24" y="10.16" size="1.778" layer="96"/>
 </instance>
 <instance part="SW1" gate="G$1" x="35.56" y="-53.34" smashed="yes" grouprefs="RESISTOR_LADDER">
 <attribute name="NAME" x="33.02" y="-48.26" size="1.778" layer="95" font="vector" rot="MR0"/>
@@ -8469,37 +8752,41 @@ JP holder</text>
 <attribute name="NAME" x="54.61" y="-45.085" size="1.778" layer="95"/>
 <attribute name="VALUE" x="54.61" y="-55.88" size="1.778" layer="96"/>
 </instance>
-<instance part="U2" gate="G$1" x="50.8" y="38.1" smashed="yes" rot="R180">
-<attribute name="VALUE" x="38.1254" y="41.4274" size="2.0828" layer="96" ratio="6" rot="SR180"/>
-<attribute name="NAME" x="30.226" y="44.45" size="2.0828" layer="96" ratio="6" rot="SR180"/>
+<instance part="U2" gate="G$1" x="53.34" y="43.18" smashed="yes" rot="R180">
+<attribute name="VALUE" x="40.6654" y="46.5074" size="2.0828" layer="96" ratio="6" rot="SR180"/>
+<attribute name="NAME" x="32.766" y="49.53" size="2.0828" layer="96" ratio="6" rot="SR180"/>
 </instance>
-<instance part="JP7" gate="G$1" x="88.9" y="27.94" smashed="yes" rot="R270">
-<attribute name="NAME" x="87.376" y="35.179" size="1.778" layer="95"/>
-<attribute name="VALUE" x="83.82" y="34.29" size="1.778" layer="96" rot="R270"/>
+<instance part="JP7" gate="G$1" x="91.44" y="15.24" smashed="yes" rot="R270">
+<attribute name="NAME" x="89.916" y="22.479" size="1.778" layer="95"/>
+<attribute name="VALUE" x="86.36" y="21.59" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="VPROG" gate="1" x="101.6" y="22.86" smashed="yes" rot="R180">
-<attribute name="NAME" x="102.997" y="20.9042" size="1.778" layer="95"/>
-<attribute name="VALUE" x="102.743" y="26.162" size="1.778" layer="96" rot="R180"/>
+<instance part="VPROG" gate="1" x="99.06" y="10.16" smashed="yes" rot="R180">
+<attribute name="NAME" x="100.457" y="8.2042" size="1.778" layer="95"/>
+<attribute name="VALUE" x="100.203" y="13.462" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="J15" gate="B" x="68.58" y="25.4" smashed="yes">
-<attribute name="NAME" x="67.31" y="36.195" size="1.778" layer="95"/>
-<attribute name="VALUE" x="67.31" y="15.24" size="1.778" layer="95"/>
+<instance part="J15" gate="B" x="71.12" y="30.48" smashed="yes">
+<attribute name="NAME" x="69.85" y="41.275" size="1.778" layer="95"/>
+<attribute name="VALUE" x="69.85" y="20.32" size="1.778" layer="95"/>
 </instance>
 <instance part="J13" gate="B" x="44.196" y="-21.082" smashed="yes" rot="R270">
 <attribute name="NAME" x="37.592" y="-21.971" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="37.592" y="-18.796" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="JP6" gate="A" x="7.62" y="20.32" smashed="yes">
-<attribute name="NAME" x="1.27" y="28.575" size="1.778" layer="95"/>
-<attribute name="VALUE" x="1.27" y="12.7" size="1.778" layer="96"/>
+<instance part="JP6" gate="A" x="7.62" y="25.4" smashed="yes">
+<attribute name="NAME" x="-3.81" y="20.955" size="1.778" layer="95"/>
+<attribute name="VALUE" x="1.27" y="17.78" size="1.778" layer="96"/>
 </instance>
-<instance part="JP10" gate="G$1" x="7.62" y="30.48" smashed="yes">
-<attribute name="NAME" x="1.27" y="36.195" size="1.778" layer="95"/>
-<attribute name="VALUE" x="1.27" y="25.4" size="1.778" layer="96"/>
+<instance part="JP10" gate="G$1" x="7.62" y="35.56" smashed="yes">
+<attribute name="NAME" x="1.27" y="41.275" size="1.778" layer="95"/>
+<attribute name="VALUE" x="1.27" y="30.48" size="1.778" layer="96"/>
 </instance>
-<instance part="JP9" gate="G$1" x="7.62" y="10.16" smashed="yes">
-<attribute name="NAME" x="1.27" y="15.875" size="1.778" layer="95"/>
-<attribute name="VALUE" x="1.27" y="5.08" size="1.778" layer="96"/>
+<instance part="JP9" gate="G$1" x="7.62" y="15.24" smashed="yes">
+<attribute name="NAME" x="1.016" y="10.541" size="1.778" layer="95"/>
+<attribute name="VALUE" x="1.27" y="10.16" size="1.778" layer="96"/>
+</instance>
+<instance part="R81" gate="G$1" x="88.9" y="36.83" smashed="yes" rot="R90">
+<attribute name="NAME" x="95.25" y="37.8714" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="95.25" y="35.052" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -8625,14 +8912,14 @@ JP holder</text>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND2"/>
-<wire x1="20.32" y1="17.78" x2="15.24" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="22.86" x2="17.78" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="GND2_2"/>
-<wire x1="20.32" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="33.02" x2="15.24" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="38.1" x2="17.78" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="38.1" x2="17.78" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="GND44" gate="1" pin="GND"/>
-<wire x1="15.24" y1="17.78" x2="15.24" y2="12.7" width="0.1524" layer="91"/>
-<junction x="15.24" y="17.78"/>
-<wire x1="5.08" y1="17.78" x2="15.24" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="22.86" x2="17.78" y2="15.24" width="0.1524" layer="91"/>
+<junction x="17.78" y="22.86"/>
+<wire x1="5.08" y1="22.86" x2="17.78" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="A" pin="4"/>
 </segment>
 </net>
@@ -9081,14 +9368,14 @@ JP holder</text>
 <pinref part="J12" gate="-5" pin="S"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="27.94" x2="12.7" y2="27.94" width="0.1524" layer="91"/>
-<label x="-5.08" y="30.48" size="1.778" layer="95" rot="MR0"/>
+<wire x1="22.86" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
+<label x="-5.08" y="35.56" size="1.778" layer="95" rot="MR0"/>
 <pinref part="U2" gate="G$1" pin="IND"/>
-<wire x1="12.7" y1="27.94" x2="12.7" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="33.02" x2="15.24" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="JP10" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="30.48" x2="5.08" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="30.48" x2="-5.08" y2="30.48" width="0.1524" layer="91"/>
-<junction x="5.08" y="30.48"/>
+<wire x1="15.24" y1="35.56" x2="5.08" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="35.56" x2="-5.08" y2="35.56" width="0.1524" layer="91"/>
+<junction x="5.08" y="35.56"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -9100,14 +9387,19 @@ JP holder</text>
 <pinref part="J12" gate="-2" pin="S"/>
 </segment>
 <segment>
-<wire x1="10.16" y1="22.86" x2="5.08" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="22.86" x2="-5.08" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="22.86" x2="12.7" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="27.94" x2="5.08" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="27.94" x2="-5.08" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="27.94" x2="15.24" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="INC"/>
-<wire x1="12.7" y1="25.4" x2="20.32" y2="25.4" width="0.1524" layer="91"/>
-<label x="-5.08" y="22.86" size="1.778" layer="95" rot="MR0"/>
+<wire x1="15.24" y1="30.48" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
+<label x="-5.08" y="27.94" size="1.778" layer="95" rot="MR0"/>
 <pinref part="JP6" gate="A" pin="2"/>
-<junction x="5.08" y="22.86"/>
+<junction x="5.08" y="27.94"/>
+</segment>
+<segment>
+<pinref part="R81" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="31.75" x2="88.9" y2="27.94" width="0.1524" layer="91"/>
+<label x="88.9" y="27.94" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="RX" class="0">
@@ -9154,14 +9446,14 @@ JP holder</text>
 <wire x1="60.96" y1="88.9" x2="67.31" y2="88.9" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 </segment>
 <segment>
-<wire x1="10.16" y1="25.4" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="30.48" x2="5.08" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="OUTB"/>
-<wire x1="5.08" y1="25.4" x2="-5.08" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="22.86" x2="20.32" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="25.4" x2="12.7" y2="22.86" width="0.1524" layer="91"/>
-<label x="-5.08" y="25.4" size="1.778" layer="95" rot="MR0"/>
+<wire x1="5.08" y1="30.48" x2="-5.08" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="27.94" x2="22.86" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="30.48" x2="15.24" y2="27.94" width="0.1524" layer="91"/>
+<label x="-5.08" y="30.48" size="1.778" layer="95" rot="MR0"/>
 <pinref part="JP6" gate="A" pin="1"/>
-<junction x="5.08" y="25.4"/>
+<junction x="5.08" y="30.48"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -9286,12 +9578,12 @@ JP holder</text>
 <label x="30.48" y="83.82" size="1.778" layer="95" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="20.32" x2="5.08" y2="20.32" width="0.1524" layer="91"/>
-<label x="-5.08" y="20.32" size="1.778" layer="95" rot="MR0"/>
+<wire x1="22.86" y1="25.4" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
+<label x="-5.08" y="25.4" size="1.778" layer="95" rot="MR0"/>
 <pinref part="U2" gate="G$1" pin="OUTA"/>
 <pinref part="JP6" gate="A" pin="3"/>
-<wire x1="5.08" y1="20.32" x2="-5.08" y2="20.32" width="0.1524" layer="91"/>
-<junction x="5.08" y="20.32"/>
+<wire x1="5.08" y1="25.4" x2="-5.08" y2="25.4" width="0.1524" layer="91"/>
+<junction x="5.08" y="25.4"/>
 </segment>
 </net>
 <net name="SYS_RAIL" class="0">
@@ -9327,8 +9619,8 @@ JP holder</text>
 <label x="-1.27" y="83.82" size="1.778" layer="95" rot="MR0" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 </segment>
 <segment>
-<wire x1="5.08" y1="10.16" x2="-5.08" y2="10.16" width="0.1524" layer="91"/>
-<label x="-5.08" y="10.16" size="1.778" layer="95" rot="MR0"/>
+<wire x1="5.08" y1="15.24" x2="-5.08" y2="15.24" width="0.1524" layer="91"/>
+<label x="-5.08" y="15.24" size="1.778" layer="95" rot="MR0"/>
 <pinref part="JP9" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -9407,23 +9699,24 @@ JP holder</text>
 </net>
 <net name="VCC2" class="0">
 <segment>
-<wire x1="55.88" y1="30.48" x2="58.42" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="30.48" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="15.24" x2="55.88" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="30.48" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
-<junction x="58.42" y="30.48"/>
+<wire x1="58.42" y1="35.56" x2="60.96" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="35.56" x2="60.96" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="20.32" x2="58.42" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="35.56" x2="66.04" y2="35.56" width="0.1524" layer="91"/>
+<junction x="60.96" y="35.56"/>
 <pinref part="U2" gate="G$1" pin="VCC1"/>
 <pinref part="U2" gate="G$1" pin="EN1"/>
 <pinref part="J15" gate="B" pin="2"/>
+<label x="58.42" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND2" class="0">
 <segment>
-<wire x1="55.88" y1="17.78" x2="60.96" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="17.78" x2="60.96" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="33.02" x2="55.88" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="33.02" x2="63.5" y2="33.02" width="0.1524" layer="91"/>
-<junction x="60.96" y="33.02"/>
+<wire x1="58.42" y1="22.86" x2="63.5" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="22.86" x2="63.5" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="38.1" x2="58.42" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="38.1" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
+<junction x="63.5" y="38.1"/>
 <pinref part="U2" gate="G$1" pin="GND1_2"/>
 <pinref part="U2" gate="G$1" pin="GND1"/>
 <pinref part="J15" gate="B" pin="1"/>
@@ -9431,28 +9724,28 @@ JP holder</text>
 </net>
 <net name="NFL_ISO" class="0">
 <segment>
-<wire x1="55.88" y1="27.94" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="33.02" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="OUTD"/>
 <pinref part="J15" gate="B" pin="3"/>
 </segment>
 </net>
 <net name="HOST_RX" class="0">
 <segment>
-<wire x1="55.88" y1="25.4" x2="63.5" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="30.48" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="OUTC"/>
 <pinref part="J15" gate="B" pin="4"/>
 </segment>
 </net>
 <net name="HOST_TX" class="0">
 <segment>
-<wire x1="55.88" y1="22.86" x2="63.5" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="27.94" x2="66.04" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="INB"/>
 <pinref part="J15" gate="B" pin="5"/>
 </segment>
 </net>
 <net name="WKP_ISO" class="0">
 <segment>
-<wire x1="55.88" y1="20.32" x2="63.5" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="25.4" x2="66.04" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="INA"/>
 <pinref part="J15" gate="B" pin="6"/>
 </segment>
@@ -9460,29 +9753,35 @@ JP holder</text>
 <net name="VPROG" class="0">
 <segment>
 <pinref part="VPROG" gate="1" pin="P"/>
-<wire x1="99.06" y1="22.86" x2="91.44" y2="22.86" width="0.1524" layer="91"/>
-<label x="91.44" y="22.86" size="1.778" layer="95" rot="MR0"/>
+<wire x1="96.52" y1="10.16" x2="88.9" y2="10.16" width="0.1524" layer="91"/>
+<label x="88.9" y="10.16" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="VCISO" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="VCC2"/>
-<wire x1="20.32" y1="15.24" x2="17.78" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="20.32" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="EN2"/>
-<wire x1="20.32" y1="30.48" x2="17.78" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="30.48" x2="17.78" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="15.24" x2="12.7" y2="15.24" width="0.1524" layer="91"/>
-<junction x="17.78" y="15.24"/>
-<wire x1="12.7" y1="15.24" x2="12.7" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="35.56" x2="20.32" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="35.56" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="20.32" x2="15.24" y2="20.32" width="0.1524" layer="91"/>
+<junction x="20.32" y="20.32"/>
+<wire x1="15.24" y1="20.32" x2="15.24" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="JP9" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="12.7" x2="5.08" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="17.78" x2="5.08" y2="17.78" width="0.1524" layer="91"/>
+<label x="10.16" y="17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R81" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="41.91" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
+<label x="88.9" y="45.72" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="NC" class="0">
 <segment>
 <pinref part="JP10" gate="G$1" pin="1"/>
-<wire x1="5.08" y1="33.02" x2="-5.08" y2="33.02" width="0.1524" layer="91"/>
-<label x="-5.08" y="33.02" size="1.778" layer="95" rot="MR0"/>
+<wire x1="5.08" y1="38.1" x2="-5.08" y2="38.1" width="0.1524" layer="91"/>
+<label x="-5.08" y="38.1" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 </nets>
