@@ -136,7 +136,7 @@
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="170" name="tAssembl" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="171" name="bAssembl" color="23" fill="1" visible="no" active="yes"/>
+<layer number="171" name="bAssembl" color="23" fill="1" visible="yes" active="yes"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
 <layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
 <layer number="193" name="mPins" color="7" fill="1" visible="no" active="no"/>
@@ -4519,11 +4519,11 @@ Source: www.st.com, BAT60J.pdf</description>
 <variant name="Full_Assembly_BOT" populate="no"/>
 <variant name="PC_Test_BOT" populate="no"/>
 </part>
-<part name="C28" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.33u/16V">
+<part name="C28" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.33u/50V">
 <variant name="Full_Assembly_BOT" populate="no"/>
 <variant name="PC_Test_BOT" populate="no"/>
 </part>
-<part name="C32" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.33u/16V">
+<part name="C32" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.33u/50V">
 <variant name="Full_Assembly_BOT" populate="no"/>
 <variant name="PC_Test_BOT" populate="no"/>
 </part>
@@ -4989,11 +4989,11 @@ Source: www.st.com, BAT60J.pdf</description>
 <variant name="Full_Assembly_BOT" populate="no"/>
 <variant name="PC_Test_BOT" populate="no"/>
 </part>
-<part name="C42" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.33u/16V">
+<part name="C42" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.33u/50V">
 <variant name="Full_Assembly_BOT" populate="no"/>
 <variant name="PC_Test_BOT" populate="no"/>
 </part>
-<part name="C46" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.33u/16V">
+<part name="C46" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="0.33u/50V">
 <variant name="Full_Assembly_BOT" populate="no"/>
 <variant name="PC_Test_BOT" populate="no"/>
 </part>
@@ -5568,6 +5568,16 @@ SS(GPIO3)</text>
 that measure battery module temperature, individual cells voltages, 
 balanced them and transmit all information to MasterBMS</text>
 <text x="135.89" y="-165.1" size="1.778" layer="97">https://github.com/701lab/SlaveBMS</text>
+<text x="-58.42" y="-96.52" size="1.778" layer="171">fail in 50V cap
+voltage rating</text>
+<text x="-60.96" y="-127" size="1.778" layer="171">fail in 50V cap
+voltage rating</text>
+<text x="66.04" y="20.32" size="1.778" layer="171">fail in 50V cap
+voltage rating</text>
+<text x="66.04" y="50.8" size="1.778" layer="171">fail in 50V cap
+voltage rating</text>
+<text x="27.94" y="71.12" size="1.778" layer="171">fail in 100V cap
+voltage rating</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="25.4" y="-11.43" smashed="yes" grouprefs="MAIN_IC">
