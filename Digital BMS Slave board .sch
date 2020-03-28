@@ -9576,6 +9576,7 @@ JP holder</text>
 <wire x1="33.02" y1="86.36" x2="25.4" y2="86.36" width="0.1524" layer="91" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <junction x="33.02" y="86.36" grouprefs="UART_TO_ISO_COMMUNICATION1"/>
 <pinref part="JP5" gate="A" pin="2"/>
+<label x="35.56" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="WAKEUP" class="0">
