@@ -5572,11 +5572,11 @@ balanced them and transmit all information to MasterBMS</text>
 voltage rating</text>
 <text x="-60.96" y="-127" size="1.778" layer="171">fail in 50V cap
 voltage rating</text>
-<text x="66.04" y="20.32" size="1.778" layer="171">fail in 50V cap
+<text x="66.04" y="20.32" size="1.778" layer="171" grouprefs="MAIN_IC">fail in 50V cap
 voltage rating</text>
-<text x="66.04" y="50.8" size="1.778" layer="171">fail in 50V cap
+<text x="66.04" y="50.8" size="1.778" layer="171" grouprefs="MAIN_IC">fail in 50V cap
 voltage rating</text>
-<text x="27.94" y="71.12" size="1.778" layer="171">fail in 100V cap
+<text x="27.94" y="71.12" size="1.778" layer="171" grouprefs="MAIN_IC">fail in 100V cap
 voltage rating</text>
 </plain>
 <instances>
@@ -6239,28 +6239,28 @@ voltage rating</text>
 <attribute name="NAME" x="-2.54" y="64.135" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-2.54" y="80.01" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="P+5" gate="VCC" x="11.43" y="-10.16" smashed="yes">
+<instance part="P+5" gate="VCC" x="11.43" y="-10.16" smashed="yes" grouprefs="MAIN_IC">
 <attribute name="VALUE" x="11.43" y="-15.24" size="1.778" layer="96"/>
 </instance>
-<instance part="GND22" gate="1" x="11.43" y="-26.67" smashed="yes">
+<instance part="GND22" gate="1" x="11.43" y="-26.67" smashed="yes" grouprefs="MAIN_IC">
 <attribute name="VALUE" x="11.43" y="-22.86" size="1.778" layer="96"/>
 </instance>
-<instance part="VC0" gate="G$1" x="86.36" y="-5.08" smashed="yes" rot="MR270">
+<instance part="VC0" gate="G$1" x="86.36" y="-5.08" smashed="yes" rot="MR270" grouprefs="MAIN_IC">
 <attribute name="NAME" x="85.09" y="-5.08" size="1.27" layer="95" rot="MR0"/>
 </instance>
-<instance part="VC2" gate="G$1" x="86.36" y="15.24" smashed="yes" rot="MR270">
+<instance part="VC2" gate="G$1" x="86.36" y="15.24" smashed="yes" rot="MR270" grouprefs="MAIN_IC">
 <attribute name="NAME" x="85.09" y="15.24" size="1.27" layer="95" rot="MR0"/>
 </instance>
-<instance part="VC3" gate="G$1" x="86.36" y="25.4" smashed="yes" rot="MR270">
+<instance part="VC3" gate="G$1" x="86.36" y="25.4" smashed="yes" rot="MR270" grouprefs="MAIN_IC">
 <attribute name="NAME" x="85.09" y="25.4" size="1.27" layer="95" rot="MR0"/>
 </instance>
-<instance part="VC4" gate="G$1" x="86.36" y="35.56" smashed="yes" rot="MR270">
+<instance part="VC4" gate="G$1" x="86.36" y="35.56" smashed="yes" rot="MR270" grouprefs="MAIN_IC">
 <attribute name="NAME" x="85.09" y="35.56" size="1.27" layer="95" rot="MR0"/>
 </instance>
-<instance part="VC5" gate="G$1" x="86.36" y="45.72" smashed="yes" rot="MR270">
+<instance part="VC5" gate="G$1" x="86.36" y="45.72" smashed="yes" rot="MR270" grouprefs="MAIN_IC">
 <attribute name="NAME" x="85.09" y="45.72" size="1.27" layer="95" rot="MR0"/>
 </instance>
-<instance part="VC6" gate="G$1" x="86.36" y="55.88" smashed="yes" rot="MR270">
+<instance part="VC6" gate="G$1" x="86.36" y="55.88" smashed="yes" rot="MR270" grouprefs="MAIN_IC">
 <attribute name="NAME" x="85.09" y="55.88" size="1.27" layer="95" rot="MR0"/>
 </instance>
 <instance part="GND27" gate="1" x="7.62" y="-130.81" smashed="yes" rot="MR0" grouprefs="CMOS_TEMP_SENSING">
@@ -6328,13 +6328,13 @@ voltage rating</text>
 <instance part="AVDD" gate="G$1" x="172.72" y="80.01" smashed="yes" rot="R90" grouprefs="MAIN_IC">
 <attribute name="NAME" x="166.37" y="80.645" size="1.27" layer="95"/>
 </instance>
-<instance part="VSS" gate="G$1" x="148.59" y="-7.62" smashed="yes" rot="R180">
+<instance part="VSS" gate="G$1" x="148.59" y="-7.62" smashed="yes" rot="R180" grouprefs="MAIN_IC">
 <attribute name="NAME" x="147.32" y="-9.525" size="1.27" layer="95" rot="R180"/>
 </instance>
-<instance part="BAT" gate="G$1" x="110.49" y="54.61" smashed="yes" rot="MR0">
+<instance part="BAT" gate="G$1" x="110.49" y="54.61" smashed="yes" rot="MR0" grouprefs="MAIN_IC">
 <attribute name="NAME" x="110.49" y="55.88" size="1.27" layer="95" rot="MR90"/>
 </instance>
-<instance part="REF" gate="G$1" x="142.24" y="74.93" smashed="yes" rot="MR180">
+<instance part="REF" gate="G$1" x="142.24" y="74.93" smashed="yes" rot="MR180" grouprefs="MAIN_IC">
 <attribute name="NAME" x="143.51" y="77.47" size="1.27" layer="95" rot="MR180"/>
 </instance>
 <instance part="C12" gate="G$1" x="-6.35" y="-68.58" smashed="yes">
@@ -6352,37 +6352,37 @@ voltage rating</text>
 <attribute name="NAME" x="170.434" y="-2.159" size="1.778" layer="95"/>
 <attribute name="VALUE" x="167.894" y="-4.699" size="1.778" layer="96"/>
 </instance>
-<instance part="C11" gate="G$1" x="180.34" y="13.97" smashed="yes">
+<instance part="C11" gate="G$1" x="180.34" y="13.97" smashed="yes" grouprefs="MAIN_IC">
 <attribute name="NAME" x="184.404" y="11.811" size="1.778" layer="95"/>
 <attribute name="VALUE" x="180.594" y="9.271" size="1.778" layer="96"/>
 </instance>
-<instance part="PROG+" gate="1" x="162.56" y="27.94" smashed="yes" rot="R180">
+<instance part="PROG+" gate="1" x="162.56" y="27.94" smashed="yes" rot="R180" grouprefs="MAIN_IC">
 <attribute name="NAME" x="163.957" y="25.9842" size="1.778" layer="95"/>
 <attribute name="VALUE" x="163.703" y="31.242" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="PROG-" gate="1" x="175.26" y="35.56" smashed="yes" rot="R180">
+<instance part="PROG-" gate="1" x="175.26" y="35.56" smashed="yes" rot="R180" grouprefs="MAIN_IC">
 <attribute name="NAME" x="176.657" y="34.8742" size="1.778" layer="95"/>
 <attribute name="VALUE" x="176.403" y="38.862" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="BAT6" gate="G$1" x="2.54" y="-10.16" smashed="yes" rot="R90">
+<instance part="BAT6" gate="G$1" x="2.54" y="-10.16" smashed="yes" rot="R90" grouprefs="MAIN_IC">
 <attribute name="NAME" x="0" y="-7.62" size="1.27" layer="95"/>
 </instance>
-<instance part="BAT4" gate="G$1" x="7.62" y="-10.16" smashed="yes" rot="R90">
+<instance part="BAT4" gate="G$1" x="7.62" y="-10.16" smashed="yes" rot="R90" grouprefs="MAIN_IC">
 <attribute name="NAME" x="5.08" y="-7.62" size="1.27" layer="95"/>
 </instance>
-<instance part="BAT2" gate="G$1" x="2.54" y="-27.94" smashed="yes" rot="R270">
+<instance part="BAT2" gate="G$1" x="2.54" y="-27.94" smashed="yes" rot="R270" grouprefs="MAIN_IC">
 <attribute name="NAME" x="2.54" y="-30.48" size="1.27" layer="95" rot="R180"/>
 </instance>
-<instance part="BAT0" gate="G$1" x="7.62" y="-27.94" smashed="yes" rot="R270">
+<instance part="BAT0" gate="G$1" x="7.62" y="-27.94" smashed="yes" rot="R270" grouprefs="MAIN_IC">
 <attribute name="NAME" x="7.62" y="-30.48" size="1.27" layer="95" rot="R180"/>
 </instance>
-<instance part="BAT1" gate="G$1" x="2.54" y="78.74" smashed="yes" rot="R90">
+<instance part="BAT1" gate="G$1" x="2.54" y="78.74" smashed="yes" rot="R90" grouprefs="MAIN_IC">
 <attribute name="NAME" x="2.54" y="81.28" size="1.27" layer="95"/>
 </instance>
-<instance part="BAT3" gate="G$1" x="7.62" y="78.74" smashed="yes" rot="R90">
+<instance part="BAT3" gate="G$1" x="7.62" y="78.74" smashed="yes" rot="R90" grouprefs="MAIN_IC">
 <attribute name="NAME" x="7.62" y="81.28" size="1.27" layer="95"/>
 </instance>
-<instance part="BAT5" gate="G$1" x="5.08" y="63.5" smashed="yes" rot="R270">
+<instance part="BAT5" gate="G$1" x="5.08" y="63.5" smashed="yes" rot="R270" grouprefs="MAIN_IC">
 <attribute name="NAME" x="7.62" y="63.5" size="1.27" layer="95"/>
 </instance>
 </instances>
@@ -6398,13 +6398,13 @@ voltage rating</text>
 <pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="157.48" y1="36.83" x2="157.48" y2="35.56" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="U1" gate="G$1" pin="DVSS"/>
-<wire x1="157.48" y1="35.56" x2="170.18" y2="35.56" width="0.1524" layer="91"/>
-<junction x="157.48" y="35.56"/>
-<junction x="170.18" y="35.56"/>
-<wire x1="148.59" y1="30.48" x2="157.48" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="30.48" x2="157.48" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="35.56" x2="170.18" y2="35.56" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<junction x="157.48" y="35.56" grouprefs="MAIN_IC"/>
+<junction x="170.18" y="35.56" grouprefs="MAIN_IC"/>
+<wire x1="148.59" y1="30.48" x2="157.48" y2="30.48" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="157.48" y1="30.48" x2="157.48" y2="35.56" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="PROG-" gate="1" pin="P"/>
-<wire x1="172.72" y1="35.56" x2="170.18" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="35.56" x2="170.18" y2="35.56" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="CVSS"/>
@@ -6437,9 +6437,9 @@ voltage rating</text>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="U1" gate="G$1" pin="PAD"/>
 <wire x1="118.11" y1="-15.24" x2="118.11" y2="-19.05" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<wire x1="115.57" y1="-12.7" x2="115.57" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="115.57" y1="-15.24" x2="118.11" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="118.11" y="-15.24"/>
+<wire x1="115.57" y1="-12.7" x2="115.57" y2="-15.24" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="115.57" y1="-15.24" x2="118.11" y2="-15.24" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<junction x="118.11" y="-15.24" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -6460,7 +6460,7 @@ voltage rating</text>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="165.1" y1="67.31" x2="165.1" y2="64.77" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <wire x1="165.1" y1="64.77" x2="152.4" y2="64.77" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<junction x="152.4" y="64.77"/>
+<junction x="152.4" y="64.77" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
 <pinref part="C40" gate="G$1" pin="1"/>
@@ -6560,18 +6560,18 @@ voltage rating</text>
 <wire x1="6.35" y1="-2.54" x2="22.86" y2="-2.54" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <label x="6.35" y="-2.54" size="1.778" layer="95" rot="MR0" grouprefs="MAIN_IC"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="25.4" y1="-8.89" x2="25.4" y2="-2.54" width="0.1524" layer="91"/>
-<junction x="25.4" y="-2.54"/>
+<wire x1="25.4" y1="-8.89" x2="25.4" y2="-2.54" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<junction x="25.4" y="-2.54" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
 <pinref part="J1" gate="B" pin="1"/>
-<wire x1="1.27" y1="-22.86" x2="7.62" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="1.27" y1="-22.86" x2="7.62" y2="-22.86" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="7.62" y1="-22.86" x2="11.43" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="11.43" y1="-22.86" x2="11.43" y2="-24.13" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-22.86" x2="11.43" y2="-22.86" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="11.43" y1="-22.86" x2="11.43" y2="-24.13" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="BAT0" gate="G$1" pin="P$1"/>
-<wire x1="7.62" y1="-25.4" x2="7.62" y2="-22.86" width="0.1524" layer="91"/>
-<junction x="7.62" y="-22.86"/>
+<wire x1="7.62" y1="-25.4" x2="7.62" y2="-22.86" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<junction x="7.62" y="-22.86" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
 <pinref part="J9" gate="B" pin="3"/>
@@ -6718,18 +6718,18 @@ voltage rating</text>
 <junction x="25.4" y="58.42" grouprefs="MAIN_IC"/>
 <label x="6.35" y="58.42" size="1.778" layer="95" rot="MR0" grouprefs="MAIN_IC"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="22.86" y1="63.5" x2="22.86" y2="58.42" width="0.1524" layer="91"/>
-<junction x="22.86" y="58.42"/>
+<wire x1="22.86" y1="63.5" x2="22.86" y2="58.42" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<junction x="22.86" y="58.42" grouprefs="MAIN_IC"/>
 </segment>
 <segment>
 <pinref part="J1" gate="B" pin="4"/>
-<wire x1="1.27" y1="-15.24" x2="2.54" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="1.27" y1="-15.24" x2="2.54" y2="-15.24" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
-<wire x1="2.54" y1="-15.24" x2="11.43" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="11.43" y1="-12.7" x2="11.43" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-15.24" x2="11.43" y2="-15.24" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="11.43" y1="-12.7" x2="11.43" y2="-15.24" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="BAT6" gate="G$1" pin="P$1"/>
-<wire x1="2.54" y1="-12.7" x2="2.54" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="2.54" y="-15.24"/>
+<wire x1="2.54" y1="-12.7" x2="2.54" y2="-15.24" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<junction x="2.54" y="-15.24" grouprefs="MAIN_IC"/>
 </segment>
 </net>
 <net name="LDOIN" class="0">
@@ -6778,7 +6778,7 @@ voltage rating</text>
 <label x="139.7" y="74.93" size="1.778" layer="95" rot="R90" grouprefs="MAIN_IC"/>
 <pinref part="REF" gate="G$1" pin="P$1"/>
 <wire x1="139.7" y1="74.93" x2="139.7" y2="73.66" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<junction x="139.7" y="74.93"/>
+<junction x="139.7" y="74.93" grouprefs="MAIN_IC"/>
 </segment>
 </net>
 <net name="BAT" class="0">
@@ -6788,14 +6788,14 @@ voltage rating</text>
 <wire x1="113.03" y1="59.69" x2="113.03" y2="54.61" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="BAT" gate="G$1" pin="P$1"/>
 <wire x1="113.03" y1="54.61" x2="113.03" y2="50.8" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<junction x="113.03" y="54.61"/>
+<junction x="113.03" y="54.61" grouprefs="MAIN_IC"/>
 </segment>
 </net>
 <net name="VPROG" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="VPROG"/>
-<wire x1="148.59" y1="27.94" x2="160.02" y2="27.94" width="0.1524" layer="91"/>
-<label x="151.13" y="27.94" size="1.778" layer="95"/>
+<wire x1="148.59" y1="27.94" x2="160.02" y2="27.94" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<label x="151.13" y="27.94" size="1.778" layer="95" grouprefs="MAIN_IC"/>
 <pinref part="PROG+" gate="1" pin="P"/>
 </segment>
 <segment>
@@ -6829,12 +6829,12 @@ voltage rating</text>
 </segment>
 <segment>
 <pinref part="J4" gate="B" pin="2"/>
-<wire x1="1.27" y1="69.85" x2="7.62" y2="69.85" width="0.1524" layer="91"/>
-<label x="10.16" y="69.85" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
+<wire x1="1.27" y1="69.85" x2="7.62" y2="69.85" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<label x="10.16" y="69.85" size="1.778" layer="95" rot="MR0" align="bottom-right" grouprefs="MAIN_IC"/>
 <pinref part="BAT3" gate="G$1" pin="P$1"/>
-<wire x1="7.62" y1="69.85" x2="10.16" y2="69.85" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="76.2" x2="7.62" y2="69.85" width="0.1524" layer="91"/>
-<junction x="7.62" y="69.85"/>
+<wire x1="7.62" y1="69.85" x2="10.16" y2="69.85" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="7.62" y1="76.2" x2="7.62" y2="69.85" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<junction x="7.62" y="69.85" grouprefs="MAIN_IC"/>
 </segment>
 </net>
 <net name="BAT2" class="0">
@@ -6858,12 +6858,12 @@ voltage rating</text>
 </segment>
 <segment>
 <pinref part="J1" gate="B" pin="2"/>
-<wire x1="1.27" y1="-20.32" x2="2.54" y2="-20.32" width="0.1524" layer="91"/>
-<label x="11.43" y="-20.32" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
+<wire x1="1.27" y1="-20.32" x2="2.54" y2="-20.32" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<label x="11.43" y="-20.32" size="1.778" layer="95" rot="MR0" align="bottom-right" grouprefs="MAIN_IC"/>
 <pinref part="BAT2" gate="G$1" pin="P$1"/>
-<wire x1="2.54" y1="-20.32" x2="11.43" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="-25.4" x2="2.54" y2="-20.32" width="0.1524" layer="91"/>
-<junction x="2.54" y="-20.32"/>
+<wire x1="2.54" y1="-20.32" x2="11.43" y2="-20.32" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="2.54" y1="-25.4" x2="2.54" y2="-20.32" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<junction x="2.54" y="-20.32" grouprefs="MAIN_IC"/>
 </segment>
 </net>
 <net name="BAT1" class="0">
@@ -6887,12 +6887,12 @@ voltage rating</text>
 </segment>
 <segment>
 <pinref part="J4" gate="B" pin="3"/>
-<wire x1="1.27" y1="72.39" x2="2.54" y2="72.39" width="0.1524" layer="91"/>
-<label x="10.16" y="72.39" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
+<wire x1="1.27" y1="72.39" x2="2.54" y2="72.39" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<label x="10.16" y="72.39" size="1.778" layer="95" rot="MR0" align="bottom-right" grouprefs="MAIN_IC"/>
 <pinref part="BAT1" gate="G$1" pin="P$1"/>
-<wire x1="2.54" y1="72.39" x2="10.16" y2="72.39" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="76.2" x2="2.54" y2="72.39" width="0.1524" layer="91"/>
-<junction x="2.54" y="72.39"/>
+<wire x1="2.54" y1="72.39" x2="10.16" y2="72.39" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="2.54" y1="76.2" x2="2.54" y2="72.39" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<junction x="2.54" y="72.39" grouprefs="MAIN_IC"/>
 </segment>
 </net>
 <net name="VC5" class="0">
@@ -6916,7 +6916,7 @@ voltage rating</text>
 <wire x1="62.23" y1="49.53" x2="62.23" y2="48.26" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <junction x="62.23" y="48.26" grouprefs="MAIN_IC"/>
 <pinref part="VC5" gate="G$1" pin="P$1"/>
-<junction x="86.36" y="48.26"/>
+<junction x="86.36" y="48.26" grouprefs="MAIN_IC"/>
 </segment>
 </net>
 <net name="VC3" class="0">
@@ -6934,7 +6934,7 @@ voltage rating</text>
 <junction x="62.23" y="27.94" grouprefs="MAIN_IC"/>
 <pinref part="VC3" gate="G$1" pin="P$1"/>
 <wire x1="86.36" y1="27.94" x2="62.23" y2="27.94" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<junction x="86.36" y="27.94"/>
+<junction x="86.36" y="27.94" grouprefs="MAIN_IC"/>
 </segment>
 </net>
 <net name="VC0" class="0">
@@ -6954,7 +6954,7 @@ voltage rating</text>
 <wire x1="105.41" y1="20.32" x2="93.98" y2="20.32" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <wire x1="93.98" y1="20.32" x2="93.98" y2="-2.54" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="VC0" gate="G$1" pin="P$1"/>
-<junction x="86.36" y="-2.54"/>
+<junction x="86.36" y="-2.54" grouprefs="MAIN_IC"/>
 </segment>
 </net>
 <net name="VC6" class="0">
@@ -6970,7 +6970,7 @@ voltage rating</text>
 <wire x1="62.23" y1="57.15" x2="62.23" y2="58.42" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <junction x="62.23" y="58.42" grouprefs="MAIN_IC"/>
 <pinref part="VC6" gate="G$1" pin="P$1"/>
-<junction x="86.36" y="58.42"/>
+<junction x="86.36" y="58.42" grouprefs="MAIN_IC"/>
 </segment>
 </net>
 <net name="BAT5" class="0">
@@ -6994,12 +6994,12 @@ voltage rating</text>
 </segment>
 <segment>
 <pinref part="J4" gate="B" pin="1"/>
-<wire x1="1.27" y1="67.31" x2="5.08" y2="67.31" width="0.1524" layer="91"/>
-<label x="10.16" y="67.31" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
+<wire x1="1.27" y1="67.31" x2="5.08" y2="67.31" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<label x="10.16" y="67.31" size="1.778" layer="95" rot="MR0" align="bottom-right" grouprefs="MAIN_IC"/>
 <pinref part="BAT5" gate="G$1" pin="P$1"/>
-<wire x1="5.08" y1="67.31" x2="10.16" y2="67.31" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="66.04" x2="5.08" y2="67.31" width="0.1524" layer="91"/>
-<junction x="5.08" y="67.31"/>
+<wire x1="5.08" y1="67.31" x2="10.16" y2="67.31" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="5.08" y1="66.04" x2="5.08" y2="67.31" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<junction x="5.08" y="67.31" grouprefs="MAIN_IC"/>
 </segment>
 </net>
 <net name="GPIO1" class="0">
@@ -7896,7 +7896,7 @@ voltage rating</text>
 <wire x1="59.69" y1="19.05" x2="59.69" y2="17.78" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <junction x="59.69" y="17.78" grouprefs="MAIN_IC"/>
 <pinref part="VC2" gate="G$1" pin="P$1"/>
-<junction x="86.36" y="17.78"/>
+<junction x="86.36" y="17.78" grouprefs="MAIN_IC"/>
 </segment>
 </net>
 <net name="VC4" class="0">
@@ -7920,7 +7920,7 @@ voltage rating</text>
 <wire x1="78.74" y1="39.37" x2="78.74" y2="38.1" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <junction x="78.74" y="38.1" grouprefs="MAIN_IC"/>
 <pinref part="VC4" gate="G$1" pin="P$1"/>
-<junction x="86.36" y="38.1"/>
+<junction x="86.36" y="38.1" grouprefs="MAIN_IC"/>
 </segment>
 </net>
 <net name="BAT4" class="0">
@@ -7944,12 +7944,12 @@ voltage rating</text>
 </segment>
 <segment>
 <pinref part="J1" gate="B" pin="3"/>
-<wire x1="1.27" y1="-17.78" x2="7.62" y2="-17.78" width="0.1524" layer="91"/>
-<label x="11.43" y="-17.78" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
+<wire x1="1.27" y1="-17.78" x2="7.62" y2="-17.78" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<label x="11.43" y="-17.78" size="1.778" layer="95" rot="MR0" align="bottom-right" grouprefs="MAIN_IC"/>
 <pinref part="BAT4" gate="G$1" pin="P$1"/>
-<wire x1="7.62" y1="-17.78" x2="11.43" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="-12.7" x2="7.62" y2="-17.78" width="0.1524" layer="91"/>
-<junction x="7.62" y="-17.78"/>
+<wire x1="7.62" y1="-17.78" x2="11.43" y2="-17.78" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="-17.78" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<junction x="7.62" y="-17.78" grouprefs="MAIN_IC"/>
 </segment>
 </net>
 <net name="SB6" class="0">
@@ -8188,8 +8188,8 @@ voltage rating</text>
 <net name="4" class="0">
 <segment>
 <pinref part="J4" gate="B" pin="4"/>
-<wire x1="1.27" y1="74.93" x2="10.16" y2="74.93" width="0.1524" layer="91"/>
-<label x="10.16" y="74.93" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
+<wire x1="1.27" y1="74.93" x2="10.16" y2="74.93" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<label x="10.16" y="74.93" size="1.778" layer="95" rot="MR0" align="bottom-right" grouprefs="MAIN_IC"/>
 </segment>
 </net>
 <net name="FAULTL_P" class="0">
@@ -8334,8 +8334,8 @@ voltage rating</text>
 <label x="185.42" y="25.4" size="1.778" layer="95" grouprefs="MAIN_IC"/>
 <wire x1="148.59" y1="25.4" x2="180.34" y2="25.4" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <wire x1="180.34" y1="25.4" x2="185.42" y2="25.4" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
-<wire x1="180.34" y1="16.51" x2="180.34" y2="25.4" width="0.1524" layer="91"/>
-<junction x="180.34" y="25.4"/>
+<wire x1="180.34" y1="16.51" x2="180.34" y2="25.4" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
+<junction x="180.34" y="25.4" grouprefs="MAIN_IC"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -8359,7 +8359,7 @@ voltage rating</text>
 <segment>
 <wire x1="138.43" y1="50.8" x2="138.43" y2="54.61" width="0.1524" layer="91" grouprefs="MAIN_IC"/>
 <pinref part="U1" gate="G$1" pin="VLDO"/>
-<label x="138.43" y="52.07" size="1.778" layer="95" rot="R90"/>
+<label x="138.43" y="52.07" size="1.778" layer="95" rot="R90" grouprefs="MAIN_IC"/>
 </segment>
 </net>
 </nets>
@@ -8631,28 +8631,28 @@ JP holder</text>
 <attribute name="NAME" x="48.26" y="92.9386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="48.26" y="88.138" size="1.778" layer="96"/>
 </instance>
-<instance part="CLN" gate="G$1" x="-147.32" y="104.14" smashed="yes" rot="MR270">
+<instance part="CLN" gate="G$1" x="-147.32" y="104.14" smashed="yes" rot="MR270" grouprefs="STAK_DEVICE_COMMUNICATION1">
 <attribute name="NAME" x="-146.05" y="104.14" size="1.27" layer="95" rot="MR180"/>
 </instance>
-<instance part="CLP" gate="G$1" x="-146.05" y="78.74" smashed="yes" rot="MR90">
+<instance part="CLP" gate="G$1" x="-146.05" y="78.74" smashed="yes" rot="MR90" grouprefs="STAK_DEVICE_COMMUNICATION1">
 <attribute name="NAME" x="-144.78" y="78.74" size="1.27" layer="95" rot="MR180"/>
 </instance>
-<instance part="FLN" gate="G$1" x="-146.05" y="55.88" smashed="yes" rot="MR270">
+<instance part="FLN" gate="G$1" x="-146.05" y="55.88" smashed="yes" rot="MR270" grouprefs="STAK_DEVICE_COMMUNICATION1">
 <attribute name="NAME" x="-144.78" y="57.15" size="1.27" layer="95" rot="MR180"/>
 </instance>
-<instance part="FLP" gate="G$1" x="-147.32" y="30.48" smashed="yes" rot="MR90">
+<instance part="FLP" gate="G$1" x="-147.32" y="30.48" smashed="yes" rot="MR90" grouprefs="STAK_DEVICE_COMMUNICATION1">
 <attribute name="NAME" x="-146.05" y="30.48" size="1.27" layer="95" rot="MR180"/>
 </instance>
-<instance part="CHN" gate="G$1" x="-49.53" y="2.54" smashed="yes" rot="MR270">
+<instance part="CHN" gate="G$1" x="-49.53" y="2.54" smashed="yes" rot="MR270" grouprefs="STAK_DEVICE_COMMUNICATION1">
 <attribute name="NAME" x="-48.26" y="2.54" size="1.27" layer="95"/>
 </instance>
-<instance part="CHP" gate="G$1" x="-49.53" y="-22.86" smashed="yes" rot="MR90">
+<instance part="CHP" gate="G$1" x="-49.53" y="-22.86" smashed="yes" rot="MR90" grouprefs="STAK_DEVICE_COMMUNICATION1">
 <attribute name="NAME" x="-48.26" y="-22.86" size="1.27" layer="95" rot="MR180"/>
 </instance>
-<instance part="FHN" gate="G$1" x="-49.53" y="-48.26" smashed="yes" rot="MR270">
+<instance part="FHN" gate="G$1" x="-49.53" y="-48.26" smashed="yes" rot="MR270" grouprefs="STAK_DEVICE_COMMUNICATION1">
 <attribute name="NAME" x="-48.26" y="-48.26" size="1.27" layer="95" rot="MR180"/>
 </instance>
-<instance part="FHP" gate="G$1" x="-49.53" y="-73.66" smashed="yes" rot="MR90">
+<instance part="FHP" gate="G$1" x="-49.53" y="-73.66" smashed="yes" rot="MR90" grouprefs="STAK_DEVICE_COMMUNICATION1">
 <attribute name="NAME" x="-48.26" y="-73.66" size="1.27" layer="95" rot="MR180"/>
 </instance>
 <instance part="J12" gate="-1" x="69.85" y="86.36" smashed="yes" grouprefs="UART_TO_ISO_COMMUNICATION1">
@@ -8839,7 +8839,7 @@ JP holder</text>
 <pinref part="GND18" gate="1" pin="GND"/>
 <wire x1="-96.52" y1="-60.96" x2="-96.52" y2="-63.5" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="X3" gate="G$1" pin="3"/>
-<wire x1="-92.71" y1="-60.96" x2="-96.52" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="-92.71" y1="-60.96" x2="-96.52" y2="-60.96" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 </segment>
 <segment>
 <pinref part="C39" gate="G$1" pin="1"/>
@@ -8855,7 +8855,7 @@ JP holder</text>
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="-96.52" y1="-10.16" x2="-96.52" y2="-12.7" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="X4" gate="G$1" pin="3"/>
-<wire x1="-96.52" y1="-10.16" x2="-92.71" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="-10.16" x2="-92.71" y2="-10.16" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 </segment>
 <segment>
 <pinref part="C52" gate="G$1" pin="1"/>
@@ -8980,7 +8980,7 @@ JP holder</text>
 <junction x="-140.97" y="106.68" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <label x="-154.94" y="106.68" size="1.778" layer="95" rot="R180" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="CLN" gate="G$1" pin="P$1"/>
-<junction x="-147.32" y="106.68"/>
+<junction x="-147.32" y="106.68" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 </segment>
 </net>
 <net name="FL_N" class="0">
@@ -9049,7 +9049,7 @@ JP holder</text>
 <wire x1="-87.63" y1="40.64" x2="-87.63" y2="27.94" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <wire x1="-87.63" y1="27.94" x2="-90.17" y2="27.94" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="L1" gate="A" pin="2"/>
-<wire x1="-85.09" y1="40.64" x2="-87.63" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-85.09" y1="40.64" x2="-87.63" y2="40.64" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 </segment>
 </net>
 <net name="FL2_N" class="0">
@@ -9058,16 +9058,16 @@ JP holder</text>
 <wire x1="-90.17" y1="58.42" x2="-87.63" y2="58.42" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <wire x1="-87.63" y1="58.42" x2="-87.63" y2="45.72" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="L1" gate="A" pin="1"/>
-<wire x1="-85.09" y1="45.72" x2="-87.63" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-85.09" y1="45.72" x2="-87.63" y2="45.72" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 </segment>
 </net>
 <net name="ISO_FAULTL_P" class="0">
 <segment>
-<wire x1="-67.31" y1="63.5" x2="-67.31" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-67.31" y1="40.64" x2="-72.39" y2="40.64" width="0.1524" layer="91"/>
-<label x="-64.77" y="63.5" size="1.778" layer="95"/>
+<wire x1="-67.31" y1="63.5" x2="-67.31" y2="40.64" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
+<wire x1="-67.31" y1="40.64" x2="-72.39" y2="40.64" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
+<label x="-64.77" y="63.5" size="1.778" layer="95" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="J2" gate="B" pin="4"/>
-<wire x1="-46.99" y1="63.5" x2="-67.31" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-46.99" y1="63.5" x2="-67.31" y2="63.5" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="L1" gate="A" pin="3"/>
 </segment>
 </net>
@@ -9115,7 +9115,7 @@ JP holder</text>
 <wire x1="-87.63" y1="88.9" x2="-87.63" y2="76.2" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <wire x1="-87.63" y1="76.2" x2="-90.17" y2="76.2" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="L2" gate="A" pin="2"/>
-<wire x1="-87.63" y1="88.9" x2="-85.09" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-87.63" y1="88.9" x2="-85.09" y2="88.9" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 </segment>
 </net>
 <net name="CL2_N" class="0">
@@ -9124,7 +9124,7 @@ JP holder</text>
 <wire x1="-90.17" y1="106.68" x2="-87.63" y2="106.68" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <wire x1="-87.63" y1="106.68" x2="-87.63" y2="93.98" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="L2" gate="A" pin="1"/>
-<wire x1="-87.63" y1="93.98" x2="-85.09" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-87.63" y1="93.98" x2="-85.09" y2="93.98" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 </segment>
 </net>
 <net name="FH1_N" class="0">
@@ -9150,7 +9150,7 @@ JP holder</text>
 <wire x1="-73.66" y1="-58.42" x2="-73.66" y2="-45.72" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <junction x="-73.66" y="-45.72" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="X3" gate="G$1" pin="1"/>
-<wire x1="-78.486" y1="-58.42" x2="-73.66" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-78.486" y1="-58.42" x2="-73.66" y2="-58.42" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 </segment>
 </net>
 <net name="FH_P" class="0">
@@ -9162,7 +9162,7 @@ JP holder</text>
 <wire x1="-73.66" y1="-63.5" x2="-73.66" y2="-76.2" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <junction x="-73.66" y="-76.2" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="X3" gate="G$1" pin="2"/>
-<wire x1="-73.66" y1="-63.5" x2="-78.486" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="-63.5" x2="-78.486" y2="-63.5" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 </segment>
 </net>
 <net name="FH2_P" class="0">
@@ -9206,7 +9206,7 @@ JP holder</text>
 <wire x1="-73.66" y1="-7.62" x2="-73.66" y2="5.08" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <junction x="-73.66" y="5.08" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="X4" gate="G$1" pin="1"/>
-<wire x1="-78.486" y1="-7.62" x2="-73.66" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-78.486" y1="-7.62" x2="-73.66" y2="-7.62" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 </segment>
 </net>
 <net name="CH_P" class="0">
@@ -9218,7 +9218,7 @@ JP holder</text>
 <wire x1="-73.66" y1="-12.7" x2="-73.66" y2="-25.4" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <junction x="-73.66" y="-25.4" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="X4" gate="G$1" pin="2"/>
-<wire x1="-73.66" y1="-12.7" x2="-78.486" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="-12.7" x2="-78.486" y2="-12.7" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 </segment>
 </net>
 <net name="CH2_P" class="0">
@@ -9314,10 +9314,10 @@ JP holder</text>
 <net name="ISO_COML_N" class="0">
 <segment>
 <wire x1="-72.39" y1="93.98" x2="-67.31" y2="93.98" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
-<wire x1="-67.31" y1="71.12" x2="-67.31" y2="93.98" width="0.1524" layer="91"/>
-<label x="-64.77" y="71.12" size="1.778" layer="95"/>
+<wire x1="-67.31" y1="71.12" x2="-67.31" y2="93.98" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
+<label x="-64.77" y="71.12" size="1.778" layer="95" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="J2" gate="B" pin="1"/>
-<wire x1="-67.31" y1="71.12" x2="-46.99" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-67.31" y1="71.12" x2="-46.99" y2="71.12" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="L2" gate="A" pin="4"/>
 </segment>
 </net>
@@ -9429,21 +9429,21 @@ JP holder</text>
 </net>
 <net name="ISO_FAULTL_N" class="0">
 <segment>
-<wire x1="-69.85" y1="66.04" x2="-69.85" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-69.85" y1="45.72" x2="-72.39" y2="45.72" width="0.1524" layer="91"/>
-<label x="-64.77" y="66.04" size="1.778" layer="95"/>
+<wire x1="-69.85" y1="66.04" x2="-69.85" y2="45.72" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
+<wire x1="-69.85" y1="45.72" x2="-72.39" y2="45.72" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
+<label x="-64.77" y="66.04" size="1.778" layer="95" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="J2" gate="B" pin="3"/>
-<wire x1="-46.99" y1="66.04" x2="-69.85" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-46.99" y1="66.04" x2="-69.85" y2="66.04" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="L1" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="ISO_COML_P" class="0">
 <segment>
-<wire x1="-72.39" y1="88.9" x2="-69.85" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="-69.85" y1="88.9" x2="-69.85" y2="68.58" width="0.1524" layer="91"/>
-<label x="-64.77" y="68.58" size="1.778" layer="95"/>
+<wire x1="-72.39" y1="88.9" x2="-69.85" y2="88.9" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
+<wire x1="-69.85" y1="88.9" x2="-69.85" y2="68.58" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
+<label x="-64.77" y="68.58" size="1.778" layer="95" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="J2" gate="B" pin="2"/>
-<wire x1="-46.99" y1="68.58" x2="-69.85" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-46.99" y1="68.58" x2="-69.85" y2="68.58" width="0.1524" layer="91" grouprefs="STAK_DEVICE_COMMUNICATION1"/>
 <pinref part="L2" gate="A" pin="3"/>
 </segment>
 </net>
